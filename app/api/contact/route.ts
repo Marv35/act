@@ -16,7 +16,7 @@ export async function POST(request: Request) {
 
     // Créer le message à envoyer
     const msg = {
-      to: "actennis28@gmail.com", // Adresse email du club
+      to: "associationcloysiennetennis.28@gmail.com", // Adresse email du club
       from: "no-reply@tennis-cloyes.fr", // Doit être une adresse vérifiée dans votre compte SendGrid
       replyTo: email, // Pour que le club puisse répondre directement à l'expéditeur
       subject: `Contact ACT - ${sujet}`,
