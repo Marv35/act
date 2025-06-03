@@ -39,7 +39,11 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gray-800 rounded-full opacity-20 blur-xl animate-pulse"></div>
               <Image
+<<<<<<< HEAD
                  src="/images/Terrains/Courts_1_2.jpg"
+=======
+                src="/images/Terrains/Courts_1_2.jpg"
+>>>>>>> c901d50 (mise a jour image)
                 alt="Terrains de tennis"
                 width={500}
                 height={500}
@@ -61,7 +65,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/Terrains/terrain_coucher_soleil.jpg"
+              src="/images/Terrains/Terrain_coucher_soleil.jpg"
               alt="Terrain de tennis au coucher du soleil"
               fill
               className="object-cover hover:scale-110 transition-transform duration-500"
@@ -83,7 +87,7 @@ export default function Home() {
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/Terrains/court_4.jpg"
+              src="/images/Terrains/Court_4.jpg"
               alt="Cours collectif de tennis"
               fill
               className="object-cover hover:scale-110 transition-transform duration-500"

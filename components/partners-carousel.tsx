@@ -21,7 +21,7 @@ const partners = [
   },
   {
     name: "Crédit Agricole Val de France",
-    logo: "/images/Partenaires/Credit_Agricole.png",
+    logo: "/images/Partenaires/Credit_agricole.png",
     link: "#",
   },
   {
