@@ -40,7 +40,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gray-800 rounded-full opacity-20 blur-xl animate-pulse"></div>
               <Image
                 src="/images/Terrains/courts_1_2.jpg"
-                alt="Logo ACT"
+                alt="Terrains de tennis"
                 width={500}
                 height={500}
                 className="relative rounded-lg shadow-xl transform transition-transform hover:scale-105"
@@ -181,13 +181,13 @@ export default function Home() {
         </div>
       </section>*/}
 
-      <section className="py-16 bg-gradient-to-r
+      {/* <section className="py-16 bg-gradient-to-r
        to-yellow-50 rounded-3xl mb-16">
         <div className="text-center mb-12 px-4">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Plannig des courts</h2>
         </div>
         <p>METTRE API TEN'UP du planning des courts de tennis tous less terrains exterieur et interieur mais reservation sur le site Ten'up</p>
-      </section>
+      </section> */}
 
       
           <section className="py-16 bg-gradient-to-r from-green-50 to-yellow-50 rounded-3xl mb-16">
