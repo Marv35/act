@@ -39,7 +39,11 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gray-800 rounded-full opacity-20 blur-xl animate-pulse"></div>
               <Image
+<<<<<<< HEAD
                 src="/images/Terrains/Courts_1_2.jpg"
+=======
+                 src="/images/Terrains/Courts_1_2.jpg"
+>>>>>>> e2be74d2c400433120c611b2dd4698b5911df5f0
                 alt="Terrains de tennis"
                 width={500}
                 height={500}
