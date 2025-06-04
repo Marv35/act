@@ -50,7 +50,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Image
-              src="/images/Logo_ACT.jpg"
+              src="/images/Logo_ACT_petit.jpg"
               alt="Logo ACT"
               width={70}
               height={70}

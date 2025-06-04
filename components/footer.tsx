@@ -13,10 +13,10 @@ export default function Footer() {
             <div className="bg-white p-3 rounded-xl mb-4 shadow-md transform transition-transform hover:scale-105">
             <Link rel="stylesheet" href= "/"/>
               <Image
-                src="/images/Logo_ACT.jpg"
+                src="/images/Logo_ACT_petit.jpg"
                 alt="Logo ACT"
-                width={120}
-                height={120}
+                width={450}
+                height={250}
                 className="rounded-lg"
               />
             </div>
@@ -66,6 +66,7 @@ export default function Footer() {
 
             {/* Map */}
             <div className="mb-5 h-40 w-full overflow-hidden rounded-lg shadow-md">
+
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.8076440736!2d1.2372195!3d47.9244722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3a1f7f5555555%3A0x5555555555555555!2s6%20Rte%20de%20Montigny%2C%2028220%20Cloyes-les-Trois-Rivi%C3%A8res!5e0!3m2!1sfr!2sfr!4v1650000000000!5m2!1sfr!2sfr"
                 width="100%"
@@ -73,8 +74,8 @@ export default function Footer() {
                 style={{ border: 0 }}
                 allowFullScreen={false}
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Google Maps"
+                referrerPolicy="no-referrer"
+                title="Google Maps - Tennis Cloyes"
                 className="rounded-lg"
               ></iframe>
             </div>

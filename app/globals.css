@@ -10,10 +10,10 @@
 }
 
 /* Curseur personnalisé - désactivé sur mobile pour éviter les problèmes */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   html,
   body {
-    cursor: url("/images/tennis-cursor.png"), auto;
+    cursor: url("/images/Logo_ACT_petit.ico"), url("/images/Logo_ACT_petit.png") 16 16, auto;
   }
 
   a,
@@ -22,9 +22,9 @@
   input[type="submit"],
   input[type="button"],
   input[type="reset"] {
-    cursor: url("/images/tennis-ball.png"), pointer !important;
+    cursor: url("/images/Logo_ACT_petit.ico"), url("/images/Logo_ACT_petit.png") 16 16, pointer;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -276,6 +276,7 @@ img,
 svg {
   max-width: 100%;
   height: auto;
+  width: auto;
 }
 
 /* Optimisations pour les appareils mobiles */
