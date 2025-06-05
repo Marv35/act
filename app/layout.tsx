@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Club de tennis à Cloyes-les-Trois-Rivières (28220). ACT propose des cours, stages, compétitions et location de courts. Rejoignez l'Association Cloysienne de Tennis ! Terrains extérieurs et couverts.",
   keywords:
-    "tennis, Cloyes-les-Trois-Rivières, ACT, club de tennis, cours de tennis, stages tennis, compétition tennis, Eure-et-Loir, 28220, tennis cloyes, tennis cloyes sur loir, tennis eure et loir, act cloyes, act 28, association cloysienne de tennis",
+    "tennis, Cloyes-les-Trois-Rivières, ACT, club de tennis, cours de tennis, stages tennis, compétition tennis, Eure-et-Loir, 28220, tennis cloyes, tennis cloyes sur loir, tennis eure et loir, act cloyes, act 28, association cloysienne de tennis, location court tennis, terrains tennis, tennis extérieur, tennis couvert, tennis pour tous les niveaux, école de tennis, entraînement tennis, act28, tennis-cloyes, tennis-cloyes-les-trois-rivières, tennis-cloyes-les-trois-rivières-28",
   authors: [{ name: "Association Cloysienne de Tennis" }],
   creator: "Association Cloysienne de Tennis",
   publisher: "Association Cloysienne de Tennis",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Association Cloysienne de Tennis",
     images: [
       {
-        url: "//https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20ACT%20Couleur%20petit%20%281%29.jpg-ajgbR3Egn4mfWrnKNXhqj13noiwzLl.jpeg",
+        url: "/images/Logo_ACT.jpg",
         width: 800,
         height: 600,
         alt: "Logo Association Cloysienne de Tennis",
@@ -56,13 +56,12 @@ export const metadata: Metadata = {
     description:
       "Club de tennis à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
     images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20ACT%20Couleur%20petit%20%281%29.jpg-ajgbR3Egn4mfWrnKNXhqj13noiwzLl.jpeg",
+      "/images/Logo_ACT.jpg",
     ],
   },
   verification: {
     google: "google-site-verification=votrecode", // À remplacer par votre code de vérification Google
   },
-  generator: "v0.dev",
 }
 
 export default function RootLayout({
