@@ -39,7 +39,7 @@ export default function Club() {
               </div>
               <div className="p-4">
                 <p className="text-gray-700">
-                  Nos deux courts extérieurs en résine synthétique offrent une surface de jeu idéale pour la pratique du
+                  Nos deux courts extérieurs en béton poreux offrent une surface de jeu idéale pour la pratique du
                   tennis en toutes saisons.
                 </p>
                 <div className="mt-3 flex items-center text-sm text-green-600">
@@ -87,10 +87,11 @@ export default function Club() {
               </div>
               <div className="p-4">
                 <p className="text-gray-700">
-                  <span className="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-medium mb-2">
+                  {/* <span className="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-medium mb-2">
                     Les terrains sont dispo travaux presque fini
-                  </span>
+                  </span> 
                   <br />
+                  */}
                   Ces courts bénéficient d'une nouvelle structure couverte avec panneaux solaires, permettant de jouer
                   par tous les temps.
                 </p>
@@ -134,7 +135,7 @@ export default function Club() {
             </p>
             <div className="flex justify-center md:justify-start">
               <Link
-                href="https://tenup.fft.fr/"
+                href="https://tenup.fft.fr/club/53280682"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors"

@@ -72,16 +72,16 @@ export default function Inscriptions() {
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
               <a
-                href="/documents/fiche-inscription.pdf"
+                href="/documents/Fiche_Inscription_ACT.pdf"
                 className="flex items-center p-4 border rounded-lg hover:bg-green-50 transition-colors"
                 download
               >
                 <FileText className="mr-3 text-green-600" />
-                <span>Fiche Inscription ACTennis</span>
+                <span>Fiche Inscription ACT</span>
                 <Download className="ml-auto text-green-600" />
               </a>
               <a
-                href="/documents/attestation-mineur.pdf"
+                href="/documents/Attestation_mineur.pdf"
                 className="flex items-center p-4 border rounded-lg hover:bg-green-50 transition-colors"
                 download
               >
@@ -90,7 +90,7 @@ export default function Inscriptions() {
                 <Download className="ml-auto text-green-600" />
               </a>
               <a
-                href="/documents/questionnaire-sante-mineur.pdf"
+                href="/documents/Questionnaire_de_sante_mineurs.pdf"
                 className="flex items-center p-4 border rounded-lg hover:bg-green-50 transition-colors"
                 download
               >

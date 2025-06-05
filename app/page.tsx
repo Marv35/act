@@ -2,11 +2,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Bell, Calendar } from "lucide-react"
 import PartnersCarousel from "@/components/partners-carousel"
+import JsonLd from "./jsonld"
 
 export default function Home() {
   return (
     <div className="container mx-auto px-4">
+      <JsonLd />
       <section className="py-16 md:py-24">
+        <h1 className="sr-only">
+          Association de Tennis Cloysienne (ACT) à Cloyes-les-Trois-Rivières – Tennis Cloyes, club, cours, location de courts, compétition Eure-et-Loir
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-medium">
@@ -109,16 +114,17 @@ export default function Home() {
               <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
                 <h4 className="font-semibold text-lg mb-3">Chers membres,</h4>
                 <p className="mb-4 text-gray-700">
-                  Nous avons le plaisir de vous annoncer que les travaux sur les courts numéro trois et quatre avancent
-                  rapidement. Une nouvelle structure avec des panneaux solaires y est installée protégeant ainsi les
-                  terrains des intempéries.
+                  Nous avons le plaisir de vous informer que les travaux sur les courts n°3 et 4 touchent à leur fin. 
+                  Les terrains sont désormais accessibles et prêts à accueillir les joueurs ! Une nouvelle structure équipée de panneaux solaires a été installée, 
+                  offrant une protection contre les intempéries.
+                  Quelques finitions restent à effectuer, mais cela n’empêche pas la pratique du tennis sur ces courts.
                 </p>
                 <p className="mb-4 text-gray-700">Merci pour votre patience !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
               </div>
               <div className="flex">
                 <Link href="/club" className="inline-flex items-center text-green-600 hover:text-green-800 font-medium">
-                  En savoir plus sur nos installations <ArrowRight className="ml-1 h-4 w-4" />
+                  En savoir plus sur les installations<ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
             </div>
@@ -192,7 +198,7 @@ export default function Home() {
       
           <section className="py-16 bg-gradient-to-r from-green-50 to-yellow-50 rounded-3xl mb-16">
         <div className="text-center mb-12 px-4">
-          <h2 className="text-3xl font-bold text-green-600 mb-4">Court de tennis </h2>
+          <h2 className="text-3xl font-bold text-green-600 mb-4">Réservez vos courts en ligne</h2>
           <p className="text-lg max-w-2xl mx-auto">
             Utilisez la plateforme Ten'Up pour réserver facilement vos courts et gérer votre compte FFT
           </p>

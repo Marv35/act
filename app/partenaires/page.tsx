@@ -318,8 +318,11 @@ export default function Partenaires() {
           </div>
         </section> */}
 
+
+
+{/* (A REVOIR ET A EN PARLER) */}
         <section>
-          <h2 className="text-2xl font-semibold mb-6">Devenir partenaire (A REVOIR ET A EN PARLER)</h2>
+          <h2 className="text-2xl font-semibold mb-6">Devenir partenaire </h2>
 
           <div className="bg-green-50 p-6 rounded-lg border border-green-200">
             <p className="mb-4">

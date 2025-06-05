@@ -5,6 +5,8 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react"
+
 
 export default function Header() {
   const pathname = usePathname()
@@ -50,10 +52,10 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Image
-              src="/images/Logo_ACT_petit.jpg"
+              src="/images/Logo_ACT_petit.png"
               alt="Logo ACT"
-              width={70}
-              height={70}
+              width={90}
+              height={50}
               className="mr-3 transition-transform duration-300 hover:scale-105"
             />
             <h1 className="text-xl font-bold text-green-600 hidden sm:block">
@@ -63,6 +65,7 @@ export default function Header() {
           </div>
 
           {/* Menu desktop */}
+
           <nav className="hidden md:block">
             <ul className="flex space-x-1 lg:space-x-4">
               {navLinks.map((link) => (
@@ -88,6 +91,27 @@ export default function Header() {
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          {/* Réseaux sociaux */}
+          <div className="flex space-x-3 mb-3">
+             <Link
+               href="https://www.instagram.com/association_tennis_cloyes_/"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="bg-green-500 hover:bg-green-400 text-white p-2 rounded-full transition-colors"
+               aria-label="Instagram"
+             >
+               <Instagram size={24} />
+             </Link>
+             <Link
+               href="https://www.facebook.com/Tenniscloyes"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="bg-green-500 hover:bg-green-400 text-white p-2 rounded-full transition-colors"
+               aria-label="Facebook"
+             >
+               <Facebook size={24} />
+             </Link>
+          </div>
         </div>
       </div>
 

@@ -15,8 +15,8 @@ export default function Footer() {
               <Image
                 src="/images/Logo_ACT_petit.jpg"
                 alt="Logo ACT"
-                width={450}
-                height={250}
+                width={130}
+                height={50}
                 className="rounded-lg"
               />
             </div>
