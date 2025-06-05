@@ -74,6 +74,7 @@ export default function RootLayout({
     <html lang="fr" className="scroll-smooth">
       <head>
         <JsonLd />
+        <meta name="google-site-verification" content="em4dxdz8ImdC7L-xnYceq832_XJfF6hkp7GgeByDTBw" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://tennis-cloyes.vercel.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
