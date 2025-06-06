@@ -74,8 +74,7 @@ export default function RootLayout({
       <head>
         <JsonLd />
         <meta name="google-site-verification" content="em4dxdz8ImdC7L-xnYceq832_XJfF6hkp7GgeByDTBw" />
-        {/* <link rel="icon" href="/images/Logo_ACT_petit.ico" sizes="any" /> */}
-        <link rel="icon"  href="/images/Logo_ACT_carre.png" />
+        <link rel="icon" href="/images/Logo_ACT_carre.png" type="image/png" />
         <link rel="canonical" href="https://tennis-cloyes.vercel.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
       </head>
