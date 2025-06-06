@@ -66,6 +66,7 @@ export default function Header() {
             </h1>
           </div>
 
+        
           {/* Menu desktop */}
           <nav className="hidden md:block">
             <ul className="flex space-x-1 lg:space-x-4">

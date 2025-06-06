@@ -9,6 +9,7 @@ import JsonLd from "./jsonld"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://tennis-cloyes.vercel.app"),
   title: "Association Cloysienne de Tennis (ACT) | Club de Tennis à Cloyes-les-Trois-Rivières",
@@ -50,6 +51,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Association Cloysienne de Tennis (ACT)",
@@ -89,4 +91,5 @@ export default function RootLayout({
     </html>
   )
 }
+
 import './globals.css'  
