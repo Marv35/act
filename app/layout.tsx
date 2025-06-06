@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Association Cloysienne de Tennis",
     images: [
       {
-        url: "/images/Logo_ACT_carre.ico",
+        url: "/images/Logo_ACT_carre.png",
         width: 800,
         height: 600,
         alt: "Logo Association Cloysienne de Tennis",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     description:
       "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
     images: [
-      "/images/Logo_ACT_carre.ico",
+      "/images/Logo_ACT_carre.png",
     ],
   },
   verification: {
@@ -92,4 +92,4 @@ export default function RootLayout({
   )
 }
 
-import './globals.css'  
+import './globals.css'
