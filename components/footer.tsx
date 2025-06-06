@@ -10,6 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Colonne 1: Logo et slogan */}
           <div className="flex flex-col items-center md:items-start">
+            
             <Link href="/">
               <div className="bg-white p-3 rounded-xl mb-4 shadow-md transform transition-transform hover:scale-105">
                 <Image
