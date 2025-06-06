@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tennis-cloyes.vercel.app"),
   title: "Association Cloysienne de Tennis (ACT) | Club de Tennis à Cloyes-les-Trois-Rivières",
   description:
-    "Club de tennis à Cloyes-les-Trois-Rivières (28220). ACT propose des cours, stages, compétitions et location de courts. Rejoignez l'Association Cloysienne de Tennis ! Terrains extérieurs et couverts.",
+      "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (28220). ACT propose des cours, stages, compétitions et location de courts. Rejoignez l'Association Cloysienne de Tennis ! Terrains extérieurs et couverts.",
   keywords:
-    "tennis, cloyes tennis, tennis cloyes, Tennis Cloyes, Cloyes Tennis, Tennis 28, tennis28, Cloyes-les-Trois-Rivières, ACT, club de tennis, cours de tennis, stages tennis, compétition tennis, Eure-et-Loir, 28220, tennis cloyes, tennis cloyes sur loir, tennis eure et loir, act cloyes, act 28, association cloysienne de tennis, location court tennis, terrains tennis, tennis extérieur, tennis couvert, tennis pour tous les niveaux, école de tennis, entraînement tennis, act28, tennis-cloyes, tennis-cloyes-les-trois-rivières, tennis-cloyes-les-trois-rivières-28, jouer au tennis a cloyes, ou jouer au tennis a cloyes, jouer au tennis a cloyes les trois rivières, jouer au tennis a cloyes les trois rivières 28, association cloisonne de tennis, association cloisonne de tennis 28, association cloisonne de tennis cloyes, association cloisonne de tennis cloyes les trois rivières, association cloisonne de tennis cloyes les trois rivières  28, comment jouer au tennisa cloyes, comment jouer au tennis a cloyes les trois rivières, comment jouer au tennis a cloyes les trois rivières 28, tennis pour tous les niveaux, école de tennis cloyes, entraînement tennis cloyes, ou jouer au tennis a cloyes les trois rivières, ou jouer au tennis a cloyes les trois rivières 28, association cloisonne de tennis cloyes les trois rivières, association cloisonne de tennis cloyes les trois rivières 28, club de tennis 28",
+    "tennis, cloyes tennis, tennis cloyes, cloyes tennis act,Tennis Cloyes, Cloyes Tennis, Tennis 28, tennis28, Cloyes-les-Trois-Rivières, ACT, club de tennis, cours de tennis, stages tennis, compétition tennis, Eure-et-Loir, 28220, tennis cloyes, tennis cloyes sur loir, tennis eure et loir, act cloyes, act 28, association cloysienne de tennis, location court tennis, terrains tennis, tennis extérieur, tennis couvert, tennis pour tous les niveaux, école de tennis, entraînement tennis, act28, tennis-cloyes, tennis-cloyes-les-trois-rivières, tennis-cloyes-les-trois-rivières-28, jouer au tennis a cloyes, ou jouer au tennis a cloyes, jouer au tennis a cloyes les trois rivières, jouer au tennis a cloyes les trois rivières 28, association cloisonne de tennis, association cloisonne de tennis 28, association cloisonne de tennis cloyes, association cloisonne de tennis cloyes les trois rivières, association cloisonne de tennis cloyes les trois rivières  28, comment jouer au tennisa cloyes, comment jouer au tennis a cloyes les trois rivières, comment jouer au tennis a cloyes les trois rivières 28, tennis pour tous les niveaux, école de tennis cloyes, entraînement tennis cloyes, ou jouer au tennis a cloyes les trois rivières, ou jouer au tennis a cloyes les trois rivières 28, association cloisonne de tennis cloyes les trois rivières, association cloisonne de tennis cloyes les trois rivières 28, club de tennis 28",
   authors: [{ name: "Association Cloysienne de Tennis" }],
   creator: "Association Cloysienne de Tennis",
   publisher: "Association Cloysienne de Tennis",
@@ -39,11 +39,11 @@ export const metadata: Metadata = {
     url: "https://tennis-cloyes.vercel.app",
     title: "Association Cloysienne de Tennis (ACT)",
     description:
-      "Club de tennis à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
+      "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
     siteName: "Association Cloysienne de Tennis",
     images: [
       {
-        url: "/images/Logo_ACT.jpg",
+        url: "/images/Logo_ACT_carre.jpg",
         width: 800,
         height: 600,
         alt: "Logo Association Cloysienne de Tennis",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Association Cloysienne de Tennis (ACT)",
     description:
-      "Club de tennis à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
+      "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
     images: [
-      "/images/Logo_ACT.jpg",
+      "/images/Logo_ACT_carre.png",
     ],
   },
   verification: {
