@@ -59,6 +59,7 @@ export default function Header() {
                 height={50}
                 className="mr-3 transition-transform duration-300 hover:scale-105"
               />
+              
             </Link>
             <h1 className="text-xl font-bold text-green-600 hidden sm:block">
               <span className="block text-sm text-green-500">Association</span>
