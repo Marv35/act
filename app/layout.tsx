@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Association Cloysienne de Tennis",
     images: [
       {
-        url: "/images/Logo_ACT_carre.jpg",
+        url: "/images/Logo_ACT_carre.ico",
         width: 800,
         height: 600,
         alt: "Logo Association Cloysienne de Tennis",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description:
       "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
     images: [
-      "/images/Logo_ACT_carre.png",
+      "/images/Logo_ACT_carre.ico",
     ],
   },
   verification: {
@@ -74,7 +74,7 @@ export default function RootLayout({
       <head>
         <JsonLd />
         <meta name="google-site-verification" content="em4dxdz8ImdC7L-xnYceq832_XJfF6hkp7GgeByDTBw" />
-        <link rel="icon" href="/images/Logo_ACT_carre.png" type="image/png" />
+        <link rel="icon" href="/images/Logo_ACT_carre.ico" type="image/x-icon" />
         <link rel="canonical" href="https://tennis-cloyes.vercel.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
       </head>
@@ -89,4 +89,4 @@ export default function RootLayout({
     </html>
   )
 }
-import './globals.css'
+import './globals.css'  

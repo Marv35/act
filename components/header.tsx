@@ -51,13 +51,15 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <Image
-              src="/images/Logo_ACT_petit.png"
-              alt="Logo ACT"
-              width={90}
-              height={50}
-              className="mr-3 transition-transform duration-300 hover:scale-105"
-            />
+            <Link href="/">
+              <Image
+                src="/images/Logo_ACT_petit.png"
+                alt="Logo ACT"
+                width={90}
+                height={50}
+                className="mr-3 transition-transform duration-300 hover:scale-105"
+              />
+            </Link>
             <h1 className="text-xl font-bold text-green-600 hidden sm:block">
               <span className="block text-sm text-green-500">Association</span>
               <span className="block">Cloysienne de Tennis</span>
@@ -65,7 +67,6 @@ export default function Header() {
           </div>
 
           {/* Menu desktop */}
-
           <nav className="hidden md:block">
             <ul className="flex space-x-1 lg:space-x-4">
               {navLinks.map((link) => (

@@ -10,16 +10,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Colonne 1: Logo et slogan */}
           <div className="flex flex-col items-center md:items-start">
-            <div className="bg-white p-3 rounded-xl mb-4 shadow-md transform transition-transform hover:scale-105">
-            <Link rel="stylesheet" href= "/"/>
-              <Image
-                src="/images/Logo_ACT_petit.jpg"
-                alt="Logo ACT"
-                width={130}
-                height={50}
-                className="rounded-lg"
-              />
-            </div>
+            <Link href="/">
+              <div className="bg-white p-3 rounded-xl mb-4 shadow-md transform transition-transform hover:scale-105">
+                <Image
+                  src="/images/Logo_ACT_petit.jpg"
+                  alt="Logo ACT"
+                  width={130}
+                  height={50}
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
             <h3 className="text-xl font-bold mb-3">Association Cloysienne de Tennis</h3>
             <p className="text-center md:text-left mb-4 text-gray-100">
               Rejoignez-nous pour des moments sportifs inoubliables !
