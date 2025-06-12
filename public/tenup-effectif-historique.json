@@ -1,0 +1,20 @@
+[
+  {
+    "saison": "2022-2023",
+    "total": 86,
+    "jeunes": 50,
+    "adultes": 36
+  },
+  {
+    "saison": "2023-2024",
+    "total": 94,
+    "jeunes": 52,
+    "adultes": 42
+  },
+  {
+    "saison": "2024-2025",
+    "total": 102,
+    "jeunes": 46,
+    "adultes": 56
+  }
+]

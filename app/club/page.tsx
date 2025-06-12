@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { MapPin } from "lucide-react" 
 import { useEffect, useState } from "react"
+import EffectifTabs from "@/components/effectif-tabs"
 
 export default function Club() {  
   const [effectif, setEffectif] = useState<{ total: number | null, jeunes: number | null, adultes: number | null }>({ total: null, jeunes: null, adultes: null })
@@ -137,19 +138,6 @@ export default function Club() {
             </div>
           </div>
 
-          <div className="bg-green-50 p-6 rounded-lg border border-green-200 mb-6">
-            <h3 className="font-semibold mb-3">Effectif du club (données Ten'Up)</h3>
-            {effectif.total !== null ? (
-              <ul className="space-y-1">
-                <li><strong>Total membres :</strong> {effectif.total}</li>
-                <li><strong>Jeunes :</strong> {effectif.jeunes}</li>
-                <li><strong>Adultes :</strong> {effectif.adultes}</li>
-              </ul>
-            ) : (
-              <span className="text-gray-500">Chargement des effectifs...</span>
-            )}
-          </div>
-
           <div className="bg-green-50 p-6 rounded-lg border border-green-200">
             <h3 className="font-semibold mb-3">Réservation des courts</h3>
             <p className="mb-4">
@@ -168,7 +156,23 @@ export default function Club() {
             </div>
           </div>
         </section>
-
+        
+        {/* Graphique historique des effectifs */}
+        <div className="mb-8">
+          <EffectifTabs />
+        </div>
+        <div className="bg-green-50 p-6 rounded-lg border border-green-200 mb-6">
+          <h3 className="font-semibold mb-3">Effectif du club (données Ten'Up)</h3>
+          {effectif.total !== null ? (
+            <ul className="space-y-1">
+              <li><strong>Total membres :</strong> {effectif.total}</li>
+              <li><strong>Jeunes :</strong> {effectif.jeunes}</li>
+              <li><strong>Adultes :</strong> {effectif.adultes}</li>
+            </ul>
+          ) : (
+            <span className="text-gray-500">Chargement des effectifs...</span>
+          )}
+        </div>
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-green-600">Notre équipe</h2>
 

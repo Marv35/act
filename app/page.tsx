@@ -1,8 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Bell, Calendar } from "lucide-react"
+import { ArrowRight, Bell, Calendar, Images } from "lucide-react"
 import PartnersCarousel from "@/components/partners-carousel"
 import JsonLd from "./jsonld"
+import ImagesCarousel from "@/components/images-carousel"
 
 export default function Home() {
   return (
@@ -40,18 +41,23 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center">
+
+           <div className="flex justify-center">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gray-800 rounded-full opacity-20 blur-xl animate-pulse"></div>
-              <Image
+              <div className="absolute -inset-4 bg-gray-250 rounded-full opacity-20 blur-xl animate-pulse"></div>
+              {/* Carousel des partenaires */}
+            <section className="py-8 mb-16">
+              <ImagesCarousel />
+            </section>
+              {/* <Image
                 src="/images/Terrains/Courts_1_2.jpg"
                 alt="Terrains de tennis"
                 width={500}
                 height={500}
                 className="relative rounded-lg shadow-xl transform transition-transform hover:scale-105"
-              />
+              /> */}
             </div>
-          </div>
+          </div> 
         </div>
       </section>
       {/* Galerie de photos */}
@@ -216,14 +222,10 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-
       {/* Carousel des partenaires */}
       <section className="py-8 mb-16">
         <PartnersCarousel />
       </section>
-
-
     </div>
   )
 }
