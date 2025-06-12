@@ -41,7 +41,7 @@ export default function Partenaires() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Nos autres partenaires</h2>
+          <h2 className="text-2xl font-semibold mb-6">Nos partenaires</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
@@ -111,6 +111,38 @@ export default function Partenaires() {
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
                 <Image
+                  src="/images/Partenaires/Carrefour_Express_vert.jpg"
+                  alt="Logo Carrefour Express"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Carrefour Express</h3>
+                <p className="text-sm text-gray-600">Partenaire de la grande distribution</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <Image
+                  src="/images/Partenaires/Guy_Hoquet.jpg"
+                  alt="Logo Guy Hoquet"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Guy Hoquet</h3>
+                <p className="text-sm text-gray-600">Partenaire Immobilier</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <Image
                   src="/images/Partenaires/Mts_pecnard.png"
                   alt="Logo M.T.S pecnard"
                   width={250}
@@ -156,9 +188,55 @@ export default function Partenaires() {
               </div>
             </div>
 
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <Image
+                  src="/images/Partenaires/Audilab.jpg"
+                  alt="Logo Audilab"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Audilab</h3>
+                <p className="text-sm text-gray-600">Partenaire Audioprothésiste</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <Image
+                  src="/images/Partenaires/Stef_o_pizza.jpg"
+                  alt="Logo Stef O Pizza"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Stef O Pizza</h3>
+                <p className="text-sm text-gray-600">Partenaire Restauration</p>
+              </div>
+            </div> 
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <Image
+                  src="/images/Partenaires/Mma.jpg"
+                  alt="Logo M.M.A"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">M.M.A </h3>
+                <p className="text-sm text-gray-600">Partenaire d'assusrance</p>
+              </div>
+            </div>
           </div>
         </section>
-
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Nos sponsors</h2>
 
@@ -212,7 +290,25 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600">Magasin de pêche à Cloyes sur le Loir</p>
               </div>
             </div>
-                        <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
+
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
+              <div className="w-24 h-24 mr-4 flex items-center justify-center">
+                <Image
+                  src="/images/Sponsors/Institut_diana.jpg"
+                  alt="Logo Institut Diana"
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="font-bold mb-1">Institut Diana</h3>
+                <p className="text-sm text-gray-600">Institut de beauté</p>
+              </div>
+            </div>
+
+            {/* <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
                 <Image
                   src="/images/Sponsors/Solfa_carburants.jpg" 
@@ -242,9 +338,8 @@ export default function Partenaires() {
                 <h3 className="font-bold mb-1">L'épi floral</h3>
                 <p className="text-sm text-gray-600">Fleuriste</p>
               </div>
-            </div>
+            </div> */}
           </div>
-
 
         </section>
 

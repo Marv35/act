@@ -1,8 +1,18 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
-import { MapPin } from "lucide-react"
+import { MapPin } from "lucide-react" 
+import { useEffect, useState } from "react"
 
-export default function Club() {
+export default function Club() {  
+  const [effectif, setEffectif] = useState<{ total: number | null, jeunes: number | null, adultes: number | null }>({ total: null, jeunes: null, adultes: null })
+  useEffect(() => {
+    fetch("/api/tenup-effectif")
+      .then(res => res.json())
+      .then(data => setEffectif(data))
+      .catch(() => setEffectif({ total: null, jeunes: null, adultes: null }))
+  }, [])
+
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-green-600 mb-8 text-center">Le Club</h1>
@@ -125,6 +135,19 @@ export default function Club() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="bg-green-50 p-6 rounded-lg border border-green-200 mb-6">
+            <h3 className="font-semibold mb-3">Effectif du club (données Ten'Up)</h3>
+            {effectif.total !== null ? (
+              <ul className="space-y-1">
+                <li><strong>Total membres :</strong> {effectif.total}</li>
+                <li><strong>Jeunes :</strong> {effectif.jeunes}</li>
+                <li><strong>Adultes :</strong> {effectif.adultes}</li>
+              </ul>
+            ) : (
+              <span className="text-gray-500">Chargement des effectifs...</span>
+            )}
           </div>
 
           <div className="bg-green-50 p-6 rounded-lg border border-green-200">
