@@ -17,6 +17,7 @@ const images = [
 
 export default function ImagesCarousel() {
   const [index, setIndex] = useState(0)
+  const [imgError, setImgError] = useState(false)
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex(i => (i + 1) % images.length)
@@ -24,25 +25,44 @@ export default function ImagesCarousel() {
     return () => clearInterval(timer)
   }, [])
 
+  // Affichage d'un message si erreur de chargement d'image
+  if (imgError) {
+    return (
+      <div className="w-[95vw] h-[60vw] max-w-[450px] max-h-[300px] sm:w-[900px] sm:h-[600px] sm:max-w-[0px] sm:max-h-[600px] flex items-center justify-center mx-auto bg-white rounded-2xl shadow-xl border-2 border-white my-2">
+        <span className="text-center text-red-600">Aucune image à afficher. Vérifiez le dossier <code>/public/images/Terrains/</code> et les chemins.</span>
+      </div>
+    )
+  }
+
   return (
-    // Conteneur principal du carrousel
-    <div className="relative w-[950px] h-[300px] flex items-center justify-center mx-auto">
+    // Conteneur principal du carrousel, responsive mobile/PC
+    <div
+      // Pour diminuer la taille de l'image sur grand écran, réduisez md:w-[55vw] à md:w-[45vw] ou md:w-[40vw]
+      className="relative w-full md:w-[45vw] max-w-[1200px] aspect-[3/2] flex flex-col items-center justify-center mx-auto bg-white overflow-hidden rounded-2xl shadow-xl border-2 border-white my-2"
+      style={{ minHeight: 200 }}
+    >
       {/* Halo d'arrière-plan */}
-      <div className="absolute -inset-4 bg-gray-180 rounded-full opacity-20 blur-xl animate-pulse"></div>
+      <div className="absolute inset-0 bg-green-100 rounded-2xl opacity-20 blur-xl animate-pulse pointer-events-none z-0"></div>
       {/* Carrousel : une seule image visible à la fois, défilement automatique */}
-      {images.map((img, i) => (
-        <Image
-          key={img.src}
-          src={img.src}
-          alt={img.alt}
-          width={600}
-          height={700}
-          className={`absolute rounded-lg shadow-xl transform transition-all duration-700 ease-in-out hover:scale-105 ${i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-          style={{ transitionProperty: 'opacity, transform' }}
-        />
-      ))}
+      <div className="relative w-full h-full flex-1 flex items-center justify-center">
+        {images.map((img, i) => (
+          <Image
+            key={img.src}
+            src={img.src}
+            alt={img.alt}
+            fill
+            // Pour ajuster la taille de l'image chargée, modifiez la valeur de sizes ci-dessous
+            sizes="(max-width: 800px) 90vw, 45vw"
+            className={`object-cover rounded-2xl transition-all duration-700 ease-in-out ${i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'} hover:scale-110 transition-transform duration-500`}
+            style={{ transitionProperty: 'opacity, transform' }}
+            priority={i === index}
+            onError={() => setImgError(true)}
+            unoptimized
+          />
+        ))}
+      </div>
       {/* Pagination points (puces) sous l'image */}
-      <div className="absolute left-1/2 top-full mt-20 -translate-x-1/2 flex gap-2 z-20">
+      <div className="relative mt-4 flex gap-2 z-20">
         {images.map((_, i) => (
           <button
             key={i}
