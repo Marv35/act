@@ -171,13 +171,13 @@ export default function Partenaires() {
                 <a
                   href="https://www.guy-hoquet.com/agence-immobiliere/chateaudun"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/images/Partenaires/Guy_Hoquet.jpg"
-                    alt="Logo Guy Hoquet"
-                    width={250}
-                    height={250}
+                  rel="noopener noreferrer" 
+                  >
+                <Image
+                  src="/images/Partenaires/Guy_hoquet.jpg"
+                  alt="Logo Guy Hoquet"
+                  width={200}
+                  height={200}
                   className="object-contain"
                 />
                 </a>
