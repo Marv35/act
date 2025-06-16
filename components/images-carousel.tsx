@@ -14,8 +14,6 @@ const images = [
   { src: "/images/Terrains/Court_2.jpg", alt: "Court 2" },
   { src: "/images/Terrains/Terrain_salle_construction.jpg", alt: "Terrain salle de construction" },
   { src: "/images/Terrains/court_arc_en_ciel.jpg", alt: "Court arc-en-ciel" },
-
-  { src: "/images/Terrains/Court_n1_jeux.jpg", alt: "Court 1 jeux collectif" },
   { src: "/images/Terrains/Photo_groupe.jpg", alt: "Photo de groupe" },
   { src: "/images/Terrains/Vue_tous_les_courts.jpg", alt: "Vue de l'ensemble des courts nouvelles scructures terrains 3 et 4" },
 ]
