@@ -5,50 +5,81 @@ import type React from "react"
 import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Target } from "lucide-react"
 
 // Définition des partenaires avec leurs logos et liens
 const partners = [
   {
     name: "Carrefour Express",
     logo: "/images/Partenaires/Carrefour_Express_vert.jpg",
-    link: "#",
+    link: "https://www.carrefour.fr/magasin/express-cloyes-sur-le-loir",
+    target: "_blank",
   },
   {
     name: "Guy Hoquet",
     logo: "/images/Partenaires/Guy_hoquet.jpg",
-    link: "#",
+    link: "https://www.guy-hoquet.com/agence-immobiliere/chateaudun",
+    target: "_blank",
   },
   {
     name: "Crédit Agricole Val de France",
     logo: "/images/Partenaires/Credit_agricole.png",
-    link: "#",
+    link: "https://www.pagesjaunes.fr/pros/05686654",
+    target: "_blank",
   },
   {
     name: "Sporteam",
     logo: "/images/Partenaires/Sporteam.jpg",
-    link: "#",
+    link: "https://www.sporteam-tennis.com/agences/vendome",
+    target: "_blank",
   },
   {
     name: "BV elec",
     logo: "/images/Partenaires/Bvelec.jpg",
-    link: "#",
+    link: "https://www.pagesjaunes.fr/pros/63034760",
+    target: "_blank",
   },
-
   {
     name: "Garage Peugeot Cassonnet",
     logo: "/images/Partenaires/Ad_peugeot_cassonnet.png",
-    link: "#",
+    link: "https://www.garage-cassonnet-cloyes.fr/",
+    target: "_blank",
   },
   {
     name: "M.T.S",
     logo: "/images/Partenaires/Mts_pecnard.png",
-    link: "#",
+    link: "https://www.multi-toitures-services-pecnard.fr/",
+    target: "_blank",
+  },
+  {
+    name: "Menuiserie le rabot des bois",
+    logo: "/images/Partenaires/La_menuiserie.png",
+    link: "https://www.lerabotdesbois.fr/",
+    target: "_blank",
   },
   {
     name: "Auto Récuperer Lascaux",
     logo: "/images/Partenaires/Auto_recuper_lascaux.jpg",
-    link: "#",
+    link: "https://auto-recuper-lascaux.fr/",
+    target: "_blank",
+  },
+  {
+    name: "M.M.A",
+    logo: "/images/Partenaires/Mma.jpg",
+    link: "https://agence.mma.fr/cloyes-les-trois-rivieres/",
+    target: "_blank",
+  },
+  {
+    name: "Stef O pizza",
+    logo: "/images/Partenaires/Stef_o_pizza.jpg",
+    link: "https://stef-o-pizz.eatbu.com/?lang=fr",
+    target: "_blank",
+  },
+  {
+    name: "Audilab",
+    logo: "/images/Partenaires/Audilab.jpg",
+    link: "https://www.audilab.fr/centre/audioprothesiste-cloyes-sur-le-loir/",
+    target: "_blank",
   },
 ]
 
@@ -185,6 +216,11 @@ export default function PartnersCarousel() {
                   <div key={`${slideIndex}-${index}`} className="partner-card group">
                     <Link
                       href={partner.link}
+                      target={partner.target}
+                      // rel="noopener noreferrer" protège contre certains risques de sécurité quand target="_blank"
+                      // noopener : empêche la nouvelle page d'accéder à window.opener (évite le détournement de la page d'origine)
+                      // noreferrer : n'envoie pas l'en-tête HTTP Referer (cache l'URL d'origine à la nouvelle page)
+                      rel={partner.target === "_blank" ? "noopener noreferrer" : undefined}
                       className="block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 transform h-full border border-gray-100 p-4"
                     >
                       <div className="relative flex flex-col items-center h-full">

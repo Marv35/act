@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tennis-cloyes.vercel.app"),
+  metadataBase: new URL("https://tenniscloyes.fr"),
   title: "Association Cloysienne de Tennis (ACT) | Club de Tennis à Cloyes-les-Trois-Rivières",
   description:
       "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (28220). ACT propose des cours, stages, compétitions et location de courts. Rejoignez l'Association Cloysienne de Tennis ! Terrains extérieurs et couverts.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   creator: "Association Cloysienne de Tennis",
   publisher: "Association Cloysienne de Tennis",
   alternates: {
-    canonical: "/",
+    canonical: "https://tenniscloyes.fr",
   },
   robots: {
     index: true,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://tenniscloyes.vercel.app",
+    url: "https://tenniscloyes.fr",
     title: "Association Cloysienne de Tennis (ACT)",
     description:
       "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     ],
   },
   verification: {
-    google: "google-site-verification=votrecode", // À remplacer par votre code de vérification Google
+    google: "google-site-verification", // À remplacer par votre code de vérification Google
   },
 }
 
@@ -76,8 +76,15 @@ export default function RootLayout({
       <head>
         <JsonLd />
         <meta name="google-site-verification" content="em4dxdz8ImdC7L-xnYceq832_XJfF6hkp7GgeByDTBw" />
-        <link rel="icon" href="/images/Logo_ACT_carre.ico" type="image/x-icon" />
-        <link rel="canonical" href="https://tenniscloyes.vercel.app" />
+        {/* Favicon classique */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        {/* Favicon PNG (optionnel) */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        {/* Apple Touch Icon (optionnel) */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* Couleur de thème pour mobile */}
+        <meta name="theme-color" content="#16a34a" />
+        <link rel="canonical" href="https://tenniscloyes.fr" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
       </head>
       <body className={inter.className}>
@@ -91,5 +98,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-import './globals.css'

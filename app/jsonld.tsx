@@ -1,11 +1,11 @@
 export default function JsonLd() {
-  const siteUrl = "https://tennis-cloyes.vercel.app"
+  const siteUrl = "https://tenniscloyes.fr"
 
   const organizationLd = {
     "@context": "https://schema.org",
     "@type": "SportsClub",
     name: "Association Cloysienne de Tennis",
-    alternateName: ["ACT", "ACT Cloyes", "ACT 28", "Tennis Cloyes"],
+    alternateName: ["ACT", "ACT Cloyes", "ACT 28", "Tennis Cloyes", "Association Tennis Cloyes", "tennis cloyes", "tennis cloyes sur loir", "act cloyes", "act 28"],
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     description: "Club de tennis à Cloyes-les-Trois-Rivières. Cours, stages, compétitions pour tous les niveaux.",
@@ -164,7 +164,7 @@ export default function JsonLd() {
     image: `${siteUrl}/logo.png`,
     foundingDate: "1980",
     keywords:
-      "tennis, Cloyes-les-Trois-Rivières, ACT, club de tennis, cours de tennis, stages tennis, compétition tennis, Eure-et-Loir, 28220, tennis cloyes, tennis cloyes sur loir, tennis eure et loir, act cloyes, act 28, association cloysienne de tennis",
+      "tennis, tennis cloyes, cloyes tennis, act, Cloyes-les-Trois-Rivières, ACT, club de tennis, cours de tennis, stages tennis, compétition tennis, Eure-et-Loir, 28220, tennis cloyes, tennis cloyes sur loir, tennis eure et loir, act cloyes, act 28, association cloysienne de tennis",
   }
 
   const jsonLdArray = [organizationLd, localBusinessLd, breadcrumbLd, sportsClubLd]
