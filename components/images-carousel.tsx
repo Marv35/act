@@ -9,13 +9,11 @@ const images = [
   { src: "/images/Terrains/Terrain_coucher_soleil.jpg", alt: "Terrain au coucher du soleil" },
   { src: "/images/Terrains/Journee_du_tennis.jpg", alt: "Journée du tennis" },
   { src: "/images/Terrains/Court_4.jpg", alt: "Court collectif" },
-    { src: "/images/Terrains/Jeter_de_balles.jpg", alt: "Jeter des balles dans membres du club" },
+  { src: "/images/Terrains/Jeter_de_balles.jpg", alt: "Jeter des balles dans membres du club" },
   { src: "/images/Terrains/Court_3-4_travaux_de_nuit.jpg", alt: "Court 3-4 travaux de nuit" },
   { src: "/images/Terrains/Court_2.jpg", alt: "Court 2" },
   { src: "/images/Terrains/Terrain_salle_construction.jpg", alt: "Terrain salle de construction" },
   { src: "/images/Terrains/court_arc_en_ciel.jpg", alt: "Court arc-en-ciel" },
-
-  { src: "/images/Terrains/Court_n1_jeux.jpg", alt: "Court 1 jeux collectif" },
   { src: "/images/Terrains/Photo_groupe.jpg", alt: "Photo de groupe" },
   { src: "/images/Terrains/Vue_tous_les_courts.jpg", alt: "Vue de l'ensemble des courts nouvelles scructures terrains 3 et 4" },
 ]
