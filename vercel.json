@@ -44,14 +44,11 @@
       "has": [
         {
           "type": "host",
-          "value": "https://tennis-cloyes.vercel.app"
+          "value": "tennis-cloyes.vercel.app"
         }
       ],
       "destination": "https://tenniscloyes.fr/$1",
       "permanent": true
     }
-  ],
-  "branding": {
-    "hide": false
-  }
+  ]
 }
