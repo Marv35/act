@@ -87,11 +87,19 @@ export default function RootLayout({
         {/* Balise de vérification Google Search Console */}
         <meta name="google-site-verification" content="em4dxdz8ImdC7L-xnYceq832_XJfF6hkp7GgeByDTBw" />
         {/* Favicon classique */}
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" /> {/* <-- Chemin absolu recommandé */}
-        {/* Favicon PNG (optionnel) */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" /> {/* <-- Chemin absolu recommandé */}
-        {/* Apple Touch Icon (optionnel) */}
-        <link rel="apple-touch-icon" href="/images/favicon-32x32.png" /> {/* <-- Chemin absolu recommandé */}
+        <link rel="icon" href="/favicon.ico" />
+        {/* SVG icon (optionnel, moderne) */}
+        <link rel="icon" type="image/svg+xml" href="/icon0.svg" />
+        {/* PNG icons */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon1.png" />
+        {/* Apple Touch Icon */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+        {/* Manifestes PWA */}
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/manifest.json" />
+        {/* Icônes PWA maskable */}
+        <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
         {/* Couleur de thème pour mobile */}
         <meta name="theme-color" content="#16a34a" />
         {/* URL canonique */}
