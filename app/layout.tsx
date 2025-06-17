@@ -51,21 +51,20 @@ export const metadata: Metadata = {
     siteName: "Association Cloysienne de Tennis",
     images: [
       {
-        url: "/images/favicon-32x32.png",
+        url: "/images/favicon-32x32.png", // <-- Cette image sera utilisée pour l'aperçu Open Graph (Facebook, LinkedIn, etc.)
         width: 800,
         height: 600,
         alt: "Logo Association Cloysienne de Tennis",
       },
     ],
   },
-  // Métadonnées Twitter Card
   twitter: {
     card: "summary_large_image",
     title: "Association Cloysienne de Tennis (ACT)",
     description:
       "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
     images: [
-      "/images/Logo_ACT_carre.png",
+      "/images/favicon-32x32.png", // <-- Cette image sera utilisée pour l'aperçu Twitter Card
     ],
   },
   // Vérification Google Search Console
@@ -88,11 +87,11 @@ export default function RootLayout({
         {/* Balise de vérification Google Search Console */}
         <meta name="google-site-verification" content="em4dxdz8ImdC7L-xnYceq832_XJfF6hkp7GgeByDTBw" />
         {/* Favicon classique */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" /> {/* <-- Chemin absolu recommandé */}
         {/* Favicon PNG (optionnel) */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" /> {/* <-- Chemin absolu recommandé */}
         {/* Apple Touch Icon (optionnel) */}
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/images/favicon-32x32.png" /> {/* <-- Chemin absolu recommandé */}
         {/* Couleur de thème pour mobile */}
         <meta name="theme-color" content="#16a34a" />
         {/* URL canonique */}
