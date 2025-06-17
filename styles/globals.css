@@ -92,3 +92,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Ajoute ce bloc à la fin du fichier pour styliser les images dans un conteneur .container */
+.container img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
