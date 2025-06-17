@@ -235,7 +235,7 @@ export default function Club() {
                 <div className="md:flex-shrink-0 md:w-1/3">
                   <div className="relative h-80 md:h-full">
                     <Image
-                      src="/images/Personnes/Daniel_act.jpg"
+                      src="/images/Personnes/Daniel_act.JPG"
                       alt="Daniel TEROUINARD, entraîneur de tennis à Cloyes-les-Trois-Rivières"
                       fill
                       className="object-cover object-top" // Ajout de object-top pour montrer le haut de l'image

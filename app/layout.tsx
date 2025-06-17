@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tenniscloyes.fr"),
-  title: "Club de Tennis de Cloyes | Association Cloysienne de Tennis (ACT)", // <-- Modifie ici le titre affiché dans Google
+  title: "Club de Tennis de Cloyes | Association Cloysienne de Tennis (ACT)", // <-- Ce titre s'affichera dans l'onglet et dans Google
   description:
     "Club de Tennis à Cloyes-les-Trois-Rivières : entraînements, tournois, location de courts, école de tennis et passion du sport. Rejoignez l'ACT !",
   keywords:
