@@ -114,8 +114,14 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
         {/* Couleur de thème pour mobile */}
         <meta name="theme-color" content="#16a34a" />
-        {/* URL canonique */}
+        {/* SEO et Open Graph personnalisés */}
+        <title>Club de Tennis à Cloyes-les-Trois-Rivières | Association ACT</title>
+        <meta name="description" content="Cours, stages, compétitions et location de terrains de tennis à Cloyes-les-Trois-Rivières (28220). Rejoignez l'Association Cloysienne de Tennis (ACT) !" />
         <link rel="canonical" href="https://tenniscloyes.fr" />
+        <meta property="og:title" content="Tennis à Cloyes-les-Trois-Rivières" />
+        <meta property="og:description" content="Découvrez le club de tennis de Cloyes : ACT propose cours, stages, et plus encore." />
+        <meta property="og:image" content="/images/tennis-club-cover.jpg" />
+        <meta property="og:url" content="https://tenniscloyes.fr" />
         {/* Responsive meta tag */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
       </head>
