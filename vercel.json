@@ -38,21 +38,19 @@
       ]
     }
   ],
-{
   "redirects": [
     {
       "source": "/(.*)",
       "has": [
         {
           "type": "host",
-          "value": "tenniscloyes.vercel.app"
+          "value": "https://tennis-cloyes.vercel.app"
         }
       ],
-      "destination": "https://tenniscloyes.fr/",
+      "destination": "https://tenniscloyes.fr/$1",
       "permanent": true
     }
   ],
-  
   "branding": {
     "hide": false
   }
