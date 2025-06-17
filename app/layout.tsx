@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Club de Tennis à Cloyes-les-Trois-Rivières : entraînements, tournois, location de courts, école de tennis et passion du sport. Rejoignez l'ACT !",
   // Mots-clés pour le SEO
   keywords:
-    "tennis, cloyes tennis, tennis cloyes, act, Tennis Cloyes, act cloyes tennis, act tennis cloyes, cloyes tennis act, TENNIS CLOYES, CLOYES TENNIS, tenniscloyes, Tenniscloyes, Cloyestennis, Tennis Cloyes, Cloyes Tennis, Tennis 28, tennis28, Cloyes-les-Trois-Rivières, ACT, club de tennis, cours de tennis, stages tennis, compétition tennis, Eure-et-Loir, 28220, tennis cloyes, tennis cloyes sur le loir, tennis eure et loir, act cloyes, act 28, association cloysienne de tennis, location court tennis, terrains tennis, tennis extérieur, tennis couvert, tennis pour tous les niveaux, école de tennis, entraînement tennis, act28, tennis-cloyes, tennis-cloyes-les-trois-rivières, tennis-cloyes-les-trois-rivières-28, jouer au tennis a cloyes, ou jouer au tennis a cloyes, jouer au tennis a cloyes les trois rivières, jouer au tennis a cloyes les trois rivières 28, association cloisonne de tennis, association cloisonne de tennis 28, association cloisonne de tennis cloyes, association cloisonne de tennis cloyes les trois rivières, association cloisonne de tennis cloyes les trois rivières  28, comment jouer au tennisa cloyes, comment jouer au tennis a cloyes les trois rivières, comment jouer au tennis a cloyes les trois rivières 28, tennis pour tous les niveaux, école de tennis cloyes, entraînement tennis cloyes, ou jouer au tennis a cloyes les trois rivières, ou jouer au tennis a cloyes les trois rivières 28, association cloyesienne de tennis cloyes les trois rivières, association cloyesienne de tennis cloyes les trois rivières 28, club de tennis 28",
+      "tennis cloyes, cloyes tennis, Cloyes tennis, CLOYES TENNIS, club de tennis Cloyes, ACT tennis, association cloysienne de tennis, tenniscloyes.fr, Cloyes-les-Trois-Rivières, tennis 28, club de tennis 28, Eure-et-Loir, cours de tennis, stages de tennis, compétitions, location de courts, terrains de tennis, école de tennis, entraînements, tennis pour tous, jouer au tennis à Cloyes, comment jouer au tennis à Cloyes, association tennis Cloyes 28220, ou jouer au tennis à Cloyes, Club de sport Cloyes, Sport Cloyes",
   authors: [{ name: "Association Cloysienne de Tennis" }],
   creator: "Association Cloysienne de Tennis",
   publisher: "Association Cloysienne de Tennis",
@@ -51,11 +51,23 @@ export const metadata: Metadata = {
     siteName: "Association Cloysienne de Tennis",
     images: [
       {
-        url: "/images/favicon-32x32.png", // <-- Cette image sera utilisée pour l'aperçu Open Graph (Facebook, LinkedIn, etc.)
-        width: 800,
-        height: 600,
+        url: "/apple-icon.png", // Image carrée recommandée pour Open Graph (Facebook, LinkedIn, etc.)
+        width: 180,
+        height: 180,
         alt: "Logo Association Cloysienne de Tennis",
       },
+      {
+        url: "/icon1.png", // Variante PNG 32x32
+        width: 32,
+        height: 32,
+        alt: "Logo Association Cloysienne de Tennis",
+      },
+      {
+        url: "/web-app-manifest-512x512.png", // Variante grande pour PWA/social
+        width: 512,
+        height: 512,
+        alt: "Logo Association Cloysienne de Tennis",
+      }
     ],
   },
   twitter: {
@@ -64,7 +76,8 @@ export const metadata: Metadata = {
     description:
       "ASSOCIATION CLOYSIENNE DE TENNIS à Cloyes-les-Trois-Rivières (ACT 28). Cours, stages, compétitions pour tous les niveaux.",
     images: [
-      "/images/favicon-32x32.png", // <-- Cette image sera utilisée pour l'aperçu Twitter Card
+      "/apple-icon.png", // Image carrée recommandée pour Twitter Card
+      "/web-app-manifest-512x512.png"
     ],
   },
   // Vérification Google Search Console
@@ -97,7 +110,6 @@ export default function RootLayout({
         {/* Manifestes PWA */}
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="manifest" href="/manifest.json" />
-        {/* Icônes PWA maskable */}
         <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
         {/* Couleur de thème pour mobile */}
