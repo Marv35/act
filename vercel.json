@@ -38,6 +38,7 @@
       ]
     }
   ],
+{
   "redirects": [
     {
       "source": "/(.*)",
@@ -51,6 +52,7 @@
       "permanent": true
     }
   ],
+  
   "branding": {
     "hide": false
   }
