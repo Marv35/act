@@ -28,14 +28,14 @@ export default function ImagesCarousel() {
     return () => clearInterval(timer)
   }, [])
 
-  // Affichage d'un message si erreur de chargement d'image
-  if (imgError) {
-    return (
-      <div className="w-[95vw] h-[60vw] max-w-[450px] max-h-[300px] sm:w-[900px] sm:h-[600px] sm:max-w-[0px] sm:max-h-[600px] flex items-center justify-center mx-auto bg-white rounded-2xl shadow-xl border-2 border-white my-2">
-        <span className="text-center text-red-600">Aucune image à afficher. Vérifiez le dossier <code>/public/images/Terrains/</code> et les chemins.</span>
-      </div>
-    )
-  }
+  // // Affichage d'un message si erreur de chargement d'image
+  // if (imgError) {
+  //   return (
+  //     <div className="w-[95vw] h-[60vw] max-w-[450px] max-h-[300px] sm:w-[900px] sm:h-[600px] sm:max-w-[0px] sm:max-h-[600px] flex items-center justify-center mx-auto bg-white rounded-2xl shadow-xl border-2 border-white my-2">
+  //       <span className="text-center text-red-600">Aucune image à afficher. Vérifiez le dossier <code>/public/images/Terrains/</code> et les chemins.</span>
+  //     </div>
+  //   )
+  // }
 
   return (
     // Conteneur principal du carrousel, responsive mobile/PC

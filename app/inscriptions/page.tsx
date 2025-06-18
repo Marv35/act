@@ -18,7 +18,7 @@ export default function Inscriptions() {
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                   <span>
-                    Remplir la fiche d'inscription (cf ci-dessous « Fiche Inscription ACTennis V02_A5_2-pages.pdf »).
+                    Remplir la fiche d'inscription (cf ci-dessous « Fiche Inscription ACT.pdf »).
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -28,8 +28,7 @@ export default function Inscriptions() {
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                   <span>
-                    Pour les mineurs : remplir et signer l'attestation de santé (ci-dessous «
-                    modele_attestation_mineur.pdf » et « Questionnaire_de_sante_mineurs.pdf »).
+                    Pour les mineurs : remplir et signer l'attestation de santé (ci-dessous « Attestation mineur.pdf » et « Questionnaire de santé mineurs.pdf »).
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -322,8 +321,9 @@ export default function Inscriptions() {
                 <h3 className="font-bold">Location terrain extérieur et intérieur 1 heure</h3>
               </div>
               <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-                <p className="text-xl font-bold text-green-600 mb-2">10 euros + chèque de caution</p>
-                <p>S'adresser à l'Office du Tourisme (02 37 98 55 27) ou au club.</p>
+                <p className="text-xl font-bold text-green-600 mb-2">10 € </p>
+                <p>S'adresser à la Maison des Trois Rivières</p>
+                <p>4 rue Nationale – Cloyes-sur-le-Loir (06 77 28 60 17).</p>
               </div>
             </div>
           </div>

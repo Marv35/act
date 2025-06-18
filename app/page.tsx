@@ -46,7 +46,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gray-250 rounded-full opacity-20 blur-xl animate-pulse"></div>
                    {/* Carousel des partenaires */}
-            <section className="py-8 mb-16">
+            <section className="py-1 mb-16">
               <ImagesCarousel />
             </section>
               {/* <Image
@@ -201,8 +201,8 @@ export default function Home() {
         <p>METTRE API TEN'UP du planning des courts de tennis tous less terrains exterieur et interieur mais reservation sur le site Ten'up</p>
       </section> */}
 
-      
-          <section className="py-16 bg-gradient-to-r from-green-50 to-yellow-50 rounded-3xl mb-16">
+
+          <section className="py-16 bg-gradient-to-r from-green-50 rounded-3xl mb-16">
         <div className="text-center mb-12 px-4">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Réservez vos courts en ligne</h2>
           <p className="text-lg max-w-2xl mx-auto">

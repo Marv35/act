@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Club de Tennis à Cloyes-les-Trois-Rivières : entraînements, tournois, location de courts, école de tennis et passion du sport. Rejoignez l'ACT !",
   // Mots-clés pour le SEO
   keywords:
-      "tennis cloyes, cloyes tennis, Cloyes tennis, CLOYES TENNIS, club de tennis Cloyes, ACT tennis, association cloysienne de tennis, tenniscloyes.fr, Cloyes-les-Trois-Rivières, tennis 28, club de tennis 28, Eure-et-Loir, cours de tennis, stages de tennis, compétitions, location de courts, terrains de tennis, école de tennis, entraînements, tennis pour tous, jouer au tennis à Cloyes, comment jouer au tennis à Cloyes, association tennis Cloyes 28220, ou jouer au tennis à Cloyes, Club de sport Cloyes, Sport Cloyes",
+      "tennis cloyes, Cloyes, Tennis, cloyes tennis, Cloyes tennis, CLOYES TENNIS, club de tennis Cloyes, ACT tennis, association cloysienne de tennis, tenniscloyes.fr, Cloyes-les-Trois-Rivières, tennis 28, club de tennis 28, Eure-et-Loir, cours de tennis, stages de tennis, compétitions, location de courts, terrains de tennis, école de tennis, entraînements, tennis pour tous, jouer au tennis à Cloyes, comment jouer au tennis à Cloyes, association tennis Cloyes 28220, ou jouer au tennis à Cloyes, Club de sport Cloyes, Sport Cloyes",
   authors: [{ name: "Association Cloysienne de Tennis" }],
   creator: "Association Cloysienne de Tennis",
   publisher: "Association Cloysienne de Tennis",

@@ -172,15 +172,15 @@ export default function Competitions() {
                     <td className="border p-2">0 (+15/-15)</td>
                     <td className="border p-2">-1 (+34/-35)</td>
                     <td className="border p-2">0 (+299/-299)</td>
-                  </tr>
-                  <tr className="bg-white">
+                  </tr>    
+                    <tr className="bg-white font-bold">
                     <td className="border p-2">5<span className="align-super">e</span></td>
                     <td className="border p-2">ASSOCIATION CLOYSIENNE DE TENNIS 1</td>
                     <td className="border p-2">9</td>
                     <td className="border p-2">5 (1V/2N/2D)</td>
                     <td className="border p-2">-4 (+13/-17)</td>
                     <td className="border p-2">-8 (+27/-35)</td>
-                    <td className="border p-2">-27 (+238/-265)</td>
+                    <td className="border p-2">-27 (+238/-265)</td>  
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border p-2">6<span className="align-super">e</span></td>
@@ -260,7 +260,7 @@ export default function Competitions() {
                     <td className="border p-2">-19 (+18/-37)</td>
                     <td className="border p-2">-83 (+176/-259)</td>
                   </tr>
-                  <tr className="bg-gray-50">
+                  <tr className="bg-gray-50 font-bold">
                     <td className="border p-2">6<span className="align-super">e</span></td>
                     <td className="border p-2">ASSOCIATION CLOYSIENNE DE TENNIS 2</td>
                     <td className="border p-2">5</td>

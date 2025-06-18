@@ -549,14 +549,14 @@ export default function Partenaires() {
                ou par téléphone au 0768428751.
             </p>
 
-            <div className="text-center">
+            {/* <div className="text-center">
               <a
                 href="#"
                 className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-colors"
               >
                 Télécharger notre dossier de partenariat
               </a>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

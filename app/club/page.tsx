@@ -63,7 +63,7 @@ export default function Club() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-64">
                 <Image
-                  src="/images/Terrains/Mur_tennis.jpg"
+                  src="/images/Terrains/Mur_tennis_vert.png"
                   alt="Mur d'entraînement de tennis à Cloyes-les-Trois-Rivières"
                   fill
                   className="object-cover"
@@ -87,7 +87,7 @@ export default function Club() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-64">
                 <Image
-                  src="/images/Terrains/Court_3-4_travaux_de_nuit.jpg"
+                  src="/images/Terrains/Court3.jpg"
                   alt="Courts de tennis n°3 et n°4 avec structure couverte et panneaux solaires à Cloyes-les-Trois-Rivières"
                   fill
                   className="object-cover"
@@ -141,8 +141,7 @@ export default function Club() {
           <div className="bg-green-50 p-6 rounded-lg border border-green-200">
             <h3 className="font-semibold mb-3">Réservation des courts</h3>
             <p className="mb-4">
-              La réservation des courts est accessible aux membres du club via la plateforme Ten'Up ou directement au
-              club house.
+              La réservation des courts est accessible aux membres du club via la plateforme Ten'Up.
             </p>
             <div className="flex justify-center md:justify-start">
               <Link
