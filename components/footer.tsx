@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="/">
               <div className="bg-white p-3 rounded-xl mb-4 shadow-md transform transition-transform hover:scale-105">
                 <Image
-                  src="/images/Logo_ACT_petit.png"
+                  src="/images/Logo_ACT.jpg"
                   alt="Logo ACT"
                   width={130}
                   height={50}

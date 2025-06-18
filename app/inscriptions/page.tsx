@@ -23,7 +23,7 @@ export default function Inscriptions() {
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Apporter un chèque pour le montant total annuel (paiement en trois fois possible).</span>
+                  <span>Apporter un chèque pour le montant total annuel.</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
@@ -31,13 +31,7 @@ export default function Inscriptions() {
                     Pour les mineurs : remplir et signer l'attestation de santé (ci-dessous « Attestation mineur.pdf » et « Questionnaire de santé mineurs.pdf »).
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <Info className="h-5 w-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span className="italic">
-                    NB : L'association ne conserve ni le certificat médical ni l'attestation des réponses au
-                    questionnaire de santé.
-                  </span>
-                </li>
+
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                   <span>Pour les adultes : le certificat médical n'est plus obligatoire.</span>
@@ -48,18 +42,11 @@ export default function Inscriptions() {
                     Rendre l'ancien badge pour recevoir le nouveau. Le non-retour du badge sera facturé 10 euros.
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>
-                    Fournir une enveloppe timbrée à votre adresse pour la convocation à l'Assemblée Générale ou préciser
-                    si une convocation par mail vous suffit.
-                  </span>
-                </li>
               </ul>
 
               <div className="bg-green-50 p-4 rounded-lg mb-6">
                 <p className="font-medium">
-                  Les cours auront lieu le jeudi soir et le samedi matin garantissant 30 heures de cours minimum.
+                  Nous garantissons 30 heures de cours pour la saison.
                 </p>
               </div>
 
