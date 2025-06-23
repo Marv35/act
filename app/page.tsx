@@ -44,9 +44,9 @@ export default function Home() {
 
            <div className="flex justify-center">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gray-250 rounded-full opacity-20 blur-xl animate-pulse"></div>
+              <div className="absolute -inset-4 bg-gray-250 rounded-full opacity-12 blur-xl animate-pulse"></div>
                    {/* Carousel des partenaires */}
-            <section className="py-1 mb-16">
+            <section className="py-1 mb-2">
               <ImagesCarousel />
             </section>
               {/* <Image

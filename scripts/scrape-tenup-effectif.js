@@ -12,7 +12,7 @@ async function scrapeEffectif() {
   });
   const page = await browser.newPage();
   // Accès à la page du club (remplacer l'URL si besoin)
-  await page.goto('https://tenup.fft.fr/club/53280682/groupes', { waitUntil: 'networkidle2' });
+  await page.goto('https://tenup.fft.fr/club/53280682/groupe', { waitUntil: 'networkidle2' });
   // Attente que les chiffres d'effectif soient chargés dans le DOM
   await page.waitForSelector('.block-color-wrapper.block-new-ficheclub.block-tags.block-effectif-club .effectif-chiffre', { timeout: 10000 });
   // Récupération des chiffres (total, jeunes, adultes) depuis la page

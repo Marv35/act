@@ -42,7 +42,7 @@ export default function ImagesCarousel() {
     <div
       // Pour diminuer la taille de l'image sur grand écran, réduisez md:w-[55vw] à md:w-[45vw] ou md:w-[40vw]
       className="relative w-full md:w-[45vw] max-w-[1200px] aspect-[3/2] flex flex-col items-center justify-center mx-auto bg-white overflow-hidden rounded-2xl shadow-xl border-2 border-white my-2"
-      style={{ minHeight: 200 }}
+      style={{ minHeight: 250 }}
     >
       {/* Halo d'arrière-plan */}
       <div className="absolute inset-0 bg-green-100 rounded-2xl opacity-20 blur-xl animate-pulse pointer-events-none z-0"></div>
@@ -55,7 +55,7 @@ export default function ImagesCarousel() {
             alt={img.alt}
             fill
             // Pour ajuster la taille de l'image chargée, modifiez la valeur de sizes ci-dessous
-            sizes="(max-width: 800px) 90vw, 45vw"
+            sizes="(max-width: 1000px) 90vw, 45vw"
             className={`object-cover rounded-2xl transition-all duration-700 ease-in-out ${i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'} hover:scale-110 transition-transform duration-500`}
             style={{ transitionProperty: 'opacity, transform' }}
             priority={i === index}
@@ -65,7 +65,7 @@ export default function ImagesCarousel() {
         ))}
       </div>
       {/* Pagination points (puces) sous l'image */}
-      <div className="relative mt-4 flex gap-2 z-20">
+      <div className="relative mt-2 flex gap-2 z-20">
         {images.map((_, i) => (
           <button
             key={i}

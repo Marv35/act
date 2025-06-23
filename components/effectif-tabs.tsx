@@ -48,6 +48,21 @@ export default function EffectifTabs() {
 
   return (
     <div className="bg-white rounded-lg p-4 shadow-md">
+    {tab ===0 && (
+     <>
+           <h3 className="font-bold mb-4 text-black">Historique des effectifs</h3>
+     </>
+    )}
+        {tab ===1 && (
+     <>
+          <h3 className="font-bold mb-4 text-black">Historique des effectifs</h3>
+     </>
+    )}
+        {tab ===2 && (
+     <>
+          <h3 className="font-bold mb-4 text-black">Répartition jeunes/adultes</h3>
+     </>
+    )}
       {/* Onglets pour naviguer entre les différents graphiques */}
       <div className="flex mb-4">
         <button
@@ -72,7 +87,6 @@ export default function EffectifTabs() {
       {tab === 0 && (
         <>
           {/* Graphique en courbes de l'historique des effectifs */}
-          <h3 className="font-bold mb-4 text-green-700">Historique des effectifs (courbes)</h3>
           <Line
             data={{
               labels,
@@ -113,7 +127,6 @@ export default function EffectifTabs() {
       {tab === 1 && (
         <>
           {/* Graphique en barres de l'historique des effectifs */}
-          <h3 className="font-bold mb-4 text-green-700">Historique des effectifs (barres)</h3>
           <Bar
             data={{
               labels,
@@ -154,7 +167,6 @@ export default function EffectifTabs() {
       {tab === 2 && (
         <>
           {/* Graphique camembert (Pie) pour la répartition jeunes/adultes de la saison sélectionnée */}
-          <h3 className="font-bold mb-4 text-green-700">Répartition jeunes/adultes (camembert)</h3>
           <div className="mb-2">
             <label htmlFor="saison-select" className="mr-2 font-medium">Saison :</label>
             <select

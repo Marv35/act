@@ -136,42 +136,81 @@ export default function Club() {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-            <h3 className="font-semibold mb-3">Réservation des courts</h3>
-            <p className="mb-4">
-              La réservation des courts est accessible aux membres du club via la plateforme Ten'Up.
+            </div>
+            <div className="bg-gradient-to-br from-green-50 via-white to-green-100 p-8 rounded-2xl border border-green-200 shadow-md relative">
+            <h3 className="font-bold text-lg mb-4 text-green-700 flex items-center gap-2">
+              <svg width="24" height="24" fill="none" className="text-green-600"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+              Réservation des courts
+            </h3>
+            <p className="mb-3 text-gray-700">
+              La réservation des courts est accessible aux membres du club via la plateforme <span className="font-semibold text-green-700">Ten'Up</span>.
             </p>
-            <div className="flex justify-center md:justify-start">
+            <div className="flex flex-col md:flex-row gap-2 mb-2">
               <Link
-                href="https://tenup.fft.fr/club/53280682"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors"
+              href="https://tenup.fft.fr/club/53280682"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white py-1 px-2 rounded-lg shadow transition-colors duration-150"
               >
-                Réserver un court sur Ten'Up
+              <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              Réserver un court sur Ten'Up
               </Link>
             </div>
-          </div>
+            <p className="text-gray-600 text-sm">
+              Pour les non-adhérents, la réservation des courts est possible à la <span className="font-semibold text-green-700">Maison des Trois Rivières</span>.
+            </p>
+            <Link
+              href="/inscriptions#location la maison des trois rivieres"
+              className="inline-flex items-center justify-center text-xs px-3 py-1 bg-white border border-green-400 text-green-700 rounded shadow hover:bg-green-50 transition-colors duration-150 mt-2"
+            >
+              <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              En savoir plus
+            </Link>
+            </div>
         </section>
         
         {/* Graphique historique des effectifs */}
-        <div className="mb-8">
-          <EffectifTabs />
-        </div>
-        <div className="bg-green-50 p-6 rounded-lg border border-green-200 mb-6">
-          <h3 className="font-semibold mb-3">Effectif du club (données Ten'Up)</h3>
+        <div className="bg-green-50 p-6 rounded-lg border border-green-200 mb-8">
+          <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Données (nombre d'adhérents)</h3>
+          <h3 className="font-semibold mb-3">Effectif actuel du club (source Ten'Up)</h3>
           {effectif.total !== null ? (
-            <ul className="space-y-1">
-              <li><strong>Total membres :</strong> {effectif.total}</li>
-              <li><strong>Jeunes :</strong> {effectif.jeunes}</li>
-              <li><strong>Adultes :</strong> {effectif.adultes}</li>
-            </ul>
+            <div className="flex flex-col md:flex-row gap-4 mb-4">
+              <div className="flex-1 bg-white rounded-lg shadow p-4 flex items-center">
+              <div className="bg-green-100 text-green-700 rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">
+                {effectif.total}
+              </div>
+              <div>
+                <div className="font-semibold text-green-700">Total</div>
+                <div className="text-gray-500 text-sm">Tous âges confondus</div>
+              </div>
+              </div>
+              <div className="flex-1 bg-white rounded-lg shadow p-4 flex items-center">
+              <div className="bg-green-100 text-green-700 rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">
+                {effectif.jeunes}
+              </div>
+              <div>
+                <div className="font-semibold text-green-700">Jeunes</div>
+                <div className="text-gray-500 text-sm">Moins de 18 ans</div>
+              </div>
+              </div>
+              <div className="flex-1 bg-white rounded-lg shadow p-4 flex items-center">
+              <div className="bg-green-100 text-green-700 rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">
+                {effectif.adultes}
+              </div>
+              <div>
+                <div className="font-semibold text-green-700">Adultes</div>
+                <div className="text-gray-500 text-sm">18 ans et plus</div>
+              </div>
+              </div>
+            </div>
           ) : (
             <span className="text-gray-500">Chargement des effectifs...</span>
           )}
+        <div className="mb-0">
+          <EffectifTabs />
         </div>
+        </div>
+
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-green-600">Notre équipe</h2>
 
@@ -291,12 +330,6 @@ export default function Club() {
                 <span className="text-green-600 font-bold mr-2">✓</span>
                 <span>
                   <strong>Respect</strong> - Des valeurs sportives et humaines
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-600 font-bold mr-2">✓</span>
-                <span>
-                  <strong>Inclusion</strong> - Le tennis accessible à tous
                 </span>
               </li>
               <li className="flex items-start">
