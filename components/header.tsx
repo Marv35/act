@@ -53,7 +53,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/images/Logo_ACT_petit.png"
+                src="/images/Logo_ACT_petit.webp"
                 alt="Logo ACT"
                 width={90}
                 height={50}

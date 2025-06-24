@@ -38,7 +38,7 @@ export default function Club() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-64">
                 <Image
-                  src="/images/Terrains/Journee_du_tennis.jpg"
+                  src="/images/Terrains/Journee_du_tennis.webp"
                   alt="Courts de tennis extérieurs n°1 et n°2 de l'Association Cloysienne de Tennis"
                   fill
                   className="object-cover"
@@ -63,7 +63,7 @@ export default function Club() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-64">
                 <Image
-                  src="/images/Terrains/Mur_tennis_vert.png"
+                  src="/images/Terrains/Mur_tennis_vert.webp"
                   alt="Mur d'entraînement de tennis à Cloyes-les-Trois-Rivières"
                   fill
                   className="object-cover"
@@ -87,7 +87,7 @@ export default function Club() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-64">
                 <Image
-                  src="/images/Terrains/Court3.jpg"
+                  src="/images/Terrains/Court3.webp"
                   alt="Courts de tennis n°3 et n°4 avec structure couverte et panneaux solaires à Cloyes-les-Trois-Rivières"
                   fill
                   className="object-cover"
@@ -116,7 +116,7 @@ export default function Club() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-64">
                 <Image
-                  src="/images/Terrains/Gymnase.jpg"
+                  src="/images/Terrains/Gymnase.webp"
                   alt="Gymnase des Trois Rivières à Cloyes-les-Trois-Rivières"
                   fill
                   className="object-cover"
@@ -223,7 +223,7 @@ export default function Club() {
                   <div className="md:flex-shrink-0 md:w-1/3">
                     <div className="relative h-64 md:h-full">
                       <Image
-                        src="/images/Personnes/Christophe_Jean-Charles_Emilien.jpg"
+                        src="/images/Personnes/Christophe_Jean-Charles_Emilien.webp"
                         alt="Bureau directeur de l'Association Cloysienne de Tennis"
                         fill
                         className="object-cover"
@@ -273,7 +273,7 @@ export default function Club() {
                 <div className="md:flex-shrink-0 md:w-1/3">
                   <div className="relative h-80 md:h-full">
                     <Image
-                      src="/images/Personnes/Daniel_act.JPG"
+                      src="/images/Personnes/Daniel_act.webp"
                       alt="Daniel TEROUINARD, entraîneur de tennis à Cloyes-les-Trois-Rivières"
                       fill
                       className="object-cover object-top" // Ajout de object-top pour montrer le haut de l'image
@@ -315,7 +315,6 @@ export default function Club() {
             </div>
           </div>
         </section>
-
         <section>
           <h2 className="text-2xl font-semibold mb-4">Nos valeurs</h2>
           <div className="bg-green-50 p-6 rounded-lg border border-green-200">

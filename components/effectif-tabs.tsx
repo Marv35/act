@@ -66,19 +66,19 @@ export default function EffectifTabs() {
       {/* Onglets pour naviguer entre les différents graphiques */}
       <div className="flex mb-4">
         <button
-          className={`px-4 py-2 rounded-t-lg font-semibold mr-2 ${tab === 0 ? "bg-green-600 text-white" : "bg-green-100 text-green-700"}`}
+          className={`px-2 py-2 rounded-t-lg font-semibold mr-2 ${tab === 0 ? "bg-green-600 text-white" : "bg-green-100 text-green-700"}`}
           onClick={() => setTab(0)}
         >
           Courbes
         </button>
         <button
-          className={`px-4 py-2 rounded-t-lg font-semibold mr-2 ${tab === 1 ? "bg-green-600 text-white" : "bg-green-100 text-green-700"}`}
+          className={`px-2 py-2 rounded-t-lg font-semibold mr-2 ${tab === 1 ? "bg-green-600 text-white" : "bg-green-100 text-green-700"}`}
           onClick={() => setTab(1)}
         >
           Barres
         </button>
         <button
-          className={`px-4 py-2 rounded-t-lg font-semibold ${tab === 2 ? "bg-green-600 text-white" : "bg-green-100 text-green-700"}`}
+          className={`px-2 py-2 rounded-t-lg font-semibold ${tab === 2 ? "bg-green-600 text-white" : "bg-green-100 text-green-700"}`}
           onClick={() => setTab(2)}
         >
           Camembert

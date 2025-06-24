@@ -18,7 +18,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/images/Partenaires/Carrefour_Express_vert.jpg"
+                    src="/images/Partenaires/Carrefour_Express_vert.webp"
                     alt="Logo Carrefour Express"
                     width={200}
                     height={200}
@@ -38,7 +38,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer" 
                   >
                 <Image
-                  src="/images/Partenaires/Guy_hoquet.jpg"
+                  src="/images/Partenaires/Guy_hoquet.webp"
                   alt="Logo Guy Hoquet"
                   width={200}
                   height={200}
@@ -64,7 +64,7 @@ export default function Partenaires() {
                   rel= "noopener noreferrere"
                   >
                 <Image
-                  src="/images/Partenaires/Ad_peugeot_cassonnet.png"
+                  src="/images/Partenaires/Ad_peugeot_cassonnet.webp"
                   alt="Logo Garage Cassonnet Peugeot"
                   width={250}
                   height={250}
@@ -86,7 +86,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                 <Image
-                  src="/images/Partenaires/Sporteam.jpg"
+                  src="/images/Partenaires/Sporteam.webp"
                   alt="Logo Sporteam"
                   width={250}
                   height={250}
@@ -108,7 +108,7 @@ export default function Partenaires() {
                   rel="noopener noreferrere"
                   >
                   <Image
-                  src="/images/Partenaires/Credit_agricole.png"
+                  src="/images/Partenaires/Credit_agricole.webp"
                   alt="Logo Crédit Agricole Val de France"
                   width={250}
                   height={250}
@@ -130,7 +130,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                 <Image
-                  src="/images/Partenaires/Bvelec.jpg"
+                  src="/images/Partenaires/Bvelec.webp"
                   alt="Logo BV elec"
                   width={250}
                   height={250}
@@ -152,7 +152,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/images/Partenaires/Carrefour_Express_vert.jpg"
+                    src="/images/Partenaires/Carrefour_Express_vert.webp"
                     alt="Logo Carrefour Express"
                     width={200}
                     height={200}
@@ -174,7 +174,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer" 
                   >
                 <Image
-                  src="/images/Partenaires/Guy_hoquet.jpg"
+                  src="/images/Partenaires/Guy_hoquet.webp"
                   alt="Logo Guy Hoquet"
                   width={200}
                   height={200}
@@ -196,7 +196,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                 <Image
-                  src="/images/Partenaires/Mts_pecnard.png"
+                  src="/images/Partenaires/Mts_pecnard.webp"
                   alt="Logo M.T.S pecnard"
                   width={250}
                   height={250}
@@ -218,7 +218,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                 <Image
-                  src="/images/Partenaires/Auto_recuper_lascaux.jpg"
+                  src="/images/Partenaires/Auto_recuper_lascaux.webp"
                   alt="Logo Auto Recuper Lascaux"
                   width={250}
                   height={250}
@@ -240,7 +240,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                   <Image
-                  src="/images/Partenaires/La_menuiserie.png"
+                  src="/images/Partenaires/La_menuiserie.webp"
                   alt="Logo Menuiserie le rabot des bois"
                   width={250}
                   height={250}
@@ -262,7 +262,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                 >
                 <Image
-                  src="/images/Partenaires/Audilab.jpg"
+                  src="/images/Partenaires/Audilab.webp"
                   alt="Logo Audilab"
                   width={250}
                   height={250}
@@ -284,7 +284,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                 >
                 <Image
-                  src="/images/Partenaires/Stef_o_pizza.jpg"
+                  src="/images/Partenaires/Stef_o_pizza.webp"
                   alt="Logo Stef O Pizza"
                   width={250}
                   height={250}
@@ -306,7 +306,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                 <Image
-                  src="/images/Partenaires/Mma.jpg"
+                  src="/images/Partenaires/Mma.webp"
                   alt="Logo M.M.A"
                   width={250}
                   height={250}
@@ -333,7 +333,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                 >
                 <Image
-                  src="/images/Sponsors/Le_saint_jacques.jpg"
+                  src="/images/Sponsors/Le_saint_jacques.webp"
                   alt="Logo Le Saint Jacques"
                   width={100}
                   height={100}
@@ -355,7 +355,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                 <Image
-                  src="/images/Sponsors/Au_relais_de_cloyes.png"
+                  src="/images/Sponsors/Au_relais_de_cloyes.webp"
                   alt="Logo Au relais de cloyes"
                   width={100}
                   height={100}
@@ -379,7 +379,7 @@ export default function Partenaires() {
                   rel="noopener noreferrer"
                   >
                 <Image
-                  src="/images/Sponsors/Domaine-pecheur.png"
+                  src="/images/Sponsors/Domaine-pecheur.webp"
                   alt="Logo Le Domaine du Pêcheur"
                   width={100}
                   height={100}
@@ -401,7 +401,7 @@ export default function Partenaires() {
                 rel="noopener noreferrer"
                 >
                 <Image
-                  src="/images/Sponsors/Institut_diana.jpg"
+                  src="/images/Sponsors/Institut_diana.webp"
                   alt="Logo Institut Diana"
                   width={100}
                   height={100}
@@ -418,7 +418,7 @@ export default function Partenaires() {
             {/* <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
                 <Image
-                  src="/images/Sponsors/Solfa_carburants.jpg" 
+                  src="/images/Sponsors/Solfa_carburants.webp" 
                   alt="Logo Solfa Carburants"
                   width={100}
                   height={100}
@@ -434,7 +434,7 @@ export default function Partenaires() {
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
                 <Image
-                  src="/images/Sponsors/Epi_floral.jpg" 
+                  src="/images/Sponsors/Epi_floral.webp" 
                   alt="Logo L'épi floral"
                   width={100}
                   height={100}

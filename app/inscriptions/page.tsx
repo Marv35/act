@@ -313,7 +313,7 @@ export default function Inscriptions() {
                     <div className="flex-shrink-0 flex flex-col justify-center items-center mt-0 md:mt-0">
 
                       <Image
-                        src="/images/Logo_maison_des_trois_rivières.jpg"
+                        src="/images/Logo_maison_des_trois_rivières.webp"
                         alt="Logo Maison des Trois Rivières"
                         width={170}
                         height={170}

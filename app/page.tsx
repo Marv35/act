@@ -72,7 +72,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/Terrains/Terrain_coucher_soleil.jpg"
+              src="/images/Terrains/Terrain_coucher_soleil.webp"
               alt="Terrain de tennis au coucher du soleil"
               fill
               className="object-cover hover:scale-110 transition-transform duration-500"
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/Terrains/Journee_du_tennis.jpg"
+              src="/images/Terrains/Journee_du_tennis.webp"
               alt="Journée du tennis ensoleillée"
               fill
               className="object-cover hover:scale-110 transition-transform duration-500"
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/Terrains/Court_4.jpg"
+              src="/images/Terrains/Court_4.webp"
               alt="Cours collectif de tennis"
               fill
               className="object-cover hover:scale-110 transition-transform duration-500"
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="md:w-1/2 relative">
               <div className="relative h-64 md:h-full w-full overflow-hidden rounded-lg">
                 <Image
-                  src="/images/Terrains/Court_3-4_travaux_de_nuit.jpg"
+                  src="/images/Terrains/Court_3-4_travaux_de_nuit.webp"
                   alt="Nouvelle structure avec panneaux solaires"
                   fill
                   className="object-cover transform transition-transform hover:scale-105"

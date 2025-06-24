@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="/">
               <div className="bg-white p-3 rounded-xl mb-4 shadow-md transform transition-transform hover:scale-105">
                 <Image
-                  src="/images/Logo_ACT.jpg"
+                  src="/images/Logo_ACT.webp"
                   alt="Logo ACT"
                   width={130}
                   height={50}
@@ -112,7 +112,7 @@ export default function Footer() {
                 className="bg-white p-2 rounded-lg hover:opacity-90 transition-opacity"
               >
                 <Image
-                  src="/images/Logo_Cloyes.png"
+                  src="/images/Logo_Cloyes.webp"
                   alt="Logo Cloyes les Trois Rivières Naturellement"
                   width={160}
                   height={50}

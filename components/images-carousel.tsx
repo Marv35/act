@@ -5,17 +5,17 @@ import Image from "next/image"
 
 // Carrousel d'images simple : une image visible à la fois, défilement automatique toutes les 6 secondes
 const images = [
-  { src: "/images/Terrains/Courts_1_2.jpg", alt: "Terrains de tennis" },
-  { src: "/images/Terrains/Terrain_coucher_soleil.jpg", alt: "Terrain au coucher du soleil" },
-  { src: "/images/Terrains/Journee_du_tennis.jpg", alt: "Journée du tennis" },
-  { src: "/images/Terrains/Court_4.jpg", alt: "Court collectif" },
-  { src: "/images/Terrains/Jeter_de_balles.jpg", alt: "Jeter des balles dans membres du club" },
-  { src: "/images/Terrains/Court_3-4_travaux_de_nuit.jpg", alt: "Court 3-4 travaux de nuit" },
-  { src: "/images/Terrains/Court_2.jpg", alt: "Court 2" },
-  { src: "/images/Terrains/Terrain_salle_construction.jpg", alt: "Terrain salle de construction" },
-  { src: "/images/Terrains/court_arc_en_ciel.jpg", alt: "Court arc-en-ciel" },
-  { src: "/images/Terrains/Photo_groupe.jpg", alt: "Photo de groupe" },
-  { src: "/images/Terrains/Vue_tous_les_courts.jpg", alt: "Vue de l'ensemble des courts nouvelles scructures terrains 3 et 4" },
+  { src: "/images/Terrains/Courts_1_2.webp", alt: "Terrains de tennis" },
+  { src: "/images/Terrains/Terrain_coucher_soleil.webp", alt: "Terrain au coucher du soleil" },
+  { src: "/images/Terrains/Journee_du_tennis.webp", alt: "Journée du tennis" },
+  { src: "/images/Terrains/Court_4.webp", alt: "Court collectif" },
+  { src: "/images/Terrains/Jeter_de_balles.webp", alt: "Jeter des balles dans membres du club" },
+  { src: "/images/Terrains/Court_3-4_travaux_de_nuit.webp", alt: "Court 3-4 travaux de nuit" },
+  { src: "/images/Terrains/Court_2.webp", alt: "Court 2" },
+  { src: "/images/Terrains/Terrain_salle_construction.webp", alt: "Terrain salle de construction" },
+  { src: "/images/Terrains/court_arc_en_ciel.webp", alt: "Court arc-en-ciel" },
+  { src: "/images/Terrains/Photo_groupe.webp", alt: "Photo de groupe" },
+  { src: "/images/Terrains/Vue_tous_les_courts.webp", alt: "Vue de l'ensemble des courts nouvelles scructures terrains 3 et 4" },
 ]
 
 export default function ImagesCarousel() {
