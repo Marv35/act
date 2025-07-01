@@ -47,7 +47,7 @@ const partners = [
   },
   {
     name: "Claveau",
-    logo: "/images/Partenaires/Claveau.webp",
+    logo: "/images/Partenaires/claveau.webp",
     link: "https://www.claveau-et-styles.fr/",
     target: "_blank",
   },
@@ -99,7 +99,12 @@ const partners = [
     link: "https://cphv41.fr/fr/bu/1016563/244974/damien-guenet",
     target: "_blank",
   },
-
+    {
+    name: "Peugeot",
+    logo: "/images/Partenaires/Peugeot_cassonnet.webp",
+    link:  "https://www.garage-cassonnet-cloyes.fr/",
+    target: "_blank",
+  },
 ]
 
 export default function PartnersCarousel() {
