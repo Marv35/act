@@ -46,9 +46,9 @@ const partners = [
     target: "_blank",
   },
   {
-    name: "M.T.S",
-    logo: "/images/Partenaires/Mts_pecnard.webp",
-    link: "https://www.multi-toitures-services-pecnard.fr/",
+    name: "Claveau",
+    logo: "/images/Partenaires/Claveau.webp",
+    link: "https://www.claveau-et-styles.fr/",
     target: "_blank",
   },
   {
@@ -81,6 +81,25 @@ const partners = [
     link: "https://www.audilab.fr/centre/audioprothesiste-cloyes-sur-le-loir/",
     target: "_blank",
   },
+    {
+    name: "Le Domaine du pêcheur",
+    logo: "/images/Partenaires/Domaine-pecheur.webp",
+    link: "https://www.le-domaine-du-pecheur.fr/",
+    target: "_blank",
+  },
+    {
+    name: "Le reflet d'Aurélie",
+    logo: "/images/Partenaires/Reflet_aurelie.webp",
+    link: "https://www.lerefletdaurelie.fr/",
+    target: "_blank",
+  },
+    {
+    name: "Damien Guenet",
+    logo: "/images/Partenaires/Damien_guenet.webp",
+    link: "https://cphv41.fr/fr/bu/1016563/244974/damien-guenet",
+    target: "_blank",
+  },
+
 ]
 
 export default function PartnersCarousel() {
