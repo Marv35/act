@@ -58,6 +58,12 @@ const partners = [
     target: "_blank",
   },
   {
+    name: "M.T.S",
+    logo: "/images/Partenaires/Mts_pecnard.webp",
+    link:  "https://www.multi-toitures-services-pecnard.fr/",
+    target: "_blank",
+  },
+  {
     name: "Auto Récuperer Lascaux",
     logo: "/images/Partenaires/Auto_recuper_lascaux.webp",
     link: "https://auto-recuper-lascaux.fr/",
@@ -97,12 +103,6 @@ const partners = [
     name: "Damien Guenet",
     logo: "/images/Partenaires/Damien_guenet.webp",
     link: "https://cphv41.fr/fr/bu/1016563/244974/damien-guenet",
-    target: "_blank",
-  },
-    {
-    name: "Peugeot",
-    logo: "/images/Partenaires/Peugeot_cassonnet.webp",
-    link:  "https://www.garage-cassonnet-cloyes.fr/",
     target: "_blank",
   },
 ]

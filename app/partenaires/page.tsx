@@ -305,6 +305,28 @@ export default function Partenaires() {
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
                 <a
+                  href="https://www.multi-toitures-services-pecnard.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <Image
+                  src="/images/Partenaires/Mts_pecnard.webp"
+                  alt="Logo M.T.S"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">M.T.S</h3>
+                <p className="text-sm text-gray-600">Charpentier, couverteur, menuisier</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <a
                   href="https://www.sporteam-tennis.com/agences/vendome"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -395,9 +417,9 @@ export default function Partenaires() {
             </div>
           </div>
         </section>
+        
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Nos sponsors</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
@@ -420,7 +442,7 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600"></p>
               </div>
             </div>
-            
+
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
                 <a
@@ -463,30 +485,7 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600">Restaurant partenaire</p>
               </div>
             </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
-              <div className="w-24 h-24 mr-4 flex items-center justify-center">
-                <a
-                  href="https://www.multi-toitures-services-pecnard.fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                <Image
-                  src="/images/Sponsors/Mts_pecnard.webp"
-                  alt="Logo Le Domaine du Pêcheur"
-                  width={100}
-                  height={100}
-                  className="object-contain"
-                />
-                </a>
-              </div>
-              <div>
-                <h3 className="font-bold mb-1">M.T.S</h3>
-                <p className="text-sm text-gray-600">Charpentier, couverteur, menuisier</p>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
                 <a 
@@ -508,6 +507,7 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600"></p>
               </div>
             </div>
+
              <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
                 <a href="https://www.institutdiane-melanie.fr/"
@@ -523,8 +523,9 @@ export default function Partenaires() {
                 />
                 </a>
               </div>
+              
               <div>
-                <h3 className="font-bold mb-1">Institut Diana</h3>
+                <h3 className="font-bold mb-1">Institut Diane</h3>
                 <p className="text-sm text-gray-600">Institut de beauté</p>
               </div>
             </div>
