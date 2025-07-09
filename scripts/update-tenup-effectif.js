@@ -1,5 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+const { createClient } = require('@supabase/supabase-js')
+
+// Configure tes variables d'environnement ou remplace par tes clés Supabase
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_KEY = process.env.SUPABASE_KEY
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 // Exemple de récupération de données (à remplacer par ta logique réelle)
 function fetchEffectifData() {
@@ -9,11 +14,20 @@ function fetchEffectifData() {
     total: 105,
     jeunes: 48,
     adultes: 57
-  };
+  }
 }
 
-const DATA_PATH = path.join(__dirname, '../public/tenup-effectif.json');
-const data = fetchEffectifData();
+async function updateEffectif() {
+  const data = fetchEffectifData()
+  // Insère ou met à jour la ligne dans la table "tenup_effectif"
+  const { error } = await supabase
+    .from('tenup_effectif')
+    .upsert([data], { onConflict: ['id'] }) // suppose une colonne "id" unique
+  if (error) {
+    console.error('Erreur Supabase:', error)
+  } else {
+    console.log('Effectif mis à jour dans Supabase:', data)
+  }
+}
 
-fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2), 'utf-8');
-console.log('Fichier tenup-effectif.json mis à jour automatiquement.');
+updateEffectif()
