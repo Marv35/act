@@ -231,7 +231,7 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Guy Hoquet</h3>
-                <p className="text-sm text-gray-600">Partenaire Immobilier</p>
+                <p className="text-sm text-gray-600">Immobilier</p>
               </div>
             </div>
 
@@ -298,7 +298,7 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Menuiserie le rabot des bois</h3>
-                <p className="text-sm text-gray-600">Partenaire Menuisier</p>
+                <p className="text-sm text-gray-600">Menuisier</p>
               </div>
             </div>
 
@@ -345,9 +345,6 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600">Équipement sportif</p>
               </div>
             </div>
-
-
-
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
                 <a
@@ -366,11 +363,9 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">M.M.A </h3>
-                <p className="text-sm text-gray-600">Partenaire d'assusrance</p>
+                <p className="text-sm text-gray-600">Assusrance</p>
               </div>
             </div>
-
-
 
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
@@ -415,6 +410,28 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600">Partenaire Restauration</p>
               </div>
             </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <a
+                  href="https://www.vorwerk.com/fr/fr/c/vorwerk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <Image
+                  src="/images/Partenaires/Vorwerk.webp"
+                  alt="Logo Vorwerk"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Vorwerk</h3>
+              </div>
+            </div>
+
           </div>
         </section>
         

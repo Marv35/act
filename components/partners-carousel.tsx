@@ -105,6 +105,12 @@ const partners = [
     link: "https://cphv41.fr/fr/bu/1016563/244974/damien-guenet",
     target: "_blank",
   },
+  {
+    name: "Vorwerk",
+    logo: "/images/Partenaires/Vorwerk.webp",
+    link: "https://www.vorwerk.com/fr/fr/c/vorwerk",
+    target: "_blank",
+  }
 ]
 
 export default function PartnersCarousel() {
