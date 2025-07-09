@@ -50,11 +50,5 @@
       "destination": "https://tenniscloyes.fr/$1",
       "permanent": true
     }
-  ],
-  "cron": [
-    {
-      "path": "/api/update-tenup-effectif",
-      "schedule": "0 0 * * 1"
-    }
   ]
 }

@@ -33,15 +33,33 @@ async function scrapeEffectif() {
   };
 }
 
+function loadCurrentData(filePath) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  } catch {
+    return null;
+  }
+}
+
+function dataChanged(newData, currentData) {
+  return !currentData || JSON.stringify(newData) !== JSON.stringify(currentData);
+}
+
 // Exécution du script principal : lance le scraping et écrit le résultat dans un fichier JSON
 (async () => {
   try {
     const data = await scrapeEffectif();
     const outPath = path.join(__dirname, '../public/tenup-effectif.json');
-    fs.writeFileSync(outPath, JSON.stringify(data, null, 2), 'utf-8');
-    console.log('Effectifs TenUp mis à jour dans public/tenup-effectif.json :', data);
+    const currentData = loadCurrentData(outPath);
+
+    if (dataChanged(data, currentData)) {
+      fs.writeFileSync(outPath, JSON.stringify(data, null, 2), 'utf-8');
+      console.log('✅ Données modifiées, fichier mis à jour :', data);
+    } else {
+      console.log('ℹ️ Données identiques, aucune mise à jour.');
+    }
   } catch (e) {
-    console.error('Erreur lors du scraping :', e);
+    console.error('❌ Erreur lors du scraping :', e);
     process.exit(1);
   }
 })();
