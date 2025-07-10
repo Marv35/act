@@ -5,7 +5,7 @@ import Image from "next/image"
 
 // Carrousel d'images simple : une image visible à la fois, défilement automatique toutes les 6 secondes
 const images = [
-  { src: "/images/Terrains/Court_lumiere.webp", alt: "court de nuit éclairé"},
+  { src: "/images/Terrains/Courts_lumiere.webp", alt: "courts de nuit éclairé"},
   { src: "/images/Terrains/Courts_1_2.webp", alt: "Terrains de tennis" },
   { src: "/images/Terrains/Terrain_coucher_soleil.webp", alt: "Terrain au coucher du soleil" },
   { src: "/images/Terrains/Journee_du_tennis.webp", alt: "Journée du tennis" },
