@@ -385,7 +385,7 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Damien Guenet</h3>
-                <p className="text-sm text-gray-600">Partenaire Pâtiquier, traiteur</p>
+                <p className="text-sm text-gray-600">Partenaire Pâtissier, traiteur</p>
               </div>
             </div>
 

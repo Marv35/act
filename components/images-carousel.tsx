@@ -5,6 +5,7 @@ import Image from "next/image"
 
 // Carrousel d'images simple : une image visible à la fois, défilement automatique toutes les 6 secondes
 const images = [
+  { src: "/images/Terrains/Court_lumiere.webp", alt: "Court de nuit éclairé"},
   { src: "/images/Terrains/Courts_1_2.webp", alt: "Terrains de tennis" },
   { src: "/images/Terrains/Terrain_coucher_soleil.webp", alt: "Terrain au coucher du soleil" },
   { src: "/images/Terrains/Journee_du_tennis.webp", alt: "Journée du tennis" },
@@ -41,7 +42,7 @@ export default function ImagesCarousel() {
     // Conteneur principal du carrousel, responsive mobile/PC
     <div
       // Pour diminuer la taille de l'image sur grand écran, réduisez md:w-[55vw] à md:w-[45vw] ou md:w-[40vw]
-      className="relative w-full md:w-[45vw] max-w-[1200px] aspect-[3/2] flex flex-col items-center justify-center mx-auto bg-white overflow-hidden rounded-2xl shadow-xl border-2 border-white my-2"
+      className="relative w-full md:w-[45vw] max-w-[850px] aspect-[3/2] flex flex-col items-center justify-center mx-auto bg-white overflow-hidden rounded-2xl shadow-xl border-2 border-white my-2"
       style={{ minHeight: 250 }}
     >
       {/* Halo d'arrière-plan */}

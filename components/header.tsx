@@ -5,7 +5,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react"
+import { Instagram, Facebook } from "lucide-react"
 
 
 export default function Header() {
@@ -13,6 +13,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  // Ajoute une classe au header quand on scrolle la page
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -21,18 +22,18 @@ export default function Header() {
         setIsScrolled(false)
       }
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
 
-  // Fermer le menu mobile lors du changement de page
+  // Ferme le menu mobile lors d'un changement de page
   useEffect(() => {
     setMobileMenuOpen(false)
   }, [pathname])
 
+  // Liste des liens de navigation
   const navLinks = [
     { emoji: "🏠", text: "Accueil", href: "/" },
     { emoji: "🎾", text: "Le club", href: "/club" },
@@ -44,12 +45,14 @@ export default function Header() {
 
   return (
     <header
+      // Ajoute un effet de flou et une ombre quand on scrolle
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-white"
       }`}
     >
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
+          {/* Logo et nom du club */}
           <div className="flex items-center">
             <Link href="/">
               <Image
@@ -59,7 +62,6 @@ export default function Header() {
                 height={50}
                 className="mr-3 transition-transform duration-300 hover:scale-105"
               />
-              
             </Link>
             <h1 className="text-xl font-bold text-green-600 hidden sm:block">
               <span className="block text-sm text-green-500">Association</span>
@@ -67,9 +69,8 @@ export default function Header() {
             </h1>
           </div>
       
-        
-          {/* Menu desktop */}
-          <nav className="hidden md:block">
+          {/* Menu desktop : affiché uniquement sur écran très large (xl et +) */}
+          <nav className="hidden xl:block">
             <ul className="flex space-x-1 lg:space-x-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -86,15 +87,16 @@ export default function Header() {
             </ul>
           </nav>
 
-          {/* Bouton menu mobile */}
+          {/* Bouton menu mobile/tablette/desktop réduit : affiché sur tout écran < xl */}
           <button
-            className="md:hidden p-2 rounded-md hover:bg-green-50"
+            className="xl:hidden p-2 rounded-md hover:bg-green-50"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-          {/* Réseaux sociaux */}
+
+          {/* Icônes réseaux sociaux */}
           <div className="flex space-x-3 mb-3">
              <Link
                href="https://www.instagram.com/association_tennis_cloyes_/"
@@ -118,9 +120,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Menu mobile */}
+      {/* Menu mobile/tablette/desktop réduit : affiché sur tout écran < xl */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
+        className={`xl:hidden overflow-hidden transition-all duration-300 ${
           mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
