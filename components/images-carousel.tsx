@@ -5,10 +5,11 @@ import Image from "next/image"
 
 // Carrousel d'images simple : une image visible à la fois, défilement automatique toutes les 6 secondes
 const images = [
-  { src: "/images/Terrains/Courts_lumiere.webp", alt: "courts de nuit éclairé"},
+  { src: "/images/Terrains/Terrain_soir_feu.webp", alt: "Terrain de tennis le soir avec un feu d'artifice" },
   { src: "/images/Terrains/Courts_1_2.webp", alt: "Terrains de tennis" },
   { src: "/images/Terrains/Terrain_coucher_soleil.webp", alt: "Terrain au coucher du soleil" },
   { src: "/images/Terrains/Journee_du_tennis.webp", alt: "Journée du tennis" },
+  { src: "/images/Terrains/Courts_lumiere.webp", alt: "courts de nuit éclairé"},
   { src: "/images/Terrains/Court_4.webp", alt: "Court collectif" },
   { src: "/images/Terrains/Jeter_de_balles.webp", alt: "Jeter des balles dans membres du club" },
   { src: "/images/Terrains/Court_3-4_travaux_de_nuit.webp", alt: "Court 3-4 travaux de nuit" },

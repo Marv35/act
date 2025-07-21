@@ -13,8 +13,24 @@ async function scrapeEffectif() {
   const page = await browser.newPage();
   // Accès à la page du club (remplacer l'URL si besoin)
   await page.goto('https://tenup.fft.fr/club/53280682/groupe', { waitUntil: 'networkidle2' });
-  // Attente que les chiffres d'effectif soient chargés dans le DOM
-  await page.waitForSelector('.block-color-wrapper.block-new-ficheclub.block-tags.block-effectif-club .effectif-chiffre', { timeout: 10000 });
+  // Prend un screenshot pour debug
+  await page.screenshot({ path: 'debug-tenup.png', fullPage: true });
+
+  // DEBUG : Affiche le HTML de la page pour vérifier la présence du sélecteur
+  const html = await page.content();
+  fs.writeFileSync('debug-tenup.html', html, 'utf-8');
+
+  // Vérifie si le sélecteur existe avant d'attendre
+  const selector = '.block-color-wrapper.block-new-ficheclub.block-tags.block-effectif-club .effectif-chiffre';
+  const exists = await page.$(selector);
+  if (!exists) {
+    console.error(`❌ Sélecteur non trouvé : ${selector}. Vérifie debug-tenup.png et debug-tenup.html`);
+    await browser.close();
+    return { total: null, jeunes: null, adultes: null };
+  }
+
+  // Attend le sélecteur (inutile si déjà trouvé, mais garde pour robustesse)
+  await page.waitForSelector(selector, { timeout: 30000 });
   // Récupération des chiffres (total, jeunes, adultes) depuis la page
   const chiffres = await page.$$eval(
     '.block-color-wrapper.block-new-ficheclub.block-tags.block-effectif-club .effectif-chiffre',
