@@ -44,7 +44,7 @@
       "has": [
         {
           "type": "host",
-          "value": "tennis-cloyes.vercel.app"
+          "value": "tenniscloyes.fr"
         }
       ],
       "destination": "https://tenniscloyes.fr/$1",

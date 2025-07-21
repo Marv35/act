@@ -3,6 +3,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // Fonction principale de scraping : ouvre la page du club sur TenUp et extrait les effectifs
 async function scrapeEffectif() {
@@ -71,6 +72,14 @@ function dataChanged(newData, currentData) {
     if (dataChanged(data, currentData)) {
       fs.writeFileSync(outPath, JSON.stringify(data, null, 2), 'utf-8');
       console.log('✅ Données modifiées, fichier mis à jour :', data);
+
+      // Appelle le script d'ajout à l'historique juste après la mise à jour
+      try {
+        execSync('node scripts/add-to-historique.js', { stdio: 'inherit', cwd: path.join(__dirname, '..') });
+        console.log('🕓 Historique mis à jour automatiquement.');
+      } catch (err) {
+        console.error('❌ Erreur lors de la mise à jour de l\'historique :', err);
+      }
     } else {
       console.log('ℹ️ Données identiques, aucune mise à jour.');
     }
