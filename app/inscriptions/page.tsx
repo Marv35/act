@@ -339,7 +339,7 @@ export default function Inscriptions() {
             {/* Location terrain extérieur */}
             <div className="mb-2">
               <div className="bg-green-600 text-white p-3 rounded-t-lg">
-          <h3 className="font-bold">Location terrain extérieur 1 heure</h3>
+          <h3 className="font-bold"></h3>
               </div>
               <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
           <p>10 euros + chèque de caution</p>
@@ -355,18 +355,17 @@ export default function Inscriptions() {
           <div className="bg-white p-6 rounded-lg shadow-lg">
               <div>
                 <div className="bg-green-600 text-white p-3 rounded-t-lg">
-                  <h3 className="font-bold" id="location la maison des trois rivieres">Location terrains (extérieur et intérieur) pour les non-adhérents</h3>
+                  <h3 className="font-bold" id="location la maison des trois rivieres">Location terrains 1 heure (extérieur et intérieur pour les non-adhérents)</h3>
                 </div>
                 <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
                   <div className="flex flex-col gap-14 md:flex-row md:items-start">
                     {/* Infos et horaires */}
                     <div className="flex-1">
                       <div className="mb-4">
-                        <p>S'adresser à la Maison des Trois Rivières</p>
-                        <p>4 rue Nationale – Cloyes-sur-le-Loir <br /> <span className="font-medium">06 77 28 60 17</span></p>
+                        <p>S'adresser à la Maison des Trois Rivières <span className="font-bold">06 77 28 60 17</span> ou au club.</p>
                       </div>
                       <div className="mb-2 flex justify-center">
-                        <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded font-bold text-lg">10 € / heure</span>
+                        <span className="inline-block bg-green-100 text-green-700 px-2 py-1 rounded font-bold">10 € / heure + chèque de caution</span>
                       </div>
                     </div>
                     <div className="flex-shrink-0 flex flex-col justify-center items-center mt-0 md:mt-0">
@@ -378,6 +377,9 @@ export default function Inscriptions() {
                         height={170}
                         className="object-contain rounded shadow"
                       />
+                      <p className="text-xs mt-1">
+                        4 rue Nationale – Cloyes-sur-le-Loir
+                      </p>
                     </div>
                     <div className="mt-0 md:mt-0">
                       <h4 className="font-semibold mb-0">Horaires d'ouverture :</h4>
