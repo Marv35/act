@@ -9,16 +9,34 @@ import { ChevronLeft, ChevronRight, Target } from "lucide-react"
 
 // Définition des partenaires avec leurs logos et liens
 const partners = [
+    {
+    name: "Guy Hoquet",
+    logo: "/images/Partenaires/Guy_hoquet.webp",
+    link: "https://www.guy-hoquet.com/agence-immobiliere/chateaudun",
+    target: "_blank",
+  },
+  {
+    name: "Garages Cassonnet et AD",
+    logo: "/images/Partenaires/Ad_peugeot_cassonnet.webp",
+    link: "https://www.garage-cassonnet-cloyes.fr/",
+    target: "_blank",
+  },
+    {
+    name: "BV elec",
+    logo: "/images/Partenaires/Bvelec.webp",
+    link: "https://www.pagesjaunes.fr/pros/63034760",
+    target: "_blank",
+  },
+  {
+    name: "Vorwerk",
+    logo: "/images/Partenaires/Vorwerk.webp",
+    link: "https://www.vorwerk.com/fr/fr/c/vorwerk",
+    target: "_blank",
+  },
   {
     name: "Carrefour Express",
     logo: "/images/Partenaires/Carrefour_Express_vert.webp",
     link: "https://www.carrefour.fr/magasin/express-cloyes-sur-le-loir",
-    target: "_blank",
-  },
-  {
-    name: "Guy Hoquet",
-    logo: "/images/Partenaires/Guy_hoquet.webp",
-    link: "https://www.guy-hoquet.com/agence-immobiliere/chateaudun",
     target: "_blank",
   },
   {
@@ -28,33 +46,21 @@ const partners = [
     target: "_blank",
   },
   {
-    name: "Sporteam",
-    logo: "/images/Partenaires/Sporteam.webp",
-    link: "https://www.sporteam-tennis.com/agences/vendome",
-    target: "_blank",
-  },
-  {
-    name: "BV elec",
-    logo: "/images/Partenaires/Bvelec.webp",
-    link: "https://www.pagesjaunes.fr/pros/63034760",
-    target: "_blank",
-  },
-  {
-    name: "Garage Peugeot Cassonnet",
-    logo: "/images/Partenaires/Ad_peugeot_cassonnet.webp",
-    link: "https://www.garage-cassonnet-cloyes.fr/",
-    target: "_blank",
-  },
-  {
     name: "Claveau",
     logo: "/images/Partenaires/claveau.webp",
     link: "https://www.claveau-et-styles.fr/",
     target: "_blank",
   },
-  {
+ {
     name: "Menuiserie le rabot des bois",
     logo: "/images/Partenaires/La_menuiserie.webp",
     link: "https://www.lerabotdesbois.fr/",
+    target: "_blank",
+  },
+  {
+    name: "Sporteam",
+    logo: "/images/Partenaires/Sporteam.webp",
+    link: "https://www.sporteam-tennis.com/agences/vendome",
     target: "_blank",
   },
   {
@@ -106,11 +112,13 @@ const partners = [
     target: "_blank",
   },
   {
-    name: "Vorwerk",
-    logo: "/images/Partenaires/Vorwerk.webp",
-    link: "https://www.vorwerk.com/fr/fr/c/vorwerk",
+    name: "Art Graphique Design",
+    logo: "/images/Partenaires/Art Graphique Design.webp",
+    link: "https://www.artgraphique-design.fr/",
     target: "_blank",
-  }
+  },
+
+
 ]
 
 export default function PartnersCarousel() {

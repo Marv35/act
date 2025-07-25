@@ -96,7 +96,7 @@ export default function Partenaires() {
                 </a>
               </div>
               <div className="text-center">
-                <h3 className="font-bold mb-1">Garage Cassonnet et AD</h3>
+                <h3 className="font-bold mb-1">Garages Cassonnet et AD</h3>
                 <p className="text-sm text-gray-600">(Partenaires fournisseurs des balles sur notre tournoi)</p>
               </div>
             </div>
@@ -450,6 +450,7 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600">à Chateaudun</p>
               </div>
             </div>
+            
           </div>
         </section>
         
@@ -585,6 +586,27 @@ export default function Partenaires() {
               </div>
             </div>
 
+            <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
+              <div className="w-24 h-24 mr-4 flex items-center justify-center">
+                <a href="https://auxcopainsgourmands.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <Image
+                  src="/images/Sponsors/Aux_Co'pains_Gourmands.webp"
+                  alt="Logo Aux Co'pains Gourmands"
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div>
+                <h3 className="font-bold mb-1">Aux Co'pains Gourmands</h3>
+                {/* <p className="text-sm text-gray-600">Boulangerie, pâtisserie, charcuterie</p> */}
+              </div>
+            </div>
+
             
           </div>
 
@@ -592,7 +614,6 @@ export default function Partenaires() {
 
         {/* <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Nos partenaires institutionnels</h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
@@ -634,28 +655,6 @@ export default function Partenaires() {
               </div>
               <h3 className="font-bold mb-2">Fédération Française de Tennis</h3>
               <p className="text-center text-sm">Affiliation et support technique</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Autres partenaires</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/La%20menuiserie-WyEIxiFpSRyElxMJx6LtqGBXg56bc4.png"
-                  alt="Logo La Menuiserie"
-                  width={120}
-                  height={120}
-                  className="object-contain"
-                />
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold mb-1">La Menuiserie</h3>
-                <p className="text-sm text-gray-600">PVC Aluminium Bois</p>
-              </div>
             </div>
           </div>
         </section> */}

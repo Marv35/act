@@ -1,9 +1,10 @@
 "use client"
 
+// Importation des hooks React et du composant Image de Next.js
 import { useEffect, useState } from "react"
 import Image from "next/image"
 
-// Carrousel d'images simple : une image visible à la fois, défilement automatique toutes les 6 secondes
+// Tableau des images à afficher dans le carrousel
 const images = [
   { src: "/images/Terrains/Terrain_soir_feu.webp", alt: "Terrain de tennis le soir avec un feu d'artifice" },
   { src: "/images/Terrains/Courts_1_2.webp", alt: "Terrains de tennis" },
@@ -26,12 +27,18 @@ const images = [
 ]
 
 export default function ImagesCarousel() {
+  // index : indice de l'image actuellement affichée
   const [index, setIndex] = useState(0)
+  // imgError : état pour détecter une erreur de chargement d'image
   const [imgError, setImgError] = useState(false)
+
+  // Effet pour gérer le défilement automatique du carrousel
   useEffect(() => {
+    // === C'est ici qu'on règle le temps d'affichage de chaque image ===
+    // Le délai est en millisecondes (6000 = 6 secondes)
     const timer = setInterval(() => {
       setIndex(i => (i + 1) % images.length)
-    }, 6000)
+    }, 1800) // <-- Modifier cette valeur pour changer la durée d'affichage
     return () => clearInterval(timer)
   }, [])
 
@@ -51,7 +58,7 @@ export default function ImagesCarousel() {
       className="relative w-full md:w-[45vw] max-w-[850px] aspect-[3/2] flex flex-col items-center justify-center mx-auto bg-white overflow-hidden rounded-2xl shadow-xl border-2 border-white my-2"
       style={{ minHeight: 250 }}
     >
-      {/* Halo d'arrière-plan */}
+      {/* Halo d'arrière-plan pour effet visuel */}
       <div className="absolute inset-0 bg-green-100 rounded-2xl opacity-20 blur-xl animate-pulse pointer-events-none z-0"></div>
       {/* Carrousel : une seule image visible à la fois, défilement automatique */}
       <div className="relative w-full h-full flex-1 flex items-center justify-center">
@@ -63,6 +70,7 @@ export default function ImagesCarousel() {
             fill
             // Pour ajuster la taille de l'image chargée, modifiez la valeur de sizes ci-dessous
             sizes="(max-width: 1000px) 90vw, 45vw"
+            // Affichage de l'image courante, transition d'opacité
             className={`object-cover rounded-2xl transition-all duration-700 ease-in-out ${i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'} hover:scale-110 transition-transform duration-500`}
             style={{ transitionProperty: 'opacity, transform' }}
             priority={i === index}
@@ -71,7 +79,7 @@ export default function ImagesCarousel() {
           />
         ))}
       </div>
-      {/* Pagination points (puces) sous l'image */}
+      {/* Pagination : points cliquables pour naviguer entre les images */}
       <div className="relative mt-2 flex gap-2 z-20">
         {images.map((_, i) => (
           <button
