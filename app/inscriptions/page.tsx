@@ -88,212 +88,271 @@ export default function Inscriptions() {
         </section>
 
         <section className="mb-12">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="flex items-center mb-6">
-                <div className="bg-green-100 p-2 rounded-full mr-3">
-                  <FileText className="h-6 w-6 text-green-600" />
-                </div>
-                <h2 className="text-2xl font-semibold text-green-600">Tarifs A.C.T. 2024/2025</h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="flex items-center mb-6">
+              <div className="bg-green-100 p-2 rounded-full mr-3">
+          <FileText className="h-6 w-6 text-green-600" />
               </div>
+              <h2 className="text-2xl font-semibold text-green-600">Tarifs ACT saison 2025 / 2026</h2>
+            </div>
 
-              <div className="mb-6">
-                <div className="bg-green-600 text-white p-3 rounded-t-lg">
-                  <h3 className="font-bold">Accès au courts + licence Multi-Raquettes FFT</h3>
-                </div>
-                <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-                  <p className="mb-2">
-                    <strong>ADULTES :</strong> Le certificat médical N'EST PAS OBLIGATOIRE pour l'obtention de la licence FFT.
-                  </p>
-                  <p>
-                    <strong>MINEURS :</strong> L'attestation relative au questionnaire santé est obligatoire pour l'obtention de la licence FFT.
-                  </p>
-                </div>
+            {/* Cotisation Annuelle */}
+            <div className="mb-8">
+              <div className="bg-green-600 text-white p-3 rounded-t-lg">
+          <h3 className="font-bold">Cotisation Annuelle : Accès aux courts + licence Multi-Raquettes</h3>
               </div>
-
-              <div className="overflow-x-auto mb-8">
-                <table className="w-full min-w-[500px] border-collapse text-sm">
-                  <thead>
-                    <tr className="bg-green-100">
-                      <th className="border p-2 text-left">Catégorie</th>
-                      <th className="border p-2 text-left">Licence Multi-Raquettes</th>
-                      <th className="border p-2 text-left">Adhésion</th>
-                      <th className="border p-2 text-left font-bold">TOTAL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {/* ...rows unchanged... */}
-                    <tr className="bg-white">
-                      <td className="border p-2 font-medium">Adulte 1</td>
-                      <td className="border p-2">33 €</td>
-                      <td className="border p-2">58 €</td>
-                      <td className="border p-2 font-bold">91 €</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="border p-2 font-medium">Adulte 2</td>
-                      <td className="border p-2">33 €</td>
-                      <td className="border p-2">49 €</td>
-                      <td className="border p-2 font-bold">82 €</td>
-                    </tr>
-                    <tr className="bg-white">
-                      <td className="border p-2 font-medium">Etudiant</td>
-                      <td className="border p-2">33 €</td>
-                      <td className="border p-2">37 €</td>
-                      <td className="border p-2 font-bold">70 €</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="border p-2 font-medium">Enfant 1 (7 à 18 ans)</td>
-                      <td className="border p-2">23 €</td>
-                      <td className="border p-2">31 €</td>
-                      <td className="border p-2 font-bold">54 €</td>
-                    </tr>
-                    <tr className="bg-white">
-                      <td className="border p-2 font-medium">Enfant 2 (7 à 18 ans)</td>
-                      <td className="border p-2">23 €</td>
-                      <td className="border p-2">25 €</td>
-                      <td className="border p-2 font-bold">48 €</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="border p-2 font-medium">Enfant (6 ans et moins)</td>
-                      <td className="border p-2">13 €</td>
-                      <td className="border p-2">26 €</td>
-                      <td className="border p-2 font-bold">39 €</td>
-                    </tr>
-                    <tr className="bg-white">
-                      <td className="border p-2 font-medium">Nouvel arrivant (*)</td>
-                      <td className="border p-2">33 €</td>
-                      <td className="border p-2">41 €</td>
-                      <td className="border p-2 font-bold">74 €</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="border p-2 font-medium">Parent (**)</td>
-                      <td className="border p-2">33 €</td>
-                      <td className="border p-2">5 €</td>
-                      <td className="border p-2 font-bold">38 €</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <p className="mb-2">
+            <strong>MINEURS :</strong> L'attestation relative au questionnaire de santé est obligatoire pour l'obtention de la licence FFT.
+          </p>
+          <div className="overflow-x-auto mt-4">
+            <table className="w-full min-w-[600px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-green-100">
+            <th className="border p-2 text-left">Cotisation</th>
+            <th className="border p-2 text-left">Licence Multi-Raquettes (€)</th>
+            <th className="border p-2 text-left">Adhésion (€)</th>
+            <th className="border p-2 text-left font-bold">TOTAL (€)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Adulte 1</td>
+            <td className="border p-2">33</td>
+            <td className="border p-2">63</td>
+            <td className="border p-2 font-bold">96</td>
+                </tr>
+                <tr className="bg-gray-50">
+            <td className="border p-2 font-medium">Adulte 2</td>
+            <td className="border p-2">33</td>
+            <td className="border p-2">49</td>
+            <td className="border p-2 font-bold">82</td>
+                </tr>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Étudiant</td>
+            <td className="border p-2">33</td>
+            <td className="border p-2">37</td>
+            <td className="border p-2 font-bold">70</td>
+                </tr>
+                <tr className="bg-gray-50">
+            <td className="border p-2 font-medium">Enfant 1 (7 à 18 ans)</td>
+            <td className="border p-2">23</td>
+            <td className="border p-2">34</td>
+            <td className="border p-2 font-bold">57</td>
+                </tr>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Enfant 2 (7 à 18 ans)</td>
+            <td className="border p-2">23</td>
+            <td className="border p-2">25</td>
+            <td className="border p-2 font-bold">48</td>
+                </tr>
+                <tr className="bg-gray-50">
+            <td className="border p-2 font-medium">Enfant (6 ans et moins)</td>
+            <td className="border p-2">13</td>
+            <td className="border p-2">26</td>
+            <td className="border p-2 font-bold">39</td>
+                </tr>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Nouvel arrivant (*)</td>
+            <td className="border p-2">33</td>
+            <td className="border p-2">43</td>
+            <td className="border p-2 font-bold">76</td>
+                </tr>
+                <tr className="bg-gray-50">
+            <td className="border p-2 font-medium">Parent (**)</td>
+            <td className="border p-2">33</td>
+            <td className="border p-2">7</td>
+            <td className="border p-2 font-bold">40</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="text-xs mt-3 space-y-1">
+            <p>(*) Nouvel arrivant = Adulte non adhérent au club durant l'année N-1.</p>
+            <p>(**) Parent = votre enfant prend des cours à l'ACT, vous voulez jouer avec lui ? La cotisation parent vous permet de jouer avec votre enfant uniquement, durant toute l'année.</p>
+          </div>
               </div>
+            </div>
 
-              <div className="text-sm mb-6">
-                <p>(*) Nouvel arrivant = Adulte non adhérent au club durant l'année N-1</p>
-                <p>
-                  (**) Parent = votre enfant prend des cours à l'ACT, vous voulez jouer avec lui ? La cotisation parent vous permet de jouer avec votre enfant uniquement durant toute l'année.
-                </p>
+            {/* Cotisation ÉTÉ 1 mois */}
+            <div className="mb-8">
+              <div className="bg-green-600 text-white p-3 rounded-t-lg">
+          <h3 className="font-bold">Cotisation ÉTÉ 1 mois</h3>
               </div>
-
-              <div className="mb-8">
-                <div className="bg-green-600 text-white p-3 rounded-t-lg">
-                  <h3 className="font-bold">Accès au courts sans licence ACT</h3>
-                </div>
-                <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-                  <p className="italic mb-2">(sous réserve de posséder une licence valide dans un autre club)</p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-                    <div className="bg-white p-3 rounded-lg shadow-sm">
-                      <p className="font-medium">Adulte</p>
-                      <p className="text-xl font-bold text-green-600">69 €</p>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg shadow-sm">
-                      <p className="font-medium">Etudiant</p>
-                      <p className="text-xl font-bold text-green-600">49 €</p>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg shadow-sm">
-                      <p className="font-medium">Enfant</p>
-                      <p className="text-xl font-bold text-green-600">45 €</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <p className="mb-2">Valable du 1er juin au 31 août.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[400px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-green-100">
+            <th className="border p-2 text-left">Cotisation</th>
+            <th className="border p-2 text-left">Licence Multi-Raquettes (€)</th>
+            <th className="border p-2 text-left">Adhésion (€)</th>
+            <th className="border p-2 text-left font-bold">TOTAL (€)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Adulte</td>
+            <td className="border p-2">33</td>
+            <td className="border p-2">30</td>
+            <td className="border p-2 font-bold">63</td>
+                </tr>
+                <tr className="bg-gray-50">
+            <td className="border p-2 font-medium">Enfant (7 à 18 ans)</td>
+            <td className="border p-2">23</td>
+            <td className="border p-2">20</td>
+            <td className="border p-2 font-bold">43</td>
+                </tr>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Enfant (6 ans et moins)</td>
+            <td className="border p-2">13</td>
+            <td className="border p-2">20</td>
+            <td className="border p-2 font-bold">33</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
               </div>
+            </div>
 
-              <div className="mb-8">
-                <div className="bg-green-600 text-white p-3 rounded-t-lg">
-                  <h3 className="font-bold">Accès aux courts + Licence Découverte</h3>
-                </div>
-                <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-                  <p className="font-medium mb-2">Conditions :</p>
-                  <p className="mb-4">
-                    Valable 3 mois maximum, une fois par saison, la licence Découverte s'adresse à tous les non licenciés sans restriction. Elle est accessible tout au long de l'année (sauf les moins de 15 ans : à partir du 25 mars). Durant ces 3 mois vous pouvez accéder aux terrains mais la compétition n'est pas autorisée.
-                  </p>
-                  <div className="overflow-x-auto">
-                    <table className="w-full min-w-[400px] border-collapse text-sm">
-                      <thead>
-                        <tr className="bg-green-100">
-                          <th className="border p-2 text-left">Catégorie</th>
-                          <th className="border p-2 text-left">Licence Découverte</th>
-                          <th className="border p-2 text-left">Adhésion</th>
-                          <th className="border p-2 text-left font-bold">TOTAL</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="bg-white">
-                          <td className="border p-2 font-medium">Adulte</td>
-                          <td className="border p-2">4 €</td>
-                          <td className="border p-2">27 €</td>
-                          <td className="border p-2 font-bold">31 €</td>
-                        </tr>
-                        <tr className="bg-gray-50">
-                          <td className="border p-2 font-medium">Enfant</td>
-                          <td className="border p-2">4 €</td>
-                          <td className="border p-2">17 €</td>
-                          <td className="border p-2 font-bold">21 €</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+            {/* Cotisation Découverte 3 mois */}
+            <div className="mb-8">
+              <div className="bg-green-600 text-white p-3 rounded-t-lg">
+          <h3 className="font-bold">Cotisation Découverte 3 mois</h3>
               </div>
-
-              <div className="mb-8">
-                <div className="bg-green-600 text-white p-3 rounded-t-lg">
-                  <h3 className="font-bold">Cours de tennis (30h minimum à l'année)</h3>
-                </div>
-                <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
-                    <div className="bg-white p-3 rounded-lg shadow-sm">
-                      <p className="font-medium">Adulte</p>
-                      <p className="text-xl font-bold text-green-600">158 €</p>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg shadow-sm">
-                      <p className="font-medium">Enfant</p>
-                      <p className="text-xl font-bold text-green-600">138 €</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <p className="mb-2">Accès aux terrains pendant 3 mois, compétition NON autorisée.<br />
+            Valable 3 mois maximum, une fois par saison, la licence Découverte s’adresse à tous les non licenciés sans restriction. Elle est accessible tout au long de l’année (sauf les moins de 15 ans : à partir du 25 mars).
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[400px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-green-100">
+            <th className="border p-2 text-left">Cotisation</th>
+            <th className="border p-2 text-left">Licence Découverte (€)</th>
+            <th className="border p-2 text-left">Adhésion (€)</th>
+            <th className="border p-2 text-left font-bold">TOTAL (€)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Adulte</td>
+            <td className="border p-2">4</td>
+            <td className="border p-2">30</td>
+            <td className="border p-2 font-bold">34</td>
+                </tr>
+                <tr className="bg-gray-50">
+            <td className="border p-2 font-medium">Enfant</td>
+            <td className="border p-2">4</td>
+            <td className="border p-2">20</td>
+            <td className="border p-2 font-bold">24</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
               </div>
+            </div>
 
-              <div className="mb-8">
-                <div className="bg-green-600 text-white p-3 rounded-t-lg">
-                  <h3 className="font-bold">Tennis Forme</h3>
-                </div>
-                <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-                  <p className="mb-4">
-                    La licence est obligatoire. La carte de 10 séances ne donne pas le droit d'accéder aux terrains municipaux en dehors des séances.
-                  </p>
-                  <div className="overflow-x-auto">
-                    <table className="w-full min-w-[400px] border-collapse text-sm">
-                      <thead>
-                        <tr className="bg-green-100">
-                          <th className="border p-2 text-left">Catégorie</th>
-                          <th className="border p-2 text-left">Licence FFT OBLIGATOIRE</th>
-                          <th className="border p-2 text-left">Carte de 10 séances</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="bg-white">
-                          <td className="border p-2 font-medium">Adulte</td>
-                          <td className="border p-2">33 €</td>
-                          <td className="border p-2">69 €</td>
-                        </tr>
-                        <tr className="bg-gray-50">
-                          <td className="border p-2 font-medium">Enfant</td>
-                          <td className="border p-2">23 €</td>
-                          <td className="border p-2">69 €</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+            {/* Cotisation Annuelle sans licence ACT */}
+            <div className="mb-8">
+              <div className="bg-green-600 text-white p-3 rounded-t-lg">
+          <h3 className="font-bold">Cotisation Annuelle sans licence ACT</h3>
               </div>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <p className="italic mb-2">Sous réserve de posséder une licence valide dans un autre club.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[300px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-green-100">
+            <th className="border p-2 text-left">Adulte</th>
+            <th className="border p-2 text-left">Étudiant</th>
+            <th className="border p-2 text-left">Enfant</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+            <td className="border p-2 font-bold">71 €</td>
+            <td className="border p-2 font-bold">51 €</td>
+            <td className="border p-2 font-bold">47 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+              </div>
+            </div>
 
+            {/* Cours de tennis annuels */}
+            <div className="mb-8">
+              <div className="bg-green-600 text-white p-3 rounded-t-lg">
+          <h3 className="font-bold">Cours de tennis annuels (30h minimum assurées)</h3>
+              </div>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[300px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-green-100">
+            <th className="border p-2 text-left">Adulte</th>
+            <th className="border p-2 text-left">Enfant</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+            <td className="border p-2 font-bold">165 €</td>
+            <td className="border p-2 font-bold">145 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs mt-2">La licence est obligatoire.</p>
+              </div>
+            </div>
+
+            {/* Tennis Forme */}
+            <div className="mb-8">
+              <div className="bg-green-600 text-white p-3 rounded-t-lg">
+          <h3 className="font-bold">Tennis Forme (carnet de 10 séances de 1h30)</h3>
+              </div>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <p className="mb-2 text-sm">
+            La licence est obligatoire. <span className="text-red-600">Ne donne pas le droit d'accéder aux terrains municipaux en dehors des séances.</span>
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[200px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-green-100">
+            <th className="border p-2 text-left">Adulte / Enfant</th>
+            <th className="border p-2 text-left">Prix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+            <td className="border p-2 font-medium">Adulte / Enfant</td>
+            <td className="border p-2 font-bold">72 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+              </div>
+            </div>
+
+            {/* Location terrain extérieur */}
+            <div className="mb-2">
+              <div className="bg-green-600 text-white p-3 rounded-t-lg">
+          <h3 className="font-bold">Location terrain extérieur 1 heure</h3>
+              </div>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <p>10 euros + chèque de caution</p>
+          <p className="text-xs mt-1">
+            S’adresser à la Maison des Trois Rivières au <span className="font-bold">06 77 28 60 17</span>, ou au club.
+          </p>
+              </div>
+            </div>
+          </div>
+        </section>
+                        
+        <section className="mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
               <div>
                 <div className="bg-green-600 text-white p-3 rounded-t-lg">
                   <h3 className="font-bold" id="location la maison des trois rivieres">Location terrains (extérieur et intérieur) pour les non-adhérents</h3>
@@ -359,9 +418,8 @@ export default function Inscriptions() {
                 </div>
               </div>
             </div>
-          
-        </section>
+        </section>  
+        </div>
       </div>
-    </div>
-  );
+      );
 }
