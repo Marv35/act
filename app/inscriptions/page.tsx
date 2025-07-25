@@ -335,19 +335,6 @@ export default function Inscriptions() {
           </div>
               </div>
             </div>
-
-            {/* Location terrain extérieur */}
-            <div className="mb-2">
-              <div className="bg-green-600 text-white p-3 rounded-t-lg">
-          <h3 className="font-bold"></h3>
-              </div>
-              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-          <p>10 euros + chèque de caution</p>
-          <p className="text-xs mt-1">
-            S’adresser à la Maison des Trois Rivières au <span className="font-bold">06 77 28 60 17</span>, ou au club.
-          </p>
-              </div>
-            </div>
           </div>
         </section>
                         
@@ -365,7 +352,7 @@ export default function Inscriptions() {
                         <p>S'adresser à la Maison des Trois Rivières <span className="font-bold">06 77 28 60 17</span> ou au club.</p>
                       </div>
                       <div className="mb-2 flex justify-center">
-                        <span className="inline-block bg-green-100 text-green-700 px-2 py-1 rounded font-bold">10 € / heure + chèque de caution</span>
+                        <span className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded font-bold">10 € / heure + chèque de caution</span>
                       </div>
                     </div>
                     <div className="flex-shrink-0 flex flex-col justify-center items-center mt-0 md:mt-0">
