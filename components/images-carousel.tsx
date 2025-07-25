@@ -10,6 +10,8 @@ const images = [
   { src: "/images/Terrains/Terrain_coucher_soleil.webp", alt: "Terrain au coucher du soleil" },
   { src: "/images/Terrains/Journee_du_tennis.webp", alt: "Journée du tennis" },
   { src: "/images/Terrains/Courts_lumiere.webp", alt: "courts de nuit éclairé"},
+  { src: "/images/Terrains/Fin de tournoi.webp", alt: "Fin de tournoi" },
+  { src: "/images/Terrains/Recompense.webp", alt: "Récompense" },
   { src: "/images/Terrains/Court_4.webp", alt: "Court collectif" },
   { src: "/images/Terrains/Jeter_de_balles.webp", alt: "Jeter des balles dans membres du club" },
   { src: "/images/Terrains/Court_3-4_travaux_de_nuit.webp", alt: "Court 3-4 travaux de nuit" },
@@ -18,6 +20,9 @@ const images = [
   { src: "/images/Terrains/court_arc_en_ciel.webp", alt: "Court arc-en-ciel" },
   { src: "/images/Terrains/Photo_groupe.webp", alt: "Photo de groupe" },
   { src: "/images/Terrains/Vue_tous_les_courts.webp", alt: "Vue de l'ensemble des courts nouvelles scructures terrains 3 et 4" },
+  { src: "/images/Terrains/Match_de_nuit.webp", alt: "Match de tennis de nuit" },
+
+  
 ]
 
 export default function ImagesCarousel() {

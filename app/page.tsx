@@ -49,19 +49,12 @@ export default function Home() {
             <section className="py-1 mb-2">
               <ImagesCarousel />
             </section>
-              {/* <Image
-                src="/images/Terrains/Courts_1_2.jpg"
-                alt="Terrains de tennis"
-                width={500}
-                height={500}
-                className="relative rounded-lg shadow-xl transform transition-transform hover:scale-105"
-              /> */}
             </div>
           </div> 
         </div>
       </section>
       {/* Galerie de photos */}
-      <section className="py-12 mb-16">
+      <section className="py-6 mb-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Nos installations</h2>
           <p className="text-lg max-w-2xl mx-auto text-gray-600">
@@ -105,7 +98,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
 
 
       {/* Annonce importante */}
@@ -153,56 +145,41 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/*
-      <section className="mb-16">
-        <div className="bg-white rounded-lg p-8 shadow-lg">
-          <h2 className="text-3xl font-bold text-green-600 mb-8 text-center">Actualités du club</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Tournoi de printemps",
-                desc: "Inscrivez-vous à notre prochain tournoi qui aura lieu le mois prochain.",
-                icon: "🏆",
-              },
-              {
-                title: "Cours collectifs",
-                desc: "Nouveaux horaires pour les cours collectifs à partir de septembre.",
-                icon: "👥",
-              },
-              {
-                title: "Stage vacances",
-                desc: "Stage de tennis pour les jeunes pendant les vacances scolaires.",
-                icon: "🎓",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-500 hover:shadow-xl transition-all hover:-translate-y-1"
-              >
-                <div className="bg-green-100 text-green-800 w-12 h-12 rounded-full flex items-center justify-center text-xl mb-4">
-                  {item.icon}
-                </div>
-                <h3 className="font-bold text-xl mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-                <Link href="#" className="inline-block mt-4 text-green-600 hover:text-green-800 font-medium">
-                  En savoir plus →
-                </Link>
-              </div>
-            ))}
+
+      <section className="mb-14">
+        <div className="relative bg-gradient-to-br to-white rounded-2xl p-10 shadow-xl overflow-hidden">
+          <div className="absolute -top-10 -left-10 w-40 h-40 bg-green-100 rounded-full opacity-30 blur-2xl pointer-events-none" />
+          <h2 className="text-3xl font-extrabold text-green-700 mb-6 text-center drop-shadow-sm">
+        Suivez toute l’actualité du club sur nos réseaux sociaux !
+          </h2>
+          <p className="text-lg text-gray-700 text-center mb-10">
+        Découvrez les dernières actualités, photos, événements et moments forts de l’ACT sur Facebook et Instagram.<br />
+        <span className="text-green-600 font-semibold">Rejoignez notre communauté pour ne rien manquer de la vie du club !</span>
+          </p>
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+        <Link
+          href="https://www.facebook.com/Tenniscloyes/?locale=fr_FR"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center rounded-full bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold px-8 py-3 text-lg shadow-lg transition-all duration-300 focus:ring-2 focus:ring-blue-300"
+          style={{ letterSpacing: "0.05em" }}
+        >
+          Facebook
+        </Link>
+        <Link
+          href="https://www.instagram.com/association_tennis_cloyes_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold px-8 py-3 text-lg shadow-lg hover:scale-105 transition-all duration-300 focus:ring-2 focus:ring-pink-300"
+          style={{ letterSpacing: "0.05em" }}
+        >
+          Instagram
+        </Link>
           </div>
         </div>
-      </section>*/}
-
-      {/* <section className="py-16 bg-gradient-to-r
-       to-yellow-50 rounded-3xl mb-16">
-        <div className="text-center mb-12 px-4">
-          <h2 className="text-3xl font-bold text-green-600 mb-4">Plannig des courts</h2>
-        </div>
-        <p>METTRE API TEN'UP du planning des courts de tennis tous less terrains exterieur et interieur mais reservation sur le site Ten'up</p>
-      </section> */}
-
-
-          <section className="py-16 bg-gradient-to-r from-green-50 rounded-3xl mb-16">
+      </section>
+      
+          <section className="py-16 bg-gradient-to-r from-orange-50 to-green-50 rounded-3xl mb-16">
         <div className="text-center mb-12 px-4">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Réservez vos courts en ligne</h2>
           <p className="text-lg max-w-2xl mx-auto">

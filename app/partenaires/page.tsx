@@ -56,12 +56,35 @@ export default function Partenaires() {
           <h2 className="text-2xl font-semibold mb-6">Nos partenaires</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+              <div className="w-32 h-32 mb-2 flex items-center justify-center">
+                <a
+                  href="https://www.guy-hoquet.com/agence-immobiliere/chateaudun"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                <Image
+                  src="/images/Partenaires/Guy_hoquet.webp"
+                  alt="Logo Guy Hoquet"
+                  width={200}
+                  height={200}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Guy Hoquet</h3>
+                <p className="text-sm text-gray-600">Agence immobilière sur Chateaudun (Partenaire distribuant la dotation de chèques sur le tournoi)</p>
+              </div>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-48 h-32 mb-2 flex items-center justify-center">
                 <a
                   href="https://www.garage-cassonnet-cloyes.fr/"
                   target="_blank"
-                  rel= "noopener noreferrere"
+                  rel= "noopener noreferrer"
                   >
                 <Image
                   src="/images/Partenaires/Ad_peugeot_cassonnet.webp"
@@ -73,35 +96,13 @@ export default function Partenaires() {
                 </a>
               </div>
               <div className="text-center">
-                <h3 className="font-bold mb-1">Garage Cassonnet Peugeot</h3>
-                <p className="text-sm text-gray-600">Partenaire automobile</p>
+                <h3 className="font-bold mb-1">Garage Cassonnet et AD</h3>
+                <p className="text-sm text-gray-600">(Partenaires fournisseurs des balles sur notre tournoi)</p>
               </div>
             </div>
 
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
-                <a
-                  href="https://www.audilab.fr/centre/audioprothesiste-cloyes-sur-le-loir/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                <Image
-                  src="/images/Partenaires/Audilab.webp"
-                  alt="Logo Audilab"
-                  width={250}
-                  height={250}
-                  className="object-contain"
-                />
-                </a>
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold mb-1">Audilab</h3>
-                <p className="text-sm text-gray-600">Partenaire Audioprothésiste</p>
-              </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+              <div className="w-48 h-32 mb-2 flex items-center justify-center">
                 <a
                   href="https://www.pagesjaunes.fr/pros/63034760"
                   target="_blank"
@@ -118,11 +119,32 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">BV elec</h3>
-                <p className="text-sm text-gray-600">Électricien à Cloyes sur le Loir</p>
+                <p className="text-sm text-gray-600">Électricien à Cloyes sur le Loir (Partenaire fournisseur des boissons gratuites lors du tournoi)</p>
               </div>
             </div>
 
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-48 h-32 mb-4 flex items-center justify-center">
+                <a
+                  href="https://www.vorwerk.com/fr/fr/c/vorwerk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <Image
+                  src="/images/Partenaires/Vorwerk.webp"
+                  alt="Logo Vorwerk"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Vorwerk</h3>
+              </div>
+            </div>
+
+              <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
                 <a
                   href="https://www.carrefour.fr/magasin/express-cloyes-sur-le-loir"
@@ -140,7 +162,29 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Carrefour Express</h3>
-                <p className="text-sm text-gray-600">Partenaire de la grande distribution</p>
+                <p className="text-sm text-gray-600">Magasin à Cloyes sur le Loir</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <a
+                  href="https://www.pagesjaunes.fr/pros/05686654"
+                  target="_blank"
+                  rel="noopener noreferrere"
+                  >
+                  <Image
+                  src="/images/Partenaires/Credit_agricole.webp"
+                  alt="Logo Crédit Agricole Val de France"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Crédit Agricole Val de France</h3>
+                <p className="text-sm text-gray-600"></p>
               </div>
             </div>
 
@@ -162,21 +206,20 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Claveau</h3>
-                <p className="text-sm text-gray-600">Peinture, ravalement, revêment de sol..</p>
+                <p className="text-sm text-gray-600">Peinture, ravalement, revêtements de sols à Cloyes sur le Loir</p>
               </div>
             </div>
 
-
-        <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-48 h-32 mb-2 flex items-center justify-center">
                 <a
-                  href="https://www.pagesjaunes.fr/pros/05686654"
+                  href="https://www.lerabotdesbois.fr/"
                   target="_blank"
-                  rel="noopener noreferrere"
+                  rel="noopener noreferrer"
                   >
                   <Image
-                  src="/images/Partenaires/Credit_agricole.webp"
-                  alt="Logo Crédit Agricole Val de France"
+                  src="/images/Partenaires/La_menuiserie.webp"
+                  alt="Logo Menuiserie le rabot des bois"
                   width={250}
                   height={250}
                   className="object-contain"
@@ -184,14 +227,79 @@ export default function Partenaires() {
                 </a>
               </div>
               <div className="text-center">
-                <h3 className="font-bold mb-1">Crédit Agricole Val de France</h3>
-                <p className="text-sm text-gray-600">Partenaire bancaire</p>
+                <h3 className="font-bold mb-1">Menuiserie le rabot des bois</h3>
+                <p className="text-sm text-gray-600">à Cloyes sur le Loir</p>
               </div>
             </div>
 
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-58 h-32 mb-2 flex items-center justify-center">
+                <a
+                  href="https://www.sporteam-tennis.com/agences/vendome"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                <Image
+                  src="/images/Partenaires/Sporteam.webp"
+                  alt="Logo Sporteam"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Sporteam</h3>
+                <p className="text-sm text-gray-600">Notre spécialiste de tennis à Vendôme</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-48 h-32 mb-4 flex items-center justify-center">
+                <a
+                  href="https://agence.mma.fr/cloyes-les-trois-rivieres/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                <Image
+                  src="/images/Partenaires/Mma.webp"
+                  alt="Logo M.M.A"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">M.M.A </h3>
+                <p className="text-sm text-gray-600">Assurance</p>
+              </div>
+            </div>
 
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <a
+                  href="https://www.audilab.fr/centre/audioprothesiste-cloyes-sur-le-loir/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <Image
+                  src="/images/Partenaires/Audilab.webp"
+                  alt="Logo Audilab"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Audilab</h3>
+                <p className="text-sm text-gray-600">Audioprothésiste</p>
+              </div>
+            </div>
+          
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-48 h-32 mb-4 flex items-center justify-center">
                 <a
                   href="https://www.le-domaine-du-pecheur.fr/"
                   target="_blank"
@@ -212,30 +320,6 @@ export default function Partenaires() {
               </div>
             </div>
 
-
-            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
-                <a
-                  href="https://www.guy-hoquet.com/agence-immobiliere/chateaudun"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                <Image
-                  src="/images/Partenaires/Guy_hoquet.webp"
-                  alt="Logo Guy Hoquet"
-                  width={200}
-                  height={200}
-                  className="object-contain"
-                />
-                </a>
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold mb-1">Guy Hoquet</h3>
-                <p className="text-sm text-gray-600">Immobilier</p>
-              </div>
-            </div>
-
-
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
                 <a
@@ -254,12 +338,12 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Auto Recuper Lascaux</h3>
-                <p className="text-sm text-gray-600">Casse automobile</p>
+                <p className="text-sm text-gray-600">Casse automobile à Cloyes sur le Loir</p>
               </div>
             </div>
 
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+              <div className="w-32 h-32 mb-4 flex items-center  justify-center">
                 <a
                   href="https://www.lerefletdaurelie.fr/"
                   target="_blank"
@@ -276,29 +360,7 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Le reflet d'Aurélie</h3>
-                <p className="text-sm text-gray-600">Salon de coiffure</p>
-              </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
-                <a
-                  href="https://www.lerabotdesbois.fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  <Image
-                  src="/images/Partenaires/La_menuiserie.webp"
-                  alt="Logo Menuiserie le rabot des bois"
-                  width={250}
-                  height={250}
-                  className="object-contain"
-                />
-                </a>
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold mb-1">Menuiserie le rabot des bois</h3>
-                <p className="text-sm text-gray-600">Menuisier</p>
+                <p className="text-sm text-gray-600">Salon de coiffure à Cloyes sur le Loir</p>
               </div>
             </div>
 
@@ -320,50 +382,7 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">M.T.S</h3>
-                <p className="text-sm text-gray-600">Charpentier, couverteur, menuisier</p>
-              </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
-                <a
-                  href="https://www.sporteam-tennis.com/agences/vendome"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                <Image
-                  src="/images/Partenaires/Sporteam.webp"
-                  alt="Logo Sporteam"
-                  width={250}
-                  height={250}
-                  className="object-contain"
-                />
-                </a>
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold mb-1">Sporteam</h3>
-                <p className="text-sm text-gray-600">Équipement sportif</p>
-              </div>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
-                <a
-                  href="https://agence.mma.fr/cloyes-les-trois-rivieres/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                <Image
-                  src="/images/Partenaires/Mma.webp"
-                  alt="Logo M.M.A"
-                  width={250}
-                  height={250}
-                  className="object-contain"
-                />
-                </a>
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold mb-1">M.M.A </h3>
-                <p className="text-sm text-gray-600">Assusrance</p>
+                <p className="text-sm text-gray-600">Charpentier, couvreur, menuisier à Cloyes sur le Loir</p>
               </div>
             </div>
 
@@ -385,7 +404,7 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Damien Guenet</h3>
-                <p className="text-sm text-gray-600">Partenaire Pâtissier, traiteur</p>
+                <p className="text-sm text-gray-600">Traiteur lors de nos tournois et manifestations</p>
               </div>
             </div>
 
@@ -407,20 +426,19 @@ export default function Partenaires() {
               </div>
               <div className="text-center">
                 <h3 className="font-bold mb-1">Stef O Pizza</h3>
-                <p className="text-sm text-gray-600">Partenaire Restauration</p>
+                <p className="text-sm text-gray-600"></p>
               </div>
             </div>
-
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
                 <a
-                  href="https://www.vorwerk.com/fr/fr/c/vorwerk"
+                  href="https://www.artgraphique-design.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                 <Image
-                  src="/images/Partenaires/Vorwerk.webp"
-                  alt="Logo Vorwerk"
+                  src="/images/Partenaires/Art Graphique Design.webp"
+                  alt="Logo Art Graphique Design"
                   width={250}
                   height={250}
                   className="object-contain"
@@ -428,15 +446,15 @@ export default function Partenaires() {
                 </a>
               </div>
               <div className="text-center">
-                <h3 className="font-bold mb-1">Vorwerk</h3>
+                <h3 className="font-bold mb-1">Art Graphique Design</h3>
+                <p className="text-sm text-gray-600">à Chateaudun</p>
               </div>
             </div>
-
           </div>
         </section>
         
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Nos sponsors</h2>
+          <h2 className="text-2xl font-semibold mb-6">Nos sponsors sur le tournoi</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
               <div className="w-24 h-24 mr-4 flex items-center justify-center">
@@ -478,7 +496,7 @@ export default function Partenaires() {
               </div>
               <div>
                 <h3 className="font-bold mb-1">L'épi floral</h3>
-                <p className="text-sm text-gray-600">Fleuriste</p>
+                <p className="text-sm text-gray-600"></p>
               </div>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
@@ -499,7 +517,7 @@ export default function Partenaires() {
               </div>
               <div>
                 <h3 className="font-bold mb-1">Le Saint Jacques</h3>
-                <p className="text-sm text-gray-600">Restaurant partenaire</p>
+                <p className="text-sm text-gray-600"></p>
               </div>
             </div>
             
@@ -543,7 +561,7 @@ export default function Partenaires() {
               
               <div>
                 <h3 className="font-bold mb-1">Institut Diane</h3>
-                <p className="text-sm text-gray-600">Institut de beauté</p>
+                <p className="text-sm text-gray-600"></p>
               </div>
             </div>
              <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
