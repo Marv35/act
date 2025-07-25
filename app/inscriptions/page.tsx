@@ -342,7 +342,7 @@ export default function Inscriptions() {
           <div className="bg-white p-6 rounded-lg shadow-lg">
               <div>
                 <div className="bg-green-600 text-white p-3 rounded-t-lg">
-                  <h3 className="font-bold" id="location la maison des trois rivieres">Location terrains 1 heure (extérieur et intérieur pour les non-adhérents)</h3>
+                  <h3 className="font-bold" id="location la maison des trois rivieres">Location terrain 1 heure (extérieur et intérieur pour les non-adhérents)</h3>
                 </div>
                 <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
                   <div className="flex flex-col gap-14 md:flex-row md:items-start">
