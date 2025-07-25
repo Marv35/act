@@ -81,11 +81,6 @@ export default function Partenaires() {
             
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-48 h-32 mb-2 flex items-center justify-center">
-                <a
-                  href="https://www.garage-cassonnet-cloyes.fr/"
-                  target="_blank"
-                  rel= "noopener noreferrer"
-                  >
                 <Image
                   src="/images/Partenaires/Ad_peugeot_cassonnet.webp"
                   alt="Logo Garage Cassonnet Peugeot"
@@ -93,10 +88,9 @@ export default function Partenaires() {
                   height={250}
                   className="object-contain"
                 />
-                </a>
               </div>
               <div className="text-center">
-                <h3 className="font-bold mb-1">Garages Cassonnet et AD</h3>
+                <h3 className="font-bold mb-1"><a href="https://www.garage-cassonnet-cloyes.fr/" target="_blank" rel="noopener noreferrer">Garages Cassonnet</a> et <a href="https://www.ad.fr/garage/ad-carrosserie-dunoise" target="_blank" rel="noopener noreferrer">AD</a></h3>
                 <p className="text-sm text-gray-600">(Partenaires fournisseurs des balles sur notre tournoi)</p>
               </div>
             </div>
