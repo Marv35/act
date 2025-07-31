@@ -16,9 +16,15 @@ const partners = [
     target: "_blank",
   },
   {
-    name: "Garages Cassonnet et AD",
-    logo: "/images/Partenaires/Ad_peugeot_cassonnet.webp",
+    name: "Garages Peugeot Cassonnet",
+    logo: "/images/Partenaires/Peugeot_cassonnet.webp",
     link: "https://www.garage-cassonnet-cloyes.fr/",
+    target: "_blank",
+  },
+  {
+    name: "AD Cassonnet",
+    logo: "/images/Partenaires/AD_Cassonnet.webp",
+    link: "https://www.ad.fr/garage/ad-carrosserie-dunoise",
     target: "_blank",
   },
     {

@@ -80,23 +80,50 @@ export default function Partenaires() {
             </div>
             
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-48 h-32 mb-2 flex items-center justify-center">
+              <div className="w-40 h-32 mb-2 flex items-center justify-center">
+                <a
+                  href="https://www.ad.fr/garage/ad-carrosserie-dunoise"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
                 <Image
-                  src="/images/Partenaires/Ad_peugeot_cassonnet.webp"
-                  alt="Logo Garage Cassonnet Peugeot"
+                  src="/images/Partenaires/AD_Cassonnet.webp"
+                  alt="Logo Garage AD Cassonnet"
                   width={250}
                   height={250}
                   className="object-contain"
                 />
+                </a>
               </div>
               <div className="text-center">
-                <h3 className="font-bold mb-1"><a href="https://www.garage-cassonnet-cloyes.fr/" target="_blank" rel="noopener noreferrer">Garages Cassonnet</a> et <a href="https://www.ad.fr/garage/ad-carrosserie-dunoise" target="_blank" rel="noopener noreferrer">AD</a></h3>
+                <h3 className="font-bold mb-1">AD Cassonnet</h3>
                 <p className="text-sm text-gray-600">(Partenaires fournisseurs des balles sur notre tournoi)</p>
               </div>
             </div>
 
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-48 h-32 mb-2 flex items-center justify-center">
+              <div className="w-32 h-32 mb-2 flex items-center justify-center">
+                <a
+                  href="https://www.garage-cassonnet-cloyes.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                <Image
+                  src="/images/Partenaires/Peugeot_cassonnet.webp"
+                  alt="Logo Garage Cassonnet Peugeot"
+                  width={250}
+                  height={250}
+                  className="object-contain"
+                />
+                </a>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold mb-1">Garages Peugeot Cassonnet </h3>
+                <p className="text-sm text-gray-600">(Partenaires fournisseurs des balles sur notre tournoi)</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <div className="w-40 h-32 mb-2 flex items-center justify-center">
                 <a
                   href="https://www.pagesjaunes.fr/pros/63034760"
                   target="_blank"
@@ -587,7 +614,7 @@ export default function Partenaires() {
                 rel="noopener noreferrer"
                 >
                 <Image
-                  src="/images/Sponsors/Aux_Co'pains_Gourmands.webp"
+                  src="/images/Sponsors/Aux_co'pains_gourmands.webp"
                   alt="Logo Aux Co'pains Gourmands"
                   width={100}
                   height={100}
