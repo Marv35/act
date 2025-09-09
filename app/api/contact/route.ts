@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import sgMail from "@sendgrid/mail"
 
-// Utilisation de la clé API depuis .env.local
+// Utilisation de la clé API depuis .env.local ( bien la mettre à jour si changement et mettre a jour sur vercel aussi)
 sgMail.setApiKey(process.env.SENDGRID_API_KEY as string)
 
 export async function POST(request: Request) {
@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       )
     }
 
-    // Préparation du message sans templateId
+    // Préparation du message sans templateId ( envoi simple sans css)
     const msg = {
       to: "associationcloysiennetennis.28@gmail.com",
       from: "associationcloysiennetennis.28@gmail.com", // doit être validée sur SendGrid

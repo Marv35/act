@@ -63,7 +63,7 @@ export default function Club() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-64">
                 <Image
-                  src="/images/Terrains/Mur_tennis_vert.webp"
+                  src="/images/Terrains/mur_nouvelle_couleur_grand.webp"
                   alt="Mur d'entraînement de tennis à Cloyes-les-Trois-Rivières"
                   fill
                   className="object-cover"
