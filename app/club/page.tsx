@@ -177,7 +177,6 @@ export default function Club() {
             <div className="flex flex-col md:flex-row gap-4 mb-4">
               <div className="flex-1 bg-white rounded-lg shadow p-4 flex items-center">
               <div className="bg-green-100 text-green-700 rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">
-                {effectif.total}
               </div>
               <div>
                 <div className="font-semibold text-green-700">Total</div>
