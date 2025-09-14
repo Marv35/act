@@ -171,7 +171,7 @@ export default function Club() {
         
         {/* Graphique historique des effectifs */}
         <div className="bg-green-50 p-6 rounded-lg border border-green-200 mb-8">
-          <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Données (nombre d'adhérents)</h3>
+          <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Données</h3>
           <h3 className="font-semibold mb-3">Effectif actuel du club (source Ten'Up)</h3>
           {effectif.total !== null ? (
             <div className="flex flex-col md:flex-row gap-4 mb-4">

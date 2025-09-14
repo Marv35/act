@@ -1,36 +1,55 @@
+# Nom du workflow (affiché dans l'onglet Actions de GitHub)
 name: Scrape TenUp Effectif
 
+# Déclencheurs du workflow :
 on:
+  # Planification : tous les jours à 8h UTC (pour tous les lundis à 8h, utilise '0 8 * * 1')
   schedule:
-    - cron: '0 8 * * *'  # Tous les jours à 8h (UTC) // ous les lundis à 8h (UTC)
-  workflow_dispatch:     # Permet de lancer manuellement depuis GitHub
+    - cron: '0 8 * * *'
+  # Permet de lancer manuellement le workflow depuis l'interface GitHub
+  workflow_dispatch:
 
+# Permissions nécessaires pour que le workflow puisse écrire dans le dépôt
 permissions:
   contents: write
 
+# Définition des jobs à exécuter
 jobs:
   build:
+    # Environnement d'exécution (machine virtuelle Ubuntu)
     runs-on: ubuntu-latest
 
+    # Liste des étapes à exécuter dans ce job
     steps:
+      # Étape 1 : Récupérer le code source du dépôt
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Action officielle GitHub pour cloner le dépôt
 
+      # Étape 2 : Configurer Node.js (version 18)
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v3  # Action officielle GitHub pour installer Node.js
         with:
-          node-version: '18'
+          node-version: '18'  # Version de Node.js à utiliser
 
+      # Étape 3 : Installer les dépendances npm (à partir du fichier package-lock.json)
       - name: Install dependencies
-        run: npm ci
+        run: npm ci  # 'npm ci' installe les dépendances exactement comme dans package-lock.json
 
+      # Étape 4 : Exécuter le script de scraping
       - name: Run scraping script
-        run: node scripts/scrape-tenup-effectif.js
+        run: node scripts/scrape-tenup-effectif.js  # Chemin vers ton script Node.js
+      - name: Run scraping script
+        run: node scripts/add-to-historique.js  # Chemin vers ton script Node.js
 
+      # Étape 5 : Commit et push des changements si le fichier a été modifié
       - name: Commit & push changes
         run: |
+          # Configurer l'utilisateur git (obligatoire pour commiter)
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/tenup-effectif.json
+          # Ajouter les fichiers modifiés au staging
+          git add public/tenup-effectif.json public/tenup-effectif-historique.json
+          # Vérifier s'il y a des changements avant de commiter
           git diff --cached --quiet || git commit -m "Mise à jour auto des effectifs TenUp"
+          # Pousser les changements vers le dépôt (utilise le token GitHub fourni automatiquement)
           git push https://$GITHUB_TOKEN@github.com/Marv35/act.git
