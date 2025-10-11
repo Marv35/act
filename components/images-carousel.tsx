@@ -8,8 +8,10 @@ import Image from "next/image"
 const images = [
   { src: "/images/Terrains/Terrain_soir_feu.webp", alt: "Terrain de tennis le soir avec un feu d'artifice" },
   { src: "/images/Terrains/Courts_1_2.webp", alt: "Terrains de tennis" },
+  { src : "/images/Personnes/directeur_secretaire_coach_vigier_chevallier.webp", alt: " Directeur Christophe Toraille, secrétaire Jean-Charles Pouzier, coach Daniel Terouinard, Philippe Vigier, Jean-Pierre Chevallier" },
   { src: "/images/Terrains/Terrain_coucher_soleil.webp", alt: "Terrain au coucher du soleil" },
   { src: "/images/Terrains/Journee_du_tennis.webp", alt: "Journée du tennis" },
+  { src: "/images/Terrains/repas_act.webp", alt: "Repas de la journée du tennis" },
   { src: "/images/Terrains/Courts_lumiere.webp", alt: "courts de nuit éclairé"},
   { src: "/images/Terrains/Fin de tournoi.webp", alt: "Fin de tournoi" },
   { src: "/images/Terrains/Recompense.webp", alt: "Récompense" },
@@ -38,7 +40,7 @@ export default function ImagesCarousel() {
     // Le délai est en millisecondes (6000 = 6 secondes)
     const timer = setInterval(() => {
       setIndex(i => (i + 1) % images.length)
-    }, 1800) // <-- Modifier cette valeur pour changer la durée d'affichage
+    }, 1905) // <-- Modifier cette valeur pour changer la durée d'affichage
     return () => clearInterval(timer)
   }, [])
 

@@ -34,7 +34,7 @@ export default function EffectifHistoriqueGraph() {
 
   return (
     <div className="bg-white rounded-lg p-4 shadow-md">
-      <h3 className="font-bold mb-4 text-green-700">Historique des effectifs du club</h3>
+      <h3 className="font-bold mb-4 text-green-700">Historique des licenciés du club</h3>
       <Line
         data={{
           labels,

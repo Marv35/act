@@ -267,7 +267,7 @@ export default function Club() {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Notre entraîneur</h3>
+          <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Notre entraîneur</h3>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="md:flex">
                 <div className="md:flex-shrink-0 md:w-1/3">

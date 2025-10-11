@@ -110,34 +110,37 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-green-700">Annonce importante</h3>
               </div>
               <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
-                <h4 className="font-semibold text-lg mb-3">Chers membres,</h4>
+                <h4 className="font-semibold text-lg mb-3">Reprise des cours de tennis 🎾</h4>
                 <p className="mb-4 text-gray-700">
-                  Nous avons le plaisir de vous informer que les travaux sur les courts n°3 et 4 touchent à leur fin. 
-                  Les terrains sont désormais accessibles et prêts à accueillir les joueurs ! Une nouvelle structure équipée de panneaux solaires a été installée, 
-                  offrant une protection contre les intempéries.
-                  Quelques finitions restent à effectuer, mais cela n’empêche pas la pratique du tennis sur ces courts.
-                </p>
-                <p className="mb-4 text-gray-700">Merci pour votre patience !</p>
+                  Les cours de tennis ont repris dans une ambiance conviviale et pleine d’énergie !
+                  <br />Cette saison marque aussi le lancement de notre nouveau programme <strong>“Baby Tennis”</strong>, qui rencontre déjà un très beau succès auprès des plus jeunes.
+                  <br />Nous avons également le plaisir d’accueillir <strong>Jordan, notre nouveau coach</strong>, qui viendra renforcer l’équipe aux côtés de Daniel, présent depuis de nombreuses années au club.
+                  <br /><strong>Le tournoi interne vient tout juste de commencer</strong>, avec déjà de belles performances et une participation record !
+                  <br />Cette année, vous êtes nombreux à nous rejoindre, et nous vous remercions chaleureusement pour votre confiance et votre enthousiasme !
+                  <br />Notre nouvelle structure représente un véritable atout pour le club, et nous tenons à remercier la commune de Cloyes-les-Trois-Rivières pour la concrétisation de ce projet <strong>très apprécié</strong>.
+                  <br />Un grand merci également à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés dans cette belle aventure sportive et humaine.
+                  </p>
+                <p className="mb-4 text-gray-700">Bon tennis à tous 🎾😉 !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
               </div>
               <div className="flex">
-                <Link href="/club" className="inline-flex items-center text-green-600 hover:text-green-800 font-medium">
+                {/* <Link href="/club" className="inline-flex items-center text-green-600 hover:text-green-800 font-medium">
                   En savoir plus sur les installations<ArrowRight className="ml-1 h-4 w-4" />
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="md:w-1/2 relative">
               <div className="relative h-64 md:h-full w-full overflow-hidden rounded-lg">
                 <Image
-                  src="/images/Terrains/Court_3-4_travaux_de_nuit.webp"
-                  alt="Nouvelle structure avec panneaux solaires"
+                  src="/images/Terrains/court_baby_tennis.webp"
                   fill
+                  alt="Court de baby tennis"
                   className="object-cover transform transition-transform hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                   <p className="text-white text-sm">
                     <Calendar className="inline-block mr-1 h-4 w-4" />
-                    Mise à jour : Mai 2025
+                    Mise à jour : Octobre 2025
                   </p>
                 </div>
               </div>
@@ -179,7 +182,50 @@ export default function Home() {
         </div>
       </section>
       
-          <section className="py-16 bg-gradient-to-r from-orange-50 to-green-50 rounded-3xl mb-16">
+     {/* Annonce importante t-shirt commande*/}
+      {/* <section className="py-8 mt-8">
+        <div className="bg-gradient-to-r from-yellow-50 to-green-50 rounded-xl overflow-hidden shadow-lg border border-green-100">
+          <div className="p-6 flex flex-col md:flex-row gap-8">
+            <div className="md:w-1/2 space-y-4">
+              <div className="flex items-center gap-2">
+                <Bell className="h-5 w-5 text-yellow-500 animate-pulse" />
+                <h3 className="text-xl font-bold text-green-700">Réédition t-shirt de ACT</h3>
+              </div>
+              <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
+                <h4 className="font-semibold text-lg mb-3">Reprise des cours de tennis 🎾</h4>
+                <p className="mb-4 text-gray-700">
+                  Vous avez été nombreux à nous demander leur retour, et c’est avec plaisir que nous vous annonçons la réédition des t-shirts ACT ! Un incontournable pour afficher fièrement les couleurs du club, que ce soit sur les courts ou au quotidien.
+                  <br />Si vous êtes intéressé(e), n’hésitez pas à nous contacter :
+                  <br />📧 par email à [votre adresse email]
+                  <br />📞 ou par téléphone au [votre numéro de téléphone]
+                </p>
+                <p className="mb-4 text-gray-700">Bon tennis à tous 🎾😉 !</p>
+                <p className="font-medium text-green-600">L'équipe ACT</p>
+              </div>
+              <div className="flex">
+                {/* <Link href="/club" className="inline-flex items-center text-green-600 hover:text-green-800 font-medium">
+                  En savoir plus sur les installations<ArrowRight className="ml-1 h-4 w-4" />
+                </Link> 
+              </div>
+            </div>
+            <div className="md:w-1/2 relative">
+              <div className="relative h-48 md:h-full w-full overflow-hidden rounded-lg">
+                <Image
+                  src="/images/Terrains/t_shirts_act.webp"
+                  fill
+                  alt="Court de baby tennis"
+                  className="object-cover transform transition-transform hover:scale-105"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+
+
+
+      <section className="py-16 bg-gradient-to-r from-orange-50 to-green-50 rounded-3xl mb-16">
         <div className="text-center mb-12 px-4">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Réservez vos courts en ligne</h2>
           <p className="text-lg max-w-2xl mx-auto">

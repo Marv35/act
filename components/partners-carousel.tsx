@@ -99,19 +99,19 @@ const partners = [
     link: "https://www.audilab.fr/centre/audioprothesiste-cloyes-sur-le-loir/",
     target: "_blank",
   },
-    {
+  {
     name: "Le Domaine du pêcheur",
     logo: "/images/Partenaires/Domaine-pecheur.webp",
     link: "https://www.le-domaine-du-pecheur.fr/",
     target: "_blank",
   },
-    {
+  {
     name: "Le reflet d'Aurélie",
     logo: "/images/Partenaires/Reflet_aurelie.webp",
     link: "https://www.lerefletdaurelie.fr/",
     target: "_blank",
   },
-    {
+  {
     name: "Damien Guenet",
     logo: "/images/Partenaires/Damien_guenet.webp",
     link: "https://cphv41.fr/fr/bu/1016563/244974/damien-guenet",
@@ -119,12 +119,10 @@ const partners = [
   },
   {
     name: "Art Graphique Design",
-    logo: "/images/Partenaires/Art Graphique Design.webp",
+    logo: "/images/Partenaires/logo_agd.webp",
     link: "https://www.artgraphique-design.fr/",
     target: "_blank",
   },
-
-
 ]
 
 export default function PartnersCarousel() {
@@ -322,7 +320,7 @@ export default function PartnersCarousel() {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
           </svg>
         </Link>
       </div>

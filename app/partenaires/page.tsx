@@ -451,14 +451,14 @@ export default function Partenaires() {
               </div>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-              <div className="w-32 h-32 mb-4 flex items-center justify-center">
+              <div className="w-58 h-32 mb-4 flex items-center justify-center">
                 <a
                   href="https://www.artgraphique-design.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                 <Image
-                  src="/images/Partenaires/Art Graphique Design.webp"
+                  src="/images/Partenaires/logo_agd.webp"
                   alt="Logo Art Graphique Design"
                   width={250}
                   height={250}

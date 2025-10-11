@@ -50,12 +50,12 @@ export default function EffectifTabs() {
     <div className="bg-white rounded-lg p-4 shadow-md">
     {tab ===0 && (
      <>
-           <h3 className="font-bold mb-4 text-black">Historique des effectifs</h3>
+           <h3 className="font-bold mb-4 text-black">Historique des licenciés</h3>
      </>
     )}
         {tab ===1 && (
      <>
-          <h3 className="font-bold mb-4 text-black">Historique des effectifs</h3>
+          <h3 className="font-bold mb-4 text-black">Historique des licenciés</h3>
      </>
     )}
         {tab ===2 && (
