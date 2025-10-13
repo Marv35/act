@@ -100,12 +100,6 @@ const partners = [
     target: "_blank",
   },
   {
-    name: "Le Domaine du pêcheur",
-    logo: "/images/Partenaires/Domaine-pecheur.webp",
-    link: "https://www.le-domaine-du-pecheur.fr/",
-    target: "_blank",
-  },
-  {
     name: "Le reflet d'Aurélie",
     logo: "/images/Partenaires/Reflet_aurelie.webp",
     link: "https://www.lerefletdaurelie.fr/",
