@@ -318,7 +318,7 @@ export default function Partenaires() {
                 <p className="text-sm text-gray-600">Audioprothésiste</p>
               </div>
             </div>
-          /*
+          {/*
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-48 h-32 mb-4 flex items-center justify-center">
                 <a
@@ -339,7 +339,7 @@ export default function Partenaires() {
                 <h3 className="font-bold mb-1">Le Domaine du Pêcheur</h3>
                 <p className="text-sm text-gray-600">Magasin de pêche à Cloyes sur le loir</p>
               </div>
-            </div>*/
+            </div>*/}
 
             <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <div className="w-32 h-32 mb-4 flex items-center justify-center">
