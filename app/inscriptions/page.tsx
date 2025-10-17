@@ -96,6 +96,43 @@ export default function Inscriptions() {
               <h2 className="text-2xl font-semibold text-green-600">Tarifs ACT saison 2025 / 2026</h2>
             </div>
 
+                        {/* Cotisation Découverte 3 mois */}
+         <div className="mb-8">
+           <div className="bg-green-600 text-white p-3 rounded-t-lg">
+            <h3 className="font-bold">Cotisation Découverte 3 mois</h3>
+            </div>
+              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
+          <p className="mb-2">Accès aux terrains pendant 3 mois, compétition NON autorisée.<br />
+            Valable 3 mois maximum, une fois par saison, la licence Découverte s’adresse à tous les non licenciés sans restriction. Elle est accessible tout au long de l’année (sauf les moins de 15 ans : à partir du 25 mars).
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[400px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-green-100">
+            <th className="border p-2 text-left">Cotisation</th>
+            <th className="border p-2 text-left">Licence Découverte (€)</th>
+            <th className="border p-2 text-left">Adhésion (€)</th>
+            <th className="border p-2 text-left font-bold">TOTAL (€)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white">
+            <td className="border p-2 font-medium">Adulte</td>
+            <td className="border p-2">4</td>
+            <td className="border p-2">30</td>
+            <td className="border p-2 font-bold">34</td>
+                </tr>
+                <tr className="bg-gray-50">
+            <td className="border p-2 font-medium">Enfant</td>
+            <td className="border p-2">4</td>
+            <td className="border p-2">20</td>
+            <td className="border p-2 font-bold">24</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+          </div>
+        </div>  
             {/* Cotisation Annuelle */}
             <div className="mb-8">
               <div className="bg-green-600 text-white p-3 rounded-t-lg">
@@ -216,43 +253,7 @@ export default function Inscriptions() {
               </div>
             </div>
 
-            {/* Cotisation Découverte 3 mois */}
-            <div className="mb-8">
-              <div className="bg-green-600 text-white p-3 rounded-t-lg">
-          <h3 className="font-bold">Cotisation Découverte 3 mois</h3>
-              </div>
-              <div className="border border-t-0 border-gray-200 p-4 rounded-b-lg bg-gray-50">
-          <p className="mb-2">Accès aux terrains pendant 3 mois, compétition NON autorisée.<br />
-            Valable 3 mois maximum, une fois par saison, la licence Découverte s’adresse à tous les non licenciés sans restriction. Elle est accessible tout au long de l’année (sauf les moins de 15 ans : à partir du 25 mars).
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[400px] border-collapse text-sm">
-              <thead>
-                <tr className="bg-green-100">
-            <th className="border p-2 text-left">Cotisation</th>
-            <th className="border p-2 text-left">Licence Découverte (€)</th>
-            <th className="border p-2 text-left">Adhésion (€)</th>
-            <th className="border p-2 text-left font-bold">TOTAL (€)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-white">
-            <td className="border p-2 font-medium">Adulte</td>
-            <td className="border p-2">4</td>
-            <td className="border p-2">30</td>
-            <td className="border p-2 font-bold">34</td>
-                </tr>
-                <tr className="bg-gray-50">
-            <td className="border p-2 font-medium">Enfant</td>
-            <td className="border p-2">4</td>
-            <td className="border p-2">20</td>
-            <td className="border p-2 font-bold">24</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-              </div>
-            </div>
+
 
             {/* Cotisation Annuelle sans licence ACT */}
             <div className="mb-8">
