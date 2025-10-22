@@ -253,7 +253,7 @@ export default function Club() {
             <h3 className="text-lg font-semibold mb-3">Les membres du bureau</h3>
             <div className="bg-white p-6 rounded-lg shadow-md mb-8">
               <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {["Séverine TORAILLE", "Séverine VENDÉ", "Guillaume VENDÉ", "Fred COLLIN", "Vincent BRETEL", "Maël BRETEL"].map(
+                {["Séverine TORAILLE", "Séverine VENDÉ", "Guillaume VENDÉ", "Frédéric COLLIN", "Vincent BRETEL", "Maël BRETEL", "Envel ARCHENAULT"].map(
                   (member, index) => (
                     <li key={index} className="flex items-center">
                       <span className="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3">
