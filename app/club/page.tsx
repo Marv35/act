@@ -266,50 +266,89 @@ export default function Club() {
               </ul>
             </div>
           </div>
+        <div>
           <div>
-          <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Notre entraîneur</h3>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="md:flex">
-                <div className="md:flex-shrink-0 md:w-1/3">
-                  <div className="relative h-80 md:h-full">
-                    <Image
-                      src="/images/Personnes/Daniel_act.webp"
-                      alt="Daniel TEROUINARD, entraîneur de tennis à Cloyes-les-Trois-Rivières"
-                      fill
-                      className="object-cover object-top" // Ajout de object-top pour montrer le haut de l'image
-                    />
-                  </div>
-                </div>
-                <div className="p-6 md:p-8">
+            <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Nos entraîneurs</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Daniel TEROUINARD */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div className="p-6 md:p-8 flex-1">
                   <div className="flex items-center mb-4">
-                    <div className="bg-green-600 text-white p-2 rounded-full mr-3">🎾</div>
-                    <h4 className="text-xl font-bold">Daniel TEROUINARD</h4>
+                  <div className="bg-green-600 text-white p-2 rounded-full mr-3">🎾</div>
+                  <h4 className="text-xl font-bold">Daniel TEROUINARD</h4>
                   </div>
                   <p className="text-gray-600 mb-4">
-                    Notre entraîneur diplômé d'État accompagne les joueurs de tous niveaux, des débutants aux
-                    compétiteurs confirmés.
+                  Notre entraîneur diplômé d'État accompagne les joueurs de tous niveaux, des débutants aux compétiteurs confirmés.
                   </p>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h5 className="font-semibold mb-2">Ses spécialités</h5>
-                    <ul className="space-y-1">
-                      <li className="flex items-center">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Cours individuels et collectifs</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Préparation physique</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Stages intensifs</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="text-green-600 mr-2">✓</span>
-                        <span>Coaching en compétition</span>
-                      </li>
-                    </ul>
+                  <div className="bg-green-50 p-4 rounded-lg mb-4">
+                  <h5 className="font-semibold mb-2">Ses spécialités</h5>
+                  <ul className="space-y-1">
+                    <li className="flex items-center">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>Cours individuels et collectifs</span>
+                    </li>
+                    <li className="flex items-center">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>Préparation physique</span>
+                    </li>
+                    <li className="flex items-center">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>Organisation de stages vacances</span>
+                    </li>
+                    <li className="flex items-center">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>Animation & pédagogie ludique</span>
+                    </li>
+                  </ul>
                   </div>
+                  <div className="relative h-64 w-full">
+                  <Image
+                    src="/images/Personnes/Daniel_act.webp"
+                    alt="Daniel TEROUINARD, entraîneur de tennis à Cloyes-les-Trois-Rivières"
+                    fill
+                    className="object-cover object-top rounded-lg"
+                    style={{ objectPosition: "top" }}
+                  />
+                  </div>
+                </div>
+              </div>
+                {/* Jordan */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div className="p-6 md:p-8 flex-1">
+                  <div className="flex items-center mb-4">
+                  <div className="bg-green-600 text-white p-2 rounded-full mr-3">🎾</div>
+                  <h4 className="text-xl font-bold">Jordan </h4>
+                  </div>
+                  <p className="text-gray-600 mb-4">
+                  Jordan, notre nouveau coach passionné de tennis, rejoint l'équipe du club pour encadrer les jeunes et proposer des séances adaptées à tous les âges.
+                  </p>
+                  <div className="bg-green-50 p-4 rounded-lg mb-4">
+                  <h5 className="font-semibold mb-2">Ses spécialités</h5>
+                  <ul className="space-y-1">
+                    <li className="flex items-center">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>Cours individuels et collectifs</span>
+                    </li>
+                    <li className="flex items-center">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>Coaching en compétition</span>
+                    </li>
+                    <li className="flex items-center">
+                    <span className="text-green-600 mr-2">✓</span>
+                    <span>Préparation physique</span>
+                    </li>
+                  </ul>
+                  </div>
+                  <div className="relative h-64 w-full">
+                  <Image
+                    src="/images/Personnes/Jordan_act.webp"
+                    alt="Jordan, entraîneur de tennis à Cloyes-les-Trois-Rivières"
+                    fill
+                    className="object-cover object-top rounded-lg"
+                    style={{ objectPosition: "top" }}
+                  />
+                  </div>
+                </div> 
                 </div>
               </div>
             </div>
