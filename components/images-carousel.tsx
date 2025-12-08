@@ -7,6 +7,7 @@ import Image from "next/image"
 // Tableau des images à afficher dans le carrousel
 const images = [
   { src: "/images/Terrains/Terrain_soir_feu.webp", alt: "Terrain de tennis le soir avec un feu d'artifice" },
+  { src: "/images/Terrains/photo_drone.webp", alt: "Terrain de tennis filmer par un drone"},
   { src: "/images/Terrains/Courts_1_2.webp", alt: "Terrains de tennis" },
   { src : "/images/Personnes/directeur_secretaire_coach_vigier_chevallier.webp", alt: " Directeur Christophe Toraille, secrétaire Jean-Charles Pouzier, coach Daniel Terouinard, Philippe Vigier, Jean-Pierre Chevallier" },
   { src: "/images/Terrains/Terrain_coucher_soleil.webp", alt: "Terrain au coucher du soleil" },
@@ -19,7 +20,7 @@ const images = [
   { src: "/images/Terrains/Jeter_de_balles.webp", alt: "Jeter des balles dans membres du club" },
   { src: "/images/Terrains/Court_3-4_travaux_de_nuit.webp", alt: "Court 3-4 travaux de nuit" },
   { src: "/images/Terrains/Court_2.webp", alt: "Court 2" },
-  { src: "/images/Terrains/Terrain_salle_construction.webp", alt: "Terrain salle de construction" },
+  { src: "/images/Terrains/photo_drone_3_4", alt: "Terrain de tennis numero 3 et 4 filmer par un drone" },
   { src: "/images/Terrains/court_arc_en_ciel.webp", alt: "Court arc-en-ciel" },
   { src: "/images/Terrains/Photo_groupe.webp", alt: "Photo de groupe" },
   { src: "/images/Terrains/Vue_tous_les_courts.webp", alt: "Vue de l'ensemble des courts nouvelles scructures terrains 3 et 4" },
@@ -95,3 +96,4 @@ export default function ImagesCarousel() {
     </div>
   )
 }
+
