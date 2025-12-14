@@ -275,7 +275,10 @@ export default function Club() {
                 <div className="p-6 md:p-8 flex-1">
                   <div className="flex items-center mb-4">
                   <div className="bg-green-600 text-white p-2 rounded-full mr-3">🎾</div>
+                  <div>
                   <h4 className="text-xl font-bold">Daniel TEROUINARD</h4>
+                  <span className="text-sm text-gray-600">Meilleur classement : 4/6</span>
+                  </div>
                   </div>
                   <p className="text-gray-600 mb-4">
                   Notre entraîneur diplômé d'État accompagne les joueurs de tous niveaux, des débutants aux compétiteurs confirmés.
@@ -283,22 +286,22 @@ export default function Club() {
                   <div className="bg-green-50 p-4 rounded-lg mb-4">
                   <h5 className="font-semibold mb-2">Ses spécialités</h5>
                   <ul className="space-y-1">
-                    <li className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Cours individuels et collectifs</span>
-                    </li>
-                    <li className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Préparation physique</span>
-                    </li>
-                    <li className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Organisation de stages vacances</span>
-                    </li>
-                    <li className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Animation & pédagogie ludique</span>
-                    </li>
+                  <li className="flex items-center">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span>Cours individuels et collectifs</span>
+                  </li>
+                  <li className="flex items-center">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span>Préparation physique</span>
+                  </li>
+                  <li className="flex items-center">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span>Organisation de stages vacances</span>
+                  </li>
+                  <li className="flex items-center">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span>Animation & pédagogie ludique</span>
+                  </li>
                   </ul>
                   </div>
                   <div className="relative h-64 w-full">
@@ -312,15 +315,18 @@ export default function Club() {
                   </div>
                 </div>
               </div>
-                {/* Jordan */}
+                {/* Jordan Colas */}
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
                 <div className="p-6 md:p-8 flex-1">
                   <div className="flex items-center mb-4">
                   <div className="bg-green-600 text-white p-2 rounded-full mr-3">🎾</div>
-                  <h4 className="text-xl font-bold">Jordan </h4>
+                  <div>
+                  <h4 className="text-xl font-bold">Jordan Colas</h4>
+                  <span className="text-sm text-gray-600">Meilleur classement : 5/6</span>
+                  </div>
                   </div>
                   <p className="text-gray-600 mb-4">
-                  Jordan, notre nouveau coach passionné de tennis, rejoint l'équipe du club pour encadrer les jeunes et proposer des séances adaptées à tous les âges.
+                  Notre nouveau coach diplômé d'États, rejoint l'équipe du club pour encadrer les jeunes et proposer des séances adaptées à tous les âges.
                   </p>
                   <div className="bg-green-50 p-4 rounded-lg mb-4">
                   <h5 className="font-semibold mb-2">Ses spécialités</h5>
