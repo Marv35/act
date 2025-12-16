@@ -110,16 +110,17 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-green-700">Annonce importante</h3>
               </div>
               <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
-                <h4 className="font-semibold text-lg mb-3">Reprise des cours de tennis 🎾</h4>
+                <h4 className="font-semibold text-lg mb-3">Actualités du club 🎾</h4>
                 <p className="mb-4 text-gray-700">
-                  Les cours de tennis ont repris dans une ambiance conviviale et pleine d’énergie !
-                  <br />Cette saison marque aussi le lancement de notre nouveau programme <strong>“Baby Tennis”</strong>, qui rencontre déjà un très beau succès auprès des plus jeunes.
-                  <br />Nous avons également le plaisir d’accueillir <strong>Jordan, notre nouveau coach</strong>, qui viendra renforcer l’équipe aux côtés de Daniel, présent depuis de nombreuses années au club.
-                  <br /><strong>Le tournoi interne vient tout juste de commencer</strong>, avec déjà de belles performances et une participation record !
-                  <br />Cette année, vous êtes nombreux à nous rejoindre, et nous vous remercions chaleureusement pour votre confiance et votre enthousiasme !
-                  <br />Notre nouvelle structure représente un véritable atout pour le club, et nous tenons à remercier la commune de Cloyes-les-Trois-Rivières pour la concrétisation de ce projet <strong>très apprécié</strong>.
+                  La saison de tennis se poursuit dans une ambiance conviviale et motivante au sein du club.
+                  <br />Les cours de tennis se déroulent très bien, avec une forte implication des joueurs de tous âges, et le programme <strong>“Baby Tennis”</strong> continue de rencontrer un beau succès auprès des plus jeunes.
+                  <br />Nous sommes heureux de pouvoir compter sur <strong>Jordan, notre coach</strong>, aux côtés de Daniel, présent depuis de nombreuses années au club, pour accompagner les joueurs tout au long de la saison.
+                  <br /><strong>Le tournoi interne est désormais terminé</strong> : bravo à <strong>Marlène et Émilien</strong> pour leurs belles victoires en finales 👏, ainsi qu’à l’ensemble des participants pour leur esprit sportif.
+                  <br />Nous vous remercions chaleureusement pour votre confiance et votre fidélité, et sommes ravis de vous voir toujours plus nombreux au sein du club.
+                  <br />Notre nouvelle structure reste un véritable atout pour le club, et nous remercions la commune de Cloyes-les-Trois-Rivières pour la concrétisation de ce projet <strong>très apprécié</strong>.
                   <br />Un grand merci également à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés dans cette belle aventure sportive et humaine.
-                  </p>
+                  <br />Si vous avez des questions, des suggestions ou des idées d’amélioration, <strong>n’hésitez pas à nous contacter</strong>.
+                </p>
                 <p className="mb-4 text-gray-700">Bon tennis à tous 🎾😉 !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
               </div>
