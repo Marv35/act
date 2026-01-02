@@ -117,9 +117,8 @@ export default function Home() {
                   <br />Nous vous remercions chaleureusement pour votre confiance et votre fidélité, et sommes ravis de vous voir toujours plus nombreux au sein du club.
                   <br />Notre nouvelle structure reste un véritable atout pour le club, et nous remercions la commune de Cloyes-les-Trois-Rivières pour la concrétisation de ce projet <strong>très apprécié</strong>.
                   <br />Un grand merci également à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés dans cette belle aventure sportive et humaine.
-                  <br />Pour finaliser complètement le projet, nous souhaitons installer un système de fermeture par bâches. Ouvertes aux beaux jours, elles permettront de profiter de terrains couverts aérés et frais. Fermées l'hiver, 
-                  <br />nous profiterons d'une vraie salle, abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvants nous aider financièrement à faire aboutir notre projet. 
-                  <br />Prochaine échéance : championnat par équipe avec 3 équipes hommes engagées. Dates des rencontres : 11/01, 18/01, 25/01, 01/02 et 08/02.
+                  <br />Pour finaliser complètement le projet, nous souhaitons installer un système de fermeture par bâches. Ouvertes aux beaux jours, elles permettront de profiter de terrains couverts aérés et frais. Fermées l'hiver, nous profiterons d'une vraie salle, abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvants nous aider financièrement à faire aboutir notre projet. 
+                  <br />Prochaine échéance : championnat par équipe avec 3 équipes hommes engagées. <strong>Dates des rencontres : 11/01, 18/01, 25/01, 01/02 et 08/02.</strong>
 
                 </p>
                 <p className="mb-4 text-gray-700">Excellente année à tous et bon tennis 🎾😉 !</p>
