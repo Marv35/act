@@ -142,7 +142,7 @@ export default function Home() {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                   <p className="text-white text-sm">
                     <Calendar className="inline-block mr-1 h-4 w-4" />
-                    Mise à jour : Octobre 2025
+                    Mise à jour : Janvier 2026
                   </p>
                 </div>
               </div>
