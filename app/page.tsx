@@ -134,7 +134,7 @@ export default function Home() {
             <div className="md:w-1/2 relative">
               <div className="relative h-64 md:h-full w-full overflow-hidden rounded-lg">
                 <Image
-                  src="/images/Terrains/court_baby_tennis.webp"
+                  src="/images/Terrains/photo_drone_3_4.webp"
                   fill
                   alt="Court de baby tennis"
                   className="object-cover transform transition-transform hover:scale-105"
