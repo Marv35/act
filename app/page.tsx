@@ -113,15 +113,16 @@ export default function Home() {
                 <h4 className="font-semibold text-lg mb-3">Actualités du club 🎾</h4>
                 <p className="mb-4 text-gray-700">
                   La saison de tennis se poursuit dans une ambiance conviviale et motivante au sein du club.
-                  <br />Les cours de tennis se déroulent très bien, avec une forte implication des joueurs de tous âges, et le programme <strong>“Baby Tennis”</strong> continue de rencontrer un beau succès auprès des plus jeunes.
-                  <br />Nous sommes heureux de pouvoir compter sur <strong>Jordan, notre coach</strong>, aux côtés de Daniel, présent depuis de nombreuses années au club, pour accompagner les joueurs tout au long de la saison.
                   <br /><strong>Le tournoi interne est désormais terminé</strong> : bravo à <strong>Marlène et Émilien</strong> pour leurs belles victoires en finales 👏, ainsi qu’à l’ensemble des participants pour leur esprit sportif.
                   <br />Nous vous remercions chaleureusement pour votre confiance et votre fidélité, et sommes ravis de vous voir toujours plus nombreux au sein du club.
                   <br />Notre nouvelle structure reste un véritable atout pour le club, et nous remercions la commune de Cloyes-les-Trois-Rivières pour la concrétisation de ce projet <strong>très apprécié</strong>.
                   <br />Un grand merci également à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés dans cette belle aventure sportive et humaine.
-                  <br />Si vous avez des questions, des suggestions ou des idées d’amélioration, <strong>n’hésitez pas à nous contacter</strong>.
+                  <br />Pour finaliser complètement le projet, nous souhaitons installer un système de fermeture par bâches. Ouvertes aux beaux jours, elles permettront de profiter de terrains couverts aérés et frais. Fermées l'hiver, 
+                  <br />nous profiterons d'une vraie salle, abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvants nous aider financièrement à faire aboutir notre projet. 
+                  <br />Prochaine échéance : championnat par équipe avec 3 équipes hommes engagées. Dates des rencontres : 11/01, 18/01, 25/01, 01/02 et 08/02.
+
                 </p>
-                <p className="mb-4 text-gray-700">Bon tennis à tous 🎾😉 !</p>
+                <p className="mb-4 text-gray-700">Excellente année à tous et bon tennis 🎾😉 !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
               </div>
               <div className="flex">
