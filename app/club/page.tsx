@@ -132,7 +132,7 @@ export default function Club() {
                 </p>
                 <div className="mt-3 flex items-center text-sm text-green-600">
                   <MapPin className="h-4 w-4 mr-1" />
-                  <span>Rue de Châteaudun, 28220 Cloyes-les-Trois-Rivières</span>
+                  <span>9 Rte de Montigny, 28220 Cloyes-les-Trois-Rivières</span>
                 </div>
               </div>
             </div>
