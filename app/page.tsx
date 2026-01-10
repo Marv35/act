@@ -65,13 +65,13 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/Terrains/Terrain_coucher_soleil.webp"
-              alt="Terrain de tennis au coucher du soleil"
+              src="/images/Terrains/acces_pmr.webp"
+              alt="Accès PMR au club de tennis"
               fill
               className="object-cover hover:scale-110 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end">
-              <p className="text-white p-4">Court en soirée</p>
+              <p className="text-white p-4">Accès PMR</p>
             </div>
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
@@ -85,6 +85,7 @@ export default function Home() {
               <p className="text-white p-4">Court collectif</p>
             </div>
           </div>
+          
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/Terrains/Court_4.webp"

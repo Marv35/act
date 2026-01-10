@@ -1,5 +1,7 @@
 import ContactForm from "@/components/contact-form"
 import { Mail, Phone, MapPin } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function Contact() {
   return (
@@ -127,24 +129,6 @@ export default function Contact() {
             ></iframe>
           </div>
         </div>
-
-        {/* Logo de la ville */}
-        {/*<div className="flex justify-center mb-12">
-          <Link
-            href="https://www.cloyeslestroisrivieres.fr/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
-          >
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20cloyes-LxZEfiEUZelj4NcJ51UNuTWJdlQpc8.png"
-              alt="Logo Cloyes les Trois Rivières Naturellement"
-              width={300}
-              height={100}
-              className="object-contain"
-            />
-          </Link>
-        </div>*/}
       </div>
     </div>
   )
