@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import { MapPin } from "lucide-react" 
+import { MapPin, Pen } from "lucide-react" 
 import { useEffect, useState } from "react"
 import EffectifTabs from "@/components/effectif-tabs"
 
@@ -347,4 +347,4 @@ export default function Club() {
       </div>
     </div>
   )
-}
+}   
