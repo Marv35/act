@@ -118,14 +118,14 @@ export default function Home() {
                   <br />Un grand merci également à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés dans cette belle aventure sportive et humaine.
                   <br />Pour finaliser complètement le projet, nous souhaitons installer un système de fermeture par bâches. Ouvertes aux beaux jours, elles permettront de profiter de terrains couverts aérés et frais. Fermées l'hiver, nous profiterons d'une vraie salle, abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvants nous aider financièrement à faire aboutir notre projet. 
                   <br /><strong>Les championnats de printemps </strong>arrivent à grands pas : 3 équipes hommes, 1 équipe femme et 1 équipe jeune sont engagés.
-                  <br />Dates des rencontres Hommes et Femmes :<strong> 26/04, 03/05, 10/05, 31/05, 07/06.</strong>
-                  <br />Dates des rencontres Jeunes :<strong> 20/05, 27/05, 03/06, 10/06, 17/06.</strong>
+                  <br />Dates des rencontres Hommes et Femmes :<strong> 26/04, 03/05, 10/05, 31/05, 07/06. </strong>
+                  <br />Dates des rencontres Jeunes :<strong> 20/05, 27/05, 03/06, 10/06, 17/06. </strong>
                   <br />
                 </p>
                   <h4 className="font-semibold text-lg mb-3">Prochaines échéances</h4>
                 <p className="mb-4 text-gray-700">
-                  <strong>Samedi 13 juin 2026, fête du tennis de 9h à 16h.</strong>Cette journée s'adresse à tous (licenciés ou non) et permet aux jeunes et moins jeunes, de se retrouver sur nos terrains pour pratiquer notre sport favori. Au-delà de nos licenciés, cette journée a aussi pour objectif de donner la possibilité à ceux qui ne pratiquent pas le tennis de le découvrir ! N’hésitez pas à nous contacter pour avoir plus de renseignements.
-                  <br /> <strong>Du 26 juin au 14 juillet 2026, Tournoi Open 2026.</strong>Inscriptions via TenUp ou en nous contactant.
+                  <strong>Samedi 13 juin 2026, fête du tennis de 9h à 16h. </strong>Cette journée s'adresse à tous (licenciés ou non) et permet aux jeunes et moins jeunes, de se retrouver sur nos terrains pour pratiquer notre sport favori. Au-delà de nos licenciés, cette journée a aussi pour objectif de donner la possibilité à ceux qui ne pratiquent pas le tennis de le découvrir ! N’hésitez pas à nous contacter pour avoir plus de renseignements.
+                  <br /> <strong>Du 26 juin au 14 juillet 2026, Tournoi Open 2026. </strong>Inscriptions via TenUp ou en nous contactant.
                 </p>
                 <p className="mb-4 text-gray-700">Bon Tennis à tous🎾😉 !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
