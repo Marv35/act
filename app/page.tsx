@@ -114,15 +114,20 @@ export default function Home() {
                 <h4 className="font-semibold text-lg mb-3">Actualités du club 🎾</h4>
                 <p className="mb-4 text-gray-700">
                   La saison de tennis se poursuit dans une ambiance conviviale et motivante au sein du club.
-                  <br /><strong>Le tournoi interne est désormais terminé</strong> : bravo à <strong>Marlène et Émilien</strong> pour leurs belles victoires en finales 👏, ainsi qu’à l’ensemble des participants pour leur esprit sportif.
-                  <br />Nous vous remercions chaleureusement pour votre confiance et votre fidélité, et sommes ravis de vous voir toujours plus nombreux au sein du club.
-                  <br />Notre nouvelle structure reste un véritable atout pour le club, et nous remercions la commune de Cloyes-les-Trois-Rivières pour la concrétisation de ce projet <strong>très apprécié</strong>.
+                  
                   <br />Un grand merci également à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés dans cette belle aventure sportive et humaine.
                   <br />Pour finaliser complètement le projet, nous souhaitons installer un système de fermeture par bâches. Ouvertes aux beaux jours, elles permettront de profiter de terrains couverts aérés et frais. Fermées l'hiver, nous profiterons d'une vraie salle, abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvants nous aider financièrement à faire aboutir notre projet. 
-                  <br />Prochaine échéance : championnat par équipe avec 3 équipes hommes engagées. <strong>Dates des rencontres : 11/01, 18/01, 25/01, 01/02 et 08/02.</strong>
-
+                  <br /><strong>Les championnats de printemps </strong>arrivent à grands pas : 3 équipes hommes, 1 équipe femme et 1 équipe jeune sont engagés.
+                  <br />Dates des rencontres Hommes et Femmes :<strong> 26/04, 03/05, 10/05, 31/05, 07/06.</strong>
+                  <br />Dates des rencontres Jeunes :<strong> 20/05, 27/05, 03/06, 10/06, 17/06.</strong>
+                  <br />
                 </p>
-                <p className="mb-4 text-gray-700">Excellente année à tous et bon tennis 🎾😉 !</p>
+                  <h4 className="font-semibold text-lg mb-3">Prochaines échéances</h4>
+                <p className="mb-4 text-gray-700">
+                  <strong>Samedi 13 juin 2026, fête du tennis de 9h à 16h.</strong>Cette journée s'adresse à tous (licenciés ou non) et permet aux jeunes et moins jeunes, de se retrouver sur nos terrains pour pratiquer notre sport favori. Au-delà de nos licenciés, cette journée a aussi pour objectif de donner la possibilité à ceux qui ne pratiquent pas le tennis de le découvrir ! N’hésitez pas à nous contacter pour avoir plus de renseignements.
+                  <br /> <strong>Du 26 juin au 14 juillet 2026, Tournoi Open 2026.</strong>Inscriptions via TenUp ou en nous contactant.
+                </p>
+                <p className="mb-4 text-gray-700">Bon Tennis à tous🎾😉 !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
               </div>
               <div className="flex">
@@ -134,7 +139,7 @@ export default function Home() {
             <div className="md:w-1/2 relative">
               <div className="relative h-64 md:h-full w-full overflow-hidden rounded-lg">
                 <Image
-                  src="/images/Terrains/act_neige.webp"
+                  src="/images/Terrains/acces_pmr_nuit.webp"
                   fill
                   alt="Court de baby tennis"
                   className="object-cover transform transition-transform hover:scale-105"
@@ -142,7 +147,7 @@ export default function Home() {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                   <p className="text-white text-sm">
                     <Calendar className="inline-block mr-1 h-4 w-4" />
-                    Mise à jour : Janvier 2026
+                    Mise à jour : Avril 2026
                   </p>
                 </div>
               </div>
