@@ -129,6 +129,20 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center text-sm text-gray-200">
           <p>&copy; {new Date().getFullYear()} Association Cloysienne de Tennis - Maël - Tous droits réservés</p>
+          <div className="mt-3 flex justify-center space-x-4">
+            <Link 
+              href="/mentions-legales" 
+              className="hover:text-yellow-300 transition-colors underline"
+            >
+              Mentions Légales
+            </Link>
+            <Link 
+              href="/politique-confidentialite" 
+              className="hover:text-yellow-300 transition-colors underline"
+            >
+              Politique de Confidentialité
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,5 +1,3 @@
-// Script Node.js à lancer en local pour scraper les effectifs TenUp et générer le fichier public/tenup-effectif.json
-
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
@@ -7,14 +5,12 @@ const { execSync } = require('child_process');
 
 // Fonction principale de scraping : ouvre la page du club sur TenUp et extrait les effectifs
 async function scrapeEffectif() {
-  // Lancement du navigateur Puppeteer (mode sans sandbox pour compatibilité serveur/local)
+  // Lancement du navigateur Puppeteer
   const browser = await puppeteer.launch({
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
   const page = await browser.newPage();
-  // Accès à la page du club (remplacer l'URL si besoin)
   await page.goto('https://tenup.fft.fr/club/53280682/groupe', { waitUntil: 'networkidle2' });
-  // Prend un screenshot pour debug
   await page.screenshot({ path: 'debug-tenup.png', fullPage: true });
 
   // DEBUG : Affiche le HTML de la page pour vérifier la présence du sélecteur
@@ -25,12 +21,11 @@ async function scrapeEffectif() {
   const selector = '.block-color-wrapper.block-new-ficheclub.block-tags.block-effectif-club .effectif-chiffre';
   const exists = await page.$(selector);
   if (!exists) {
-    console.error(`❌ Sélecteur non trouvé : ${selector}. Vérifie debug-tenup.png et debug-tenup.html`);
+    console.error(`Sélecteur non trouvé : ${selector}. Vérifie debug-tenup.png et debug-tenup.html`);
     await browser.close();
     return { total: null, jeunes: null, adultes: null };
   }
-
-  // Attend le sélecteur (inutile si déjà trouvé, mais garde pour robustesse)
+  // Attend le sélecteur 
   await page.waitForSelector(selector, { timeout: 30000 });
   // Récupération des chiffres (total, jeunes, adultes) depuis la page
   const chiffres = await page.$$eval(
@@ -38,11 +33,11 @@ async function scrapeEffectif() {
     els => els.map(el => parseInt(el.textContent?.trim() || '0', 10))
   );
   await browser.close();
-  // Vérification que les données sont bien présentes
+
   if (chiffres.length < 3) {
     return { total: null, jeunes: null, adultes: null };
   }
-  // Retourne un objet avec les effectifs
+
   return {
     total: chiffres[0],
     jeunes: chiffres[1],
@@ -71,20 +66,19 @@ function dataChanged(newData, currentData) {
 
     if (dataChanged(data, currentData)) {
       fs.writeFileSync(outPath, JSON.stringify(data, null, 2), 'utf-8');
-      console.log('✅ Données modifiées, fichier mis à jour :', data);
+      console.log('Données modifiées, fichier mis à jour :', data);
 
-      // Appelle le script d'ajout à l'historique juste après la mise à jour
       try {
         execSync('node scripts/add-to-historique.js', { stdio: 'inherit', cwd: path.join(__dirname, '..') });
-        console.log('🕓 Historique mis à jour automatiquement.');
+        console.log('Historique mis à jour automatiquement.');
       } catch (err) {
-        console.error('❌ Erreur lors de la mise à jour de l\'historique :', err);
+        console.error('Erreur lors de la mise à jour de l\'historique :', err);
       }
     } else {
-      console.log('ℹ️ Données identiques, aucune mise à jour.');
+      console.log('Données identiques, aucune mise à jour.');
     }
   } catch (e) {
-    console.error('❌ Erreur lors du scraping :', e);
+    console.error('Erreur lors du scraping :', e);
     process.exit(1);
   }
 })();
