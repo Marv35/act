@@ -136,7 +136,7 @@ export default function PolitiqueConfidentialite() {
                 href="mailto:tennis.cloyes@orange.fr?subject=Demande%20RGPD" 
                 className="text-xl font-semibold text-green-600 hover:underline"
               >
-                tennis.cloyes@orange.fr
+                actennis28@gmail.com
               </a>
             </div>
             <p className="text-gray-600 text-sm mt-4 text-center">
