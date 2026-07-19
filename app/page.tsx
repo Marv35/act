@@ -113,7 +113,7 @@ export default function Home() {
               <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
                 <h4 className="font-semibold text-lg mb-3">Actualités du club 🎾</h4>
                 <p className="mb-4 text-gray-700">
-                      La saison de tennis 2026 touche à sa fin                  
+                      La saison de tennis 2026 touche à sa fin.                 
                   <br />Un grand merci à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés durant cette saison.
                   <br />Pour finaliser complètement notre projet, nous souhaitons installer un système de fermeture par bâches.
                   <br />Ouvertes aux beaux jours, elles permettront de profiter de terrains aérés et frais, fermées l’hiver, nous profiterons d’une vraie salle abritée du vent et du froid. Nous sommes en recherchede mécènes et partenaires pouvant nous aider financièrement à faire aboutir notre projet.
@@ -136,8 +136,8 @@ export default function Home() {
                 <h4 className="font-semibold text-lg mb-3">Tournoi open 2026</h4>
                 <p className="mb-4 text-gray-700">
 Nous vous donnons rendez-vous aux journées d’information et d’inscription 2027 au club, 6 route de Montigny 28220 Cloyes-sur-le-Loir, présence de Daniel notre entraîneur, les :
-
--        Mercredi 2 septembre de 16h à 20h
+<br />
+-        Mercredi 2 septembre de 16h à 20h < br/>
 -        Samedi 5 septembre de 10h à 18h             
                 </p>
                 
