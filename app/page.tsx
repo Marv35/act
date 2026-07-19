@@ -113,20 +113,34 @@ export default function Home() {
               <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
                 <h4 className="font-semibold text-lg mb-3">Actualités du club 🎾</h4>
                 <p className="mb-4 text-gray-700">
-                  La saison de tennis se poursuit dans une ambiance conviviale et motivante au sein du club.
-                  
-                  <br />Un grand merci également à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés dans cette belle aventure sportive et humaine.
-                  <br />Pour finaliser complètement le projet, nous souhaitons installer un système de fermeture par bâches. Ouvertes aux beaux jours, elles permettront de profiter de terrains couverts aérés et frais. Fermées l'hiver, nous profiterons d'une vraie salle, abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvants nous aider financièrement à faire aboutir notre projet. 
-                  <br /><strong>Les championnats de printemps </strong>arrivent à grands pas : 3 équipes hommes, 1 équipe femme et 1 équipe jeune sont engagés.
-                  <br />Dates des rencontres Hommes et Femmes :<strong> 26/04, 03/05, 10/05, 31/05, 07/06. </strong>
-                  <br />Dates des rencontres Jeunes :<strong> 20/05, 27/05, 03/06, 10/06, 17/06. </strong>
-                  <br />
+                      La saison de tennis 2026 touche à sa fin                  
+                  <br />Un grand merci à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés durant cette saison.
+                  <br />Pour finaliser complètement notre projet, nous souhaitons installer un système de fermeture par bâches.
+                  <br />Ouvertes aux beaux jours, elles permettront de profiter de terrains aérés et frais, fermées l’hiver, nous profiterons d’une vraie salle abritée du vent et du froid. Nous sommes en recherchede mécènes et partenaires pouvant nous aider financièrement à faire aboutir notre projet.
                 </p>
-                  <h4 className="font-semibold text-lg mb-3">Prochaines échéances</h4>
+                  <h4 className="font-semibold text-lg mb-3">Les championnats par équipes de printemps</h4>
                 <p className="mb-4 text-gray-700">
-                  <strong>Samedi 13 juin 2026, fête du tennis de 9h à 16h. </strong>Cette journée s'adresse à tous (licenciés ou non) et permet aux jeunes et moins jeunes, de se retrouver sur nos terrains pour pratiquer notre sport favori. Au-delà de nos licenciés, cette journée a aussi pour objectif de donner la possibilité à ceux qui ne pratiquent pas le tennis de le découvrir ! N’hésitez pas à nous contacter pour avoir plus de renseignements.
-                  <br /> <strong>Du 26 juin au 14 juillet 2026, Tournoi Open 2026. </strong>Inscriptions via TenUp ou en nous contactant.
+                5 équipes étaient engagées, résultats moyens pour l’ensemble. Les équipes devraient se maintenir dans leur division. 
                 </p>
+
+                <h4 className="font-semibold text-lg mb-3">Fête du tennis</h4>
+                <p className="mb-4 text-gray-700">
+                  Cette journée s’est passée dans la joie et la bonne humeur, rassemblant une soixantaine de participants.
+                </p>
+              
+                <h4 className="font-semibold text-lg mb-3">Tournoi open 2026</h4>
+                <p className="mb-4 text-gray-700">
+                  Nous avons vécu cette année un tournoi très particulier, dû aux fortes chaleurs. Démarrage retardé de 3 jours et stoppé 4 jours avant la fin. C’est dommage, les tableaux étaient bien garnis avec 28 participantes chez les dames et 103 participants chez les Messieurs.
+                </p>
+
+                <h4 className="font-semibold text-lg mb-3">Tournoi open 2026</h4>
+                <p className="mb-4 text-gray-700">
+Nous vous donnons rendez-vous aux journées d’information et d’inscription 2027 au club, 6 route de Montigny 28220 Cloyes-sur-le-Loir, présence de Daniel notre entraîneur, les :
+
+-        Mercredi 2 septembre de 16h à 20h
+-        Samedi 5 septembre de 10h à 18h             
+                </p>
+                
                 <p className="mb-4 text-gray-700">Bon Tennis à tous🎾😉 !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
               </div>
