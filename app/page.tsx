@@ -133,7 +133,7 @@ export default function Home() {
                   Nous avons vécu cette année un tournoi très particulier, dû aux fortes chaleurs. Démarrage retardé de 3 jours et stoppé 4 jours avant la fin. C’est dommage, les tableaux étaient bien garnis avec 28 participantes chez les dames et 103 participants chez les Messieurs.
                 </p>
 
-                <h4 className="font-semibold text-lg mb-3">Iscription 2027</h4>
+                <h4 className="font-semibold text-lg mb-3">Inscription 2027</h4>
                 <p className="mb-4 text-gray-700">
 Nous vous donnons rendez-vous aux journées d’information et d’inscription 2027 au club, 6 route de Montigny 28220 Cloyes-sur-le-Loir, présence de Daniel notre entraîneur, les :
 <br />
