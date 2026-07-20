@@ -153,7 +153,7 @@ Nous vous donnons rendez-vous aux journées d’information et d’inscription 2
             <div className="md:w-1/2 relative">
               <div className="relative h-64 md:h-full w-full overflow-hidden rounded-lg">
                 <Image
-                  src="/images/Terrains/acces_pmr_nuit.webp"
+                  src="/images/Terrains/tournoi_nuit.webp"
                   fill
                   alt="Court de baby tennis"
                   className="object-cover transform transition-transform hover:scale-105"
@@ -161,7 +161,7 @@ Nous vous donnons rendez-vous aux journées d’information et d’inscription 2
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                   <p className="text-white text-sm">
                     <Calendar className="inline-block mr-1 h-4 w-4" />
-                    Mise à jour : Avril 2026
+                    Mise à jour : Juillet 2026
                   </p>
                 </div>
               </div>
