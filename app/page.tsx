@@ -155,7 +155,7 @@ Nous vous donnons rendez-vous aux journées d’information et d’inscription 2
                 <Image
                   src="/images/Terrains/tournoi_nuit.webp"
                   fill
-                  alt="Court de baby tennis"
+                  alt="Vue du parking des terrains de tennis de nuit"
                   className="object-cover transform transition-transform hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
