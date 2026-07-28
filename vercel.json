@@ -47,7 +47,7 @@
           "value": "tennis-cloyes.vercel.app"
         }
       ],
-      "destination": "https://tenniscloyes.fr/$1",
+      "destination": "https://tenniscloyes.fr/",
       "permanent": true
     }
   ]
