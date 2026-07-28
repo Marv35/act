@@ -133,10 +133,10 @@ export default function PolitiqueConfidentialite() {
             <div className="flex items-center justify-center">
               <Mail className="h-6 w-6 text-green-600 mr-2" />
               <a 
-                href="mailto:tennis.cloyes@orange.fr?subject=Demande%20RGPD" 
+                href="mailto:actennis28@gmail.com?subject=Demande%20RGPD" 
                 className="text-xl font-semibold text-green-600 hover:underline"
               >
-                tennis.cloyes@orange.fr
+                actennis28@gmail.com
               </a>
             </div>
             <p className="text-gray-600 text-sm mt-4 text-center">

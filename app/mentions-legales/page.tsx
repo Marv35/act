@@ -22,7 +22,7 @@ export default function MentionsLegales() {
             </div>
             <div className="flex items-center mt-2">
               <Mail className="h-5 w-5 text-green-600 mr-2" />
-              <p><strong>Email :</strong> <a href="mailto:tennis.cloyes@orange.fr" className="text-green-600 hover:underline">tennis.cloyes@orange.fr</a></p>
+              <p><strong>Email :</strong> <a href="mailto:actennis28@gmail.com" className="text-green-600 hover:underline">actennis28@gmail.com</a></p>
             </div>
           </div>
         </section>
