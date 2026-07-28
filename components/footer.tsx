@@ -128,7 +128,12 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-sm text-gray-200">
-          <p>&copy; {new Date().getFullYear()} Association Cloysienne de Tennis - Maël - Tous droits réservés</p>
+          <p>
+            &copy; {new Date().getFullYear()} Association Cloysienne de Tennis - <Link 
+              href="https://github.com/Marv35/" 
+              target="_blank"
+              className="hover:text-yellow-300 transition-colors underline"
+            >Marv</Link> - Tous droits réservés</p>
           <div className="mt-3 flex justify-center space-x-4">
             <Link 
               href="/mentions-legales" 
