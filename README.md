@@ -25,5 +25,9 @@ Le site a été conçu pour répondre aux besoins d'information et de gestion du
 
 1. **Cloner le dépôt :**
    ```bash
-       git clone [https://github.com/Marv35/act.git](https://github.com/Marv35/act.git)
-       cd act
+   git clone https://github.com/Marv35/act.git
+   cd act
+   npm install
+   npm run dev 
+   
+Ouvrez votre navigateur à l'adresse **http://localhost:3000**.
