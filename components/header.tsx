@@ -69,8 +69,8 @@ export default function Header() {
             </h1>
           </div>
       
-          {/* Menu desktop : affiché uniquement sur écran très large (xl et +) */}
-          <nav className="hidden xl:block">
+          {/* Menu desktop : affiché sur les écrans larges à partir de lg */}
+          <nav className="hidden lg:block">
             <ul className="flex space-x-1 lg:space-x-4">
               {navLinks.map((link) => (
                 <li key={link.href}>

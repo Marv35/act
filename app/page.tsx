@@ -13,48 +13,69 @@ export default function Home() {
         <h1 className="sr-only">
           Association de Tennis Cloysienne (ACT) à Cloyes-les-Trois-Rivières – Tennis Cloyes, club, cours, location de courts, compétition Eure-et-Loir
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-medium">
-              Bienvenue à l'ACT
+        <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-emerald-50 via-white to-yellow-100 shadow-2xl ring-1 ring-black/5 p-6 md:p-10 reveal">
+          <div className="pointer-events-none absolute -left-16 top-12 h-48 w-48 rounded-full bg-emerald-200/40 blur-3xl animate-blob" />
+          <div className="pointer-events-none absolute right-0 top-24 h-40 w-40 rounded-full bg-yellow-200/50 blur-3xl animate-blob" style={{ animationDelay: "2s" }} />
+          <div className="pointer-events-none absolute left-1/2 -bottom-10 h-56 w-56 -translate-x-1/2 rounded-full bg-lime-200/40 blur-3xl animate-blob" style={{ animationDelay: "1s" }} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-1 rounded-full text-sm font-medium shadow-sm ring-1 ring-emerald-200">
+                Nouveautés 2026
+              </div>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-700 leading-tight tracking-tighter">
+                Rejoignez l'<span className="text-yellow-500">ACT</span> et vivez le tennis autrement.
+              </h2>
+              <p className="text-lg text-slate-700 max-w-xl">
+                Que vous soyez passionné de sport, de culture ou à la recherche de nouvelles activités, notre association
+                vous accueille dans une ambiance chaleureuse et conviviale. Des cours, des compétitions et des événements pour toute la famille.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/inscriptions"
+                  className="inline-flex items-center justify-center bg-gradient-to-r from-emerald-600 to-lime-500 text-white font-bold py-3 px-7 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                >
+                  S'inscrire <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+                <Link
+                  href="/club"
+                  className="inline-flex items-center justify-center bg-white border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-bold py-3 px-7 rounded-full shadow-sm transition-all duration-300 hover:shadow-md"
+                >
+                  Découvrir le club
+                </Link>
+              </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-green-600 leading-tight">
-              Rejoignez-nous à <span className="text-yellow-500">ACT</span> !
-            </h2> 
-            <p className="text-lg text-gray-700">
-              Que vous soyez passionné de sport, de culture ou à la recherche de nouvelles activités, notre association
-              est ouverte à tous ! Que vous soyez débutant ou expert, nous vous accueillons dans une ambiance
-              conviviale.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/inscriptions"
-                className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all hover:shadow-lg hover:-translate-y-1"
-              >
-                S'inscrire <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-              <Link
-                href="/club"
-                className="inline-flex items-center bg-white border-2 border-green-600 text-green-600 hover:bg-green-50 font-bold py-3 px-6 rounded-lg transition-all hover:shadow-md"
-              >
-                Découvrir le club
-              </Link>
+            <div className="relative flex justify-center">
+              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-100 via-transparent to-yellow-100 opacity-70 rounded-[2rem] blur-3xl" />
+              <div className="relative w-full max-w-[550px]">
+                <div className="relative overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-black/5">
+                  <div className="absolute inset-0 bg-gradient-to-br from-slate-950/10 via-transparent to-slate-50/30" />
+                  <section className="py-1 mb-2">
+                    <ImagesCarousel />
+                  </section>
+                </div>
+              </div>
             </div>
           </div>
-
-           <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gray-250 rounded-full opacity-12 blur-xl animate-pulse"></div>
-                   {/* Carousel des partenaires */}
-            <section className="py-1 mb-2">
-              <ImagesCarousel />
-            </section>
-            </div>
-          </div> 
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            {[
+              { title: "Terrains rénovés", description: "Des courts de tennis entretenus pour tous les niveaux." },
+              { title: "Ambiance conviviale", description: "Un club où la famille, les jeunes et les compétiteurs se retrouvent." },
+              { title: "Événements réguliers", description: "Tournois, soirées tennis et réunions de club tout au long de l'année." },
+              { title: "Inscription simple", description: "Réservez votre place facilement depuis notre site." },
+            ].map((card) => (
+              <div key={card.title} className="rounded-3xl border border-emerald-100 bg-white/80 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <h3 className="text-lg font-semibold text-emerald-700 mb-2">{card.title}</h3>
+                <p className="text-slate-600">{card.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex justify-center">
+            <div className="scroll-indicator" aria-hidden="true" />
+          </div>
         </div>
       </section>
       {/* Galerie de photos */}
-      <section className="py-6 mb-4">
+      <section className="py-6 mb-4 reveal reveal-delay-1">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Nos installations</h2>
           <p className="text-lg max-w-2xl mx-auto text-gray-600">
@@ -102,8 +123,8 @@ export default function Home() {
 
 
       {/* Annonce importante */}
-      <section className="py-8 mt-8">
-        <div className="bg-gradient-to-r from-yellow-50 to-green-50 rounded-xl overflow-hidden shadow-lg border border-green-100">
+      <section className="py-8 mt-8 reveal reveal-delay-2">
+        <div className="bg-gradient-to-r from-yellow-50 to-green-50 rounded-3xl overflow-hidden shadow-2xl border border-green-100">
           <div className="p-6 flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2 space-y-4">
               <div className="flex items-center gap-2">
@@ -170,7 +191,7 @@ Nous vous donnons rendez-vous aux journées d’information et d’inscription 2
         </div>
       </section>
 
-      <section className="mb-14">
+      <section className="mb-14 reveal reveal-delay-3">
         <div className="relative bg-gradient-to-br to-white rounded-2xl p-10 shadow-xl overflow-hidden">
           <div className="absolute -top-10 -left-10 w-40 h-40 bg-green-100 rounded-full opacity-30 blur-2xl pointer-events-none" />
           <h2 className="text-3xl font-extrabold text-green-700 mb-6 text-center drop-shadow-sm">
@@ -267,7 +288,7 @@ Nous vous donnons rendez-vous aux journées d’information et d’inscription 2
         </div>
       </section>
       {/* Carousel des partenaires */}
-      <section className="py-8 mb-16">
+      <section className="py-8 mb-16 reveal reveal-delay-3">
         <PartnersCarousel />
       </section>
     </div>

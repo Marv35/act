@@ -378,3 +378,95 @@ li {
   width: auto;
   margin: 0 auto;
 }
+
+/* Effets visuels modernes et animations douces */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(10px, -10px, 0) scale(1.08);
+  }
+  66% {
+    transform: translate3d(-10px, 8px, 0) scale(0.96);
+  }
+}
+
+@keyframes scrollDot {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, 12px);
+    opacity: 0.4;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: revealUp 0.85s ease-out forwards;
+}
+
+.reveal-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.reveal-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.reveal-delay-3 {
+  animation-delay: 0.45s;
+}
+
+.animate-blob {
+  animation: blob 10s ease-in-out infinite;
+}
+
+.scroll-indicator {
+  width: 30px;
+  height: 52px;
+  border: 2px solid rgba(16, 185, 129, 0.55);
+  border-radius: 9999px;
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.scroll-indicator::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: rgba(16, 185, 129, 0.8);
+  border-radius: 9999px;
+  transform: translateX(-50%);
+  animation: scrollDot 1.6s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .animate-blob,
+  .scroll-indicator::before {
+    animation: none !important;
+  }
+}
