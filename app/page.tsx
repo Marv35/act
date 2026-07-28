@@ -116,7 +116,7 @@ export default function Home() {
                       La saison de tennis 2026 touche à sa fin.                 
                   <br />Un grand merci à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés durant cette saison.
                   <br />Pour finaliser complètement notre projet, nous souhaitons installer un système de fermeture par bâches.
-                  <br />Ouvertes aux beaux jours, elles permettront de profiter de terrains aérés et frais, fermées l’hiver, nous profiterons d’une vraie salle abritée du vent et du froid. Nous sommes en recherchede mécènes et partenaires pouvant nous aider financièrement à faire aboutir notre projet.
+                  <br />Ouvertes aux beaux jours, elles permettront de profiter de terrains aérés et frais, fermées l’hiver, nous profiterons d’une vraie salle abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvant nous aider financièrement à faire aboutir notre projet.
                 </p>
                   <h4 className="font-semibold text-lg mb-3">Les championnats par équipes de printemps</h4>
                 <p className="mb-4 text-gray-700">
