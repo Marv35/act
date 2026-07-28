@@ -28,11 +28,22 @@ export default function ContactForm() {
   const [clientInfo, setClientInfo] = useState<ClientInfo | null>(null)
 
   // Détecter le type d'appareil
-  const getDeviceType = (ua: string): string => {
-    if (/mobile|android|iphone|ipad|phone/i.test(ua)) return "Mobile/Tablette"
-    if (/tablet|ipad/i.test(ua)) return "Tablette"
-    return "Ordinateur"
+const getDeviceType = (ua: string): string => {
+  if (typeof window === "undefined") return "Inconnu"
+
+  // 1. Test basé sur les capacités tactiles et la largeur d'écran (très fiable sur mobile)
+  const isTouch = navigator.maxTouchPoints > 0
+  const isSmallScreen = window.screen.width <= 1024
+
+  // 2. Test classique sur le User-Agent
+  const isMobileUA = /mobile|android|iphone|ipad|ipod|phone/i.test(ua)
+
+  if (isMobileUA || (isTouch && isSmallScreen)) {
+    return "Mobile/Tablette"
   }
+
+  return "Ordinateur"
+}
 
   // Récupérer les infos client au chargement
   useEffect(() => {

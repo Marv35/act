@@ -93,7 +93,7 @@ export default function Inscriptions() {
               <div className="bg-green-100 p-2 rounded-full mr-3">
           <FileText className="h-6 w-6 text-green-600" />
               </div>
-              <h2 className="text-2xl font-semibold text-green-600">Tarifs ACT saison 2025 / 2026</h2>
+              <h2 className="text-2xl font-semibold text-green-600">Tarifs ACT saison 2026 / 2027</h2>
             </div>
 
                         {/* Cotisation Découverte 3 mois */}
