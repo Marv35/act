@@ -118,7 +118,7 @@ export default function Home() {
                       N’hésitez pas à prendre contact avec nous pour plus de renseignements.
                       <br/>Tournoi interne 2027
                       Notre tournoi interne débutera courant octobre.
-                      </br>Vie du club
+                      <br/>Vie du club
                       Notre assemblée générale aura lieu mi octobre.
                       <br/>Bonne rentrée à tout le monde.
                 <p className="mb-4 text-gray-700">Bon Tennis à tous🎾😉 !</p>
