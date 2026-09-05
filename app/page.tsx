@@ -113,34 +113,14 @@ export default function Home() {
               <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
                 <h4 className="font-semibold text-lg mb-3">Actualités du club 🎾</h4>
                 <p className="mb-4 text-gray-700">
-                      La saison de tennis 2026 touche à sa fin.                 
-                  <br />Un grand merci à nos sponsors et partenaires pour leur soutien et leur engagement à nos côtés durant cette saison.
-                  <br />Pour finaliser complètement notre projet, nous souhaitons installer un système de fermeture par bâches.
-                  <br />Ouvertes aux beaux jours, elles permettront de profiter de terrains aérés et frais, fermées l’hiver, nous profiterons d’une vraie salle abritée du vent et du froid. Nous sommes en recherche de mécènes et partenaires pouvant nous aider financièrement à faire aboutir notre projet.
-                </p>
-                  <h4 className="font-semibold text-lg mb-3">Les championnats par équipes de printemps</h4>
-                <p className="mb-4 text-gray-700">
-                5 équipes étaient engagées, résultats moyens pour l’ensemble. Les équipes devraient se maintenir dans leur division. 
-                </p>
-
-                <h4 className="font-semibold text-lg mb-3">Fête du tennis</h4>
-                <p className="mb-4 text-gray-700">
-                  Cette journée s’est passée dans la joie et la bonne humeur, rassemblant une soixantaine de participants.
-                </p>
-              
-                <h4 className="font-semibold text-lg mb-3">Tournoi open 2026</h4>
-                <p className="mb-4 text-gray-700">
-                  Nous avons vécu cette année un tournoi très particulier, dû aux fortes chaleurs. Démarrage retardé de 3 jours et stoppé 4 jours avant la fin. C’est dommage, les tableaux étaient bien garnis avec 28 participantes chez les dames et 103 participants chez les Messieurs.
-                </p>
-
-                <h4 className="font-semibold text-lg mb-3">Inscription 2027</h4>
-                <p className="mb-4 text-gray-700">
-Nous vous donnons rendez-vous aux journées d’information et d’inscription 2027 au club, 6 route de Montigny 28220 Cloyes-sur-le-Loir, présence de Daniel notre entraîneur, les :
-<br />
--        Mercredi 2 septembre de 16h à 20h < br/>
--        Samedi 5 septembre de 10h à 18h             
-                </p>
-                
+                      C’est la rentrée tennistique, les inscriptions au club sont ouvertes.
+                      Les cours débuteront la semaine du 7 septembre avec nos moniteurs Daniel et Julien.
+                      N’hésitez pas à prendre contact avec nous pour plus de renseignements.
+                      <br/>Tournoi interne 2027
+                      Notre tournoi interne débutera courant octobre.
+                      </br>Vie du club
+                      Notre assemblée générale aura lieu mi octobre.
+                      <br/>Bonne rentrée à tout le monde.
                 <p className="mb-4 text-gray-700">Bon Tennis à tous🎾😉 !</p>
                 <p className="font-medium text-green-600">L'équipe ACT</p>
               </div>
