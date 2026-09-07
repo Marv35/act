@@ -5,7 +5,8 @@ name: Scrape TenUp Effectif
 on:
   # Planification : tous les jours à 8h UTC (pour tous les lundis à 8h, utilise '0 8 * * 1')
   schedule:
-    - cron: '0 0 1,5,15,20,25  * *' # une fois par mois 
+    # - cron: '0 0 1,5,15,20,25  * *' # une fois par mois 
+    - cron: '0 6 */3 * *' # tous les 3 jours à 6h UTC
   # Permet de lancer manuellement le workflow depuis l'interface GitHub
   workflow_dispatch:
 
