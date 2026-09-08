@@ -4,6 +4,38 @@ import Link from "next/link"
 import { MapPin, Pen } from "lucide-react" 
 import { useEffect, useState } from "react"
 import EffectifTabs from "@/components/effectif-tabs"
+import CoachList, { Coach } from "@/components/CoachList"
+
+// Données des entraîneurs
+const coachesData: Coach[] = [
+  {
+    id: "daniel-terouinard",
+    name: "Daniel TEROUINARD",
+    ranking: "4/6",
+    imageSrc: "/images/Personnes/Daniel_act.webp",
+    imageAlt: "Daniel TEROUINARD, entraîneur de tennis à Cloyes-les-Trois-Rivières",
+    description: "Notre entraîneur diplômé d'État accompagne les joueurs de tous niveaux, des débutants aux compétiteurs confirmés, avec une approche pédagogique adaptée.",
+    specialties: [
+      "Cours individuels et collectifs",
+      "Préparation physique",
+      "Organisation de stages vacances",
+      "Animation & pédagogie ludique",
+    ],
+  },
+  {
+    id: "julien-segard",
+    name: "Julien SEGARD",
+    ranking: "1/6",
+    imageSrc: "/images/Personnes/julien_segard.webp",
+    imageAlt: "Julien SEGARD, entraîneur de tennis à Cloyes-les-Trois-Rivières",
+    description: "Julien rejoint le club pour encadrer les cours compétiteurs le samedi après-midi. Il propose également un accompagnement en préparation mentale et des cours particuliers.",
+    specialties: [
+      "Cours compétiteurs (samedi après-midi)",
+      "Perfectionnement technique & tactique",
+      "Cours particuliers (semaine & samedi)",
+    ],
+  },
+]
 
 export default function Club() {  
   const [effectif, setEffectif] = useState<{ total: number | null, jeunes: number | null, adultes: number | null }>({ total: null, jeunes: null, adultes: null })
@@ -265,58 +297,9 @@ export default function Club() {
                 )}
               </ul>
             </div>
-          </div>
-        <div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Notre entraîneur</h3>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="md:flex">
-                <div className="md:flex-shrink-0 md:w-2/5">
-                  <div className="relative h-80 md:h-full min-h-96">
-                    <Image
-                      src="/images/Personnes/Daniel_act.webp"
-                      alt="Daniel TEROUINARD, entraîneur de tennis à Cloyes-les-Trois-Rivières"
-                      fill
-                      className="object-cover object-top"
-                    />
-                  </div>
-                </div>
-                <div className="p-6 md:p-8 md:w-3/5 flex flex-col justify-center">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-green-600 text-white w-12 h-12 rounded-full mr-4 flex items-center justify-center text-xl">🎾</div>
-                    <div>
-                      <h4 className="text-2xl font-bold text-gray-800">Daniel TEROUINARD</h4>
-                      <span className="text-sm text-green-600 font-semibold">Meilleur classement : 4/6</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    Notre entraîneur diplômé d'État accompagne les joueurs de tous niveaux, des débutants aux compétiteurs confirmés, avec une approche pédagogique adaptée.
-                  </p>
-                  <div className="bg-green-50 p-5 rounded-lg border border-green-200">
-                    <h5 className="font-semibold text-green-700 mb-3">Ses spécialités</h5>
-                    <ul className="space-y-2">
-                      <li className="flex items-center text-gray-700">
-                        <span className="text-green-600 mr-3 font-bold">✓</span>
-                        <span>Cours individuels et collectifs</span>
-                      </li>
-                      <li className="flex items-center text-gray-700">
-                        <span className="text-green-600 mr-3 font-bold">✓</span>
-                        <span>Préparation physique</span>
-                      </li>
-                      <li className="flex items-center text-gray-700">
-                        <span className="text-green-600 mr-3 font-bold">✓</span>
-                        <span>Organisation de stages vacances</span>
-                      </li>
-                      <li className="flex items-center text-gray-700">
-                        <span className="text-green-600 mr-3 font-bold">✓</span>
-                        <span>Animation & pédagogie ludique</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            {/* Apport du composant CoachList */}
+            <CoachList coaches={coachesData} title="Nos entraîneurs" />
+
           </div>
         </section>
         <section>
