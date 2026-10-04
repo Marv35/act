@@ -4,14 +4,18 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
-import { Instagram, Facebook } from "lucide-react"
-
+import { Menu, X, Instagram, Facebook } from "lucide-react"
 
 export default function Header() {
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isOctober, setIsOctober] = useState(false)
+
+  // Vérifie si nous sommes au mois d'octobre (mois 9 en JavaScript)
+  useEffect(() => {
+    setIsOctober(new Date().getMonth() === 9)
+  }, [])
 
   // Ajoute une classe au header quand on scrolle la page
   useEffect(() => {
@@ -32,6 +36,9 @@ export default function Header() {
   useEffect(() => {
     setMobileMenuOpen(false)
   }, [pathname])
+
+  // Image dynamique : logo rose en octobre, logo standard le reste de l'année
+  const logoSrc = isOctober ? "/images/ACT_rose.webp" : "/images/Logo_ACT_petit.webp"
 
   // Liste des liens de navigation
   const navLinks = [
@@ -56,7 +63,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/images/Logo_ACT_petit.webp"
+                src={logoSrc}
                 alt="Logo ACT"
                 width={90}
                 height={50}
@@ -68,7 +75,7 @@ export default function Header() {
               <span className="block">Cloysienne de Tennis</span>
             </h1>
           </div>
-      
+
           {/* Menu desktop : affiché uniquement sur écran très large (xl et +) */}
           <nav className="hidden xl:block">
             <ul className="flex space-x-1 lg:space-x-4">
@@ -98,24 +105,24 @@ export default function Header() {
 
           {/* Icônes réseaux sociaux */}
           <div className="flex space-x-3 mb-3">
-             <Link
-               href="https://www.instagram.com/association_tennis_cloyes_/"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="bg-green-500 hover:bg-green-400 text-white p-2 rounded-full transition-colors"
-               aria-label="Instagram"
-             >
-               <Instagram size={24} />
-             </Link>
-             <Link
-               href="https://www.facebook.com/Tenniscloyes"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="bg-green-500 hover:bg-green-400 text-white p-2 rounded-full transition-colors"
-               aria-label="Facebook"
-             >
-               <Facebook size={24} />
-             </Link>
+            <Link
+              href="https://www.instagram.com/association_tennis_cloyes_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-400 text-white p-2 rounded-full transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={24} />
+            </Link>
+            <Link
+              href="https://www.facebook.com/Tenniscloyes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-400 text-white p-2 rounded-full transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={24} />
+            </Link>
           </div>
         </div>
       </div>
