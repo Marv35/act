@@ -7,6 +7,7 @@ on:
   schedule:
     # - cron: '0 0 1,5,15,20,25  * *' # une fois par mois 
     - cron: '0 6 */3 * *' # tous les 3 jours à 6h UTC
+    - cron: '0 6 1 1 2035' # (Selon le parseur cron supporté par votre outil, certains acceptent l'année en 6ème position)
   # Permet de lancer manuellement le workflow depuis l'interface GitHub
   workflow_dispatch:
 

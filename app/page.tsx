@@ -119,22 +119,31 @@ export default function Home() {
               <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-lg p-5 shadow-inner">
                 <h4 className="font-semibold text-lg mb-3">Actualités du club 🎾</h4>
                 <p className="mb-4 text-gray-700">
-                  C’est la rentrée tennistique, les inscriptions au club sont ouvertes.
-                  Les cours débuteront la semaine du 7 septembre avec nos moniteurs Daniel et Julien.
-                  N’hésitez pas à prendre contact avec nous pour plus de renseignements.
+                  <strong>Assemblée Générale – 6 novembre</strong>
                   <br />
-                  <strong>Tournoi interne 2027</strong>
+                  Notre Assemblée Générale aura lieu le 6 novembre. Nous comptons sur votre présence !
                   <br />
-                  Notre tournoi interne débutera courant octobre.
                   <br />
-                  <strong>Vie du club</strong>
+                  <strong>Tournoi interne – Finales le 5 décembre</strong>
                   <br />
-                  Notre assemblée générale aura lieu mi-octobre.
+                  Nous sommes actuellement en plein tournoi interne, qui se clôturera le 5 décembre avec les finales.
+                  Celles-ci seront suivies d'une soirée tartiflette réservée à nos adhérents, grâce à notre partenaire traiteur Damien Guenet.
                   <br />
-                  Bonne rentrée à tout le monde.
+                  <br />
+                  <strong>Préparation aux championnats d'hiver</strong>
+                  <br />
+                  En décembre, des rencontres en double seront organisées afin de poursuivre la préparation de nos compétiteurs aux championnats d'hiver.
+                  <br />
+                  Ces championnats auront lieu les week-ends des 10, 17, 24 et 31 janvier, ainsi que le 7 février.
+                  <br />
+                  Les spectateurs seront les bienvenus pour venir encourager nos joueurs !
                 </p>
-                <p className="mb-4 text-gray-700">Bon tennis à tous 🎾😉 !</p>
-                <p className="font-medium text-green-600">L'équipe ACT</p>
+                <p className="mb-4 text-gray-700">
+                  Bon tennis à tous 🎾😉 !
+                </p>
+                <p className="font-medium text-green-600">
+                  L'équipe ACT
+                </p>
               </div>
             </div>
             

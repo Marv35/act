@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import { MapPin, Pen } from "lucide-react" 
+import { MapPin, Pen, Info } from "lucide-react" 
 import { useEffect, useState } from "react"
 import EffectifTabs from "@/components/effectif-tabs"
 import CoachList, { Coach } from "@/components/CoachList"
@@ -205,6 +205,19 @@ export default function Club() {
         <div className="bg-green-50 p-6 rounded-lg border border-green-200 mb-8">
           <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Données</h3>
           <h3 className="font-semibold mb-3">Effectif actuel du club (source Ten'Up)</h3>
+          <div className="flex items-center gap-1.5 text-gray-500 text-sm">
+            <span>Dernière mise à jour : 10/2026</span>
+      
+            {/* Conteneur de l'icône et du tooltip */}
+            <div className="group relative inline-flex items-center">
+              <Info className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-pointer" />
+
+              {/* Infobulle affichée uniquement au survol du conteneur */}  
+              <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:flex whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white shadow-md z-10 pointer-events-none">
+                  La page source de ces informations a été fermée sur Ten'Up.
+              </div>
+          </div>
+        </div>
           {effectif.total !== null ? (
             <div className="flex flex-col md:flex-row gap-4 mb-4">
               <div className="flex-1 bg-white rounded-lg shadow p-4 flex items-center">
