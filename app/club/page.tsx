@@ -206,7 +206,7 @@ export default function Club() {
           <h3 className="text-xl font-semibold mb-4 border-b border-green-200 pb-2">Données</h3>
           <h3 className="font-semibold mb-3">Effectif actuel du club (source Ten'Up)</h3>
           <div className="flex items-center gap-1.5 text-gray-500 text-sm">
-            <span>Dernière mise à jour : 10/2026</span>
+            <span>Dernière mise à jour : 11/2026</span>
       
             {/* Conteneur de l'icône et du tooltip */}
             <div className="group relative inline-flex items-center">
