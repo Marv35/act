@@ -389,11 +389,11 @@ export default function Club() {
             {/* Carte unique épurée sans boîtes imbriquées */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden mb-8 transition-shadow duration-300 hover:shadow-xl">
               <div className="lg:flex">
-                <div className="group lg:w-1/3 lg:flex-shrink-0 overflow-hidden">
-                  <div className="relative h-64 lg:h-full min-h-[300px]">
+                <div className="group lg:w-2/4 lg:flex-shrink-0 overflow-hidden">
+                  <div className="relative h-64 lg:h-full min-h-[350px]">
                     <Image
-                      src="/images/Terrains/photo_drone.webp"
-                      alt="Bureau directeur de l'Association Cloysienne de Tennis"
+                      src="/images/Personnes/Bureau.webp"
+                      alt="Bureau directeur et les membre de l'Association Cloysienne de Tennis"
                       fill
                       className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     />

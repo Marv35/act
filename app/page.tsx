@@ -150,16 +150,16 @@ export default function Home() {
             <div className="md:w-1/2 relative min-h-[250px] md:min-h-full">
               <div className="relative h-full w-full overflow-hidden rounded-lg">
                 <Image
-                  src="/images/Terrains/repas_de_tournoi.webp"
+                  src="/images/Terrains/Court_baby_tennis.webp"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  alt="Repas de tournoi de tennis en extérieur"
+                  alt="Court de baby tennis le samedi matin"
                   className="object-cover transform transition-transform hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                   <p className="text-white text-sm">
                     <Calendar className="inline-block mr-1 h-4 w-4" />
-                    Mise à jour : Septembre 2026
+                    Mise à jour : Novembre 2026
                   </p>
                 </div>
               </div>
