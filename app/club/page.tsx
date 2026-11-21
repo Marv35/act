@@ -31,7 +31,7 @@ const bureauPairs: BureauPair[] = [
   {
     pole: "Trésorerie",
     lead: { title: "Trésorier", person: "Émilien LETOURNEUX" },
-    vice: { title: "Vice-trésorière", person: "Séverine VENDÉ" },
+    vice: { title: "Vice-trésorière", person: "Séverine TORAILLE" },
   },
 ]
 
